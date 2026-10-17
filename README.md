@@ -1,0 +1,2 @@
+# gusuku
+experimental homelab
