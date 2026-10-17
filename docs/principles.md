@@ -85,13 +85,27 @@ Do not add physical hosts simply to fill reserved names.
 
 A new host should solve a real learning or infrastructure requirement that cannot reasonably be met with the existing environment.
 
-### 6. fujigoko remains independent
+### 6. gusuku is not production
+
+gusuku is an experimental environment. Services, configurations, and platforms running in gusuku should be considered disposable and should not become required parts of the real home environment.
+
+If an experiment proves genuinely useful in day-to-day life, the result should be redeployed on an appropriate fujigoko system rather than promoted in place inside gusuku.
+
+The normal path is:
+
+```text
+experiment in gusuku → validate → redeploy on fujigoko if useful
+```
+
+### 7. fujigoko remains independent
 
 gusuku may eventually monitor, manage, automate, or interact with selected fujigoko systems for learning purposes.
 
-fujigoko must not depend on gusuku for critical services.
+fujigoko must not depend on gusuku for critical or required services.
 
-### 7. document useful evidence
+A gusuku outage, rebuild, or complete loss should not materially affect normal home operations.
+
+### 8. document useful evidence
 
 Documentation should capture information that would matter to a future administrator or employer:
 
