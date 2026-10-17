@@ -1,55 +1,35 @@
 # gusuku
 
-gusuku is a learning and experimentation homelab for exploring enterprise IT.
+Gusuku is a disposable learning and career-exploration homelab for enterprise IT.
 
-The goal is to build practical experience across different infrastructure domains, understand how enterprise systems work together, and figure out which areas are actually interesting through hands-on use.
+It is deliberately separate from [`fujigoko`](https://github.com/s-pollard/fujigoko), the production home environment.
 
-`fujigoko` is the home production environment.
+```text
+fujigoko = production
+ gusuku  = experimentation / learning
+```
 
-`gusuku` is where things can be built, broken, rebuilt, and experimented with without affecting `fujigoko`.
+A gusuku outage, rebuild, or complete loss must not materially affect normal home services.
 
-## environment boundary
-
-`gusuku` is experimental and disposable by design. It should not become a production environment simply because an experiment happens to be useful.
-
-The intended lifecycle is:
+## lifecycle
 
 ```text
 idea
   ↓
 gusuku
   ↓
-test / break / learn / validate
+test / break / troubleshoot / recover / learn
   ↓
 useful in the real world?
-  ├── no  → remove it
-  └── yes → redeploy it properly on fujigoko
+  ├── no  -> remove it
+  └── yes -> redeploy it properly on fujigoko
 ```
 
-If a service, configuration, or platform proves genuinely useful for the real home environment, it should graduate out of gusuku and be deployed on an appropriate `fujigoko` system.
+Useful experiments graduate by being rebuilt in Fujigoko; gusuku itself does not become production.
 
-`fujigoko` must not depend on gusuku for required home services.
+## scope
 
-## core principles
-
-- learn by building and operating real systems
-- prefer practical experience over theory alone
-- learn how enterprise systems interact, not just individual products
-- troubleshoot before rebuilding
-- intentionally create failures and practice recovery
-- document architecture, incidents, and lessons learned
-- keep gusuku independent from critical fujigoko services
-- keep gusuku workloads experimental rather than production
-- graduate useful real-world services to fujigoko instead of making gusuku permanent
-- add hardware only when a real lab requirement exists
-- use scripting and automation as infrastructure tools, not as a software-development goal
-- use AI as a productivity tool while retaining enough underlying knowledge to verify its work
-
-Breaking gusuku is expected.
-
-Breaking fujigoko is not.
-
-## areas to explore
+Primary areas to explore:
 
 - virtualization
 - Linux / RHEL
@@ -63,73 +43,74 @@ Breaking fujigoko is not.
 - cloud
 - backup and disaster recovery
 
-Cloud and higher-level platforms should come after the traditional infrastructure fundamentals they depend on.
+Software development is not a career goal. Scripting and automation are infrastructure tools. Radar/RF are out of scope.
+
+## operating principles
+
+- learn by building and operating real systems
+- understand fundamentals before adding abstraction
+- troubleshoot before rebuilding when practical
+- intentionally create failures and practice recovery
+- document architecture, incidents, runbooks, and lessons that are worth preserving
+- keep gusuku independent from production services
+- add hardware only when a real lab requirement exists
+- use AI as a productivity tool while retaining enough understanding to verify its output
+
+Breaking gusuku is expected. Breaking Fujigoko is not.
+
+See [`docs/principles.md`](docs/principles.md) for the detailed rules.
 
 ## physical hosts
 
 ```text
 gusuku
 ├── shuri
-├── nakijin
-├── zakimi
-├── katsuren
-└── nakagusuku
+├── nakijin      (reserved)
+├── zakimi       (reserved)
+├── katsuren     (reserved)
+└── nakagusuku   (reserved)
 ```
 
 ### shuri
 
-First physical host.
+First physical host and initial Proxmox platform for the lab.
 
-Initial role:
+See [`hosts/shuri.md`](hosts/shuri.md) for current hardware and deployment state.
 
-- Proxmox virtualization host
-- primary platform for gusuku virtual infrastructure
+Additional physical hosts should be added only when the existing environment cannot reasonably satisfy a real learning requirement.
 
-### reserved names
+## direction
 
-- nakijin
-- zakimi
-- katsuren
-- nakagusuku
+Over time, gusuku should resemble a small fictional enterprise rather than an unrelated VM collection. Possible components include:
 
-Additional physical hosts should only be added when the lab develops a real requirement for them.
-
-## long-term direction
-
-Eventually gusuku should resemble a small fictional enterprise rather than a collection of unrelated test machines.
-
-The environment may include:
-
-- multiple departments
-- users and groups
-- Windows clients
+- users and departments
+- Windows clients and servers
 - Linux servers
-- Active Directory
-- internal DNS
-- network segmentation
+- Active Directory and internal DNS
+- segmented networks
 - shared storage
-- internal services
-- remote access
-- monitoring
-- centralized logging
+- monitoring and centralized logging
 - security controls
-- backups
-- disaster recovery
+- backup and recovery systems
 
-The environment should periodically be subjected to simulated failures so diagnosis, repair, recovery, and documentation become part of the lab rather than exceptional events.
+The environment should periodically be subjected to intentional faults so diagnosis, repair, recovery, and documentation become normal lab activities.
 
-## evaluation
+See [`docs/roadmap.md`](docs/roadmap.md) for the suggested progression.
 
-As different areas are explored, they can be evaluated based on hands-on experience:
+## public-repo boundary
 
-- enjoyment
-- troubleshooting enjoyment
-- frustration
-- desire to go deeper
-- useful concepts learned
-- acceptable amount of scripting or automation
-- whether the technology is worth revisiting later
+Do not commit credentials, API keys, tokens, private keys, recovery codes, exact private addressing, management URLs, MAC addresses, serial numbers, VPN endpoints, account identifiers, or personal location details.
 
-There is no requirement to choose a specialization.
+Hardware models, high-level topology, lab roles, generic configurations, and non-secret lessons are appropriate to document publicly.
 
-See [`docs/principles.md`](docs/principles.md), [`docs/roadmap.md`](docs/roadmap.md), and [`hosts/shuri.md`](hosts/shuri.md) for the current source of truth.
+## repository structure
+
+```text
+.
+├── README.md
+├── docs/
+│   ├── principles.md
+│   └── roadmap.md
+└── hosts/
+    └── shuri.md
+```
