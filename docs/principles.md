@@ -2,7 +2,7 @@
 
 ## purpose
 
-gusuku exists to support learning, experimentation, and career exploration in enterprise IT before military retirement in 2033.
+gusuku exists to support learning and experimentation in enterprise IT.
 
 It is not optimized for production uptime. It is optimized for learning from building, operating, breaking, troubleshooting, and recovering systems.
 
@@ -22,7 +22,7 @@ Areas of interest include:
 - cloud
 - backup and disaster recovery
 
-Software development is not a career goal.
+Software development is not a goal.
 
 Scripting and automation are in scope when they are normal tools for infrastructure work.
 
@@ -107,7 +107,7 @@ A gusuku outage, rebuild, or complete loss should not materially affect normal h
 
 ### 8. document useful evidence
 
-Documentation should capture information that would matter to a future administrator or employer:
+Documentation should capture information that would matter when revisiting or rebuilding the environment:
 
 - architecture decisions
 - diagrams
@@ -120,52 +120,31 @@ Documentation should capture information that would matter to a future administr
 
 Avoid documenting busywork merely to make the repository larger.
 
-## career evaluation
+## evaluation
 
-Each major technical area should eventually be evaluated subjectively and objectively.
+Each major technical area can eventually be evaluated based on actual hands-on experience.
 
-### subjective
+Useful questions include:
 
-- enjoyment
-- troubleshooting enjoyment
-- frustration
-- desire to learn more
-- willingness to do the work professionally
-- acceptable amount of scripting or automation
+- was it enjoyable?
+- was troubleshooting it enjoyable?
+- what was frustrating?
+- is there a desire to learn more?
+- how much scripting or automation did it require?
+- did the technology make underlying systems easier or harder to understand?
+- is it worth revisiting later?
 
-### objective
-
-- Miami-area compensation
-- national compensation
-- cleared opportunities
-- job availability
-- average worker age
-- typical experience
-- career progression
-- promotion potential
-- remote and hybrid availability
-- employment outlook
-- AI exposure
-- AI leverage
-- certification requirements
-- education requirements
-- on-call expectations
-- travel requirements
-
-The goal is to identify the overlap between enjoyable work and a strong civilian career.
+No specialization needs to be chosen.
 
 ## certifications
 
-Certifications validate direction; they do not define it.
+Certifications may be useful as structured learning goals or validation after an area becomes interesting, but they are not the purpose of gusuku.
 
-Likely certifications to consider:
+Possible certifications to consider:
 
 - Security+
 - CCNA
 - RHCSA
-
-Possible later certifications:
-
 - CCNP Enterprise
 - RHCE
 - CISSP
@@ -173,7 +152,7 @@ Possible later certifications:
 - AWS certifications
 - Kubernetes certifications
 
-Certification timing should depend on career direction, employer demand, available military funding, and proximity to military retirement.
+They should only be pursued when they add useful structure or validation to something already being explored.
 
 ## AI
 
@@ -181,11 +160,10 @@ AI should be used as a tool rather than avoided.
 
 The lab should build enough underlying knowledge to validate AI-assisted work and recognize incorrect output.
 
-Career areas should also be evaluated for:
+Areas can also be evaluated for:
 
 - likelihood of routine tasks being automated
 - amount of human judgment required
 - value of physical infrastructure knowledge
 - value of troubleshooting ability
 - ability to use AI to increase productivity
-- expected durability of the field
