@@ -87,7 +87,7 @@ Possible tools:
 - Bash
 - infrastructure as code
 
-The objective is to evaluate both the usefulness and personal appeal of automation-heavy infrastructure work.
+The objective is to evaluate where automation is genuinely useful and whether working with it is enjoyable.
 
 ## phase 5 — containers
 
@@ -142,8 +142,8 @@ For each meaningful exercise:
 5. document root cause
 6. record what would make future diagnosis faster
 
-## ongoing — career evaluation
+## ongoing — evaluation
 
-As enough experience accumulates in an area, create a career evaluation based on actual hands-on experience rather than assumptions.
+As enough experience accumulates in an area, record what was enjoyable, frustrating, useful, or worth exploring more deeply.
 
-No specialization needs to be chosen early.
+No specialization needs to be chosen.
