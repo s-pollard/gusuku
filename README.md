@@ -8,6 +8,28 @@ The goal is not to train for one specific job. The goal is to spend the years be
 
 `gusuku` is where things can be built, broken, rebuilt, and experimented with without affecting `fujigoko`.
 
+## environment boundary
+
+`gusuku` is experimental and disposable by design. It should not become a production environment simply because an experiment happens to be useful.
+
+The intended lifecycle is:
+
+```text
+idea
+  ↓
+gusuku
+  ↓
+test / break / learn / validate
+  ↓
+useful in the real world?
+  ├── no  → remove it
+  └── yes → redeploy it properly on fujigoko
+```
+
+If a service, configuration, or platform proves genuinely useful for the real home environment, it should graduate out of gusuku and be deployed on an appropriate `fujigoko` system.
+
+`fujigoko` must not depend on gusuku for required home services.
+
 ## core principles
 
 - learn by building and operating real systems
@@ -17,6 +39,8 @@ The goal is not to train for one specific job. The goal is to spend the years be
 - intentionally create failures and practice recovery
 - document architecture, incidents, and lessons learned
 - keep gusuku independent from critical fujigoko services
+- keep gusuku workloads experimental rather than production
+- graduate useful real-world services to fujigoko instead of making gusuku permanent
 - add hardware only when a real lab requirement exists
 - use scripting and automation as infrastructure tools, not as a software-development goal
 - use AI as a productivity tool while retaining enough underlying knowledge to verify its work
@@ -54,7 +78,7 @@ gusuku
 
 ### shuri
 
-Planned first physical host.
+First physical host.
 
 Initial role:
 
