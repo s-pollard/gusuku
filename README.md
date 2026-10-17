@@ -1,8 +1,8 @@
 # gusuku
 
-gusuku is a learning and career-exploration homelab.
+gusuku is a learning and experimentation homelab for exploring enterprise IT.
 
-The goal is not to train for one specific job. The goal is to spend the years before military retirement exploring different areas of enterprise IT, figuring out what is actually enjoyable, and developing skills that can transfer into a civilian career.
+The goal is to build practical experience across different infrastructure domains, understand how enterprise systems work together, and figure out which areas are actually interesting through hands-on use.
 
 `fujigoko` is the home production environment.
 
@@ -118,10 +118,18 @@ The environment may include:
 
 The environment should periodically be subjected to simulated failures so diagnosis, repair, recovery, and documentation become part of the lab rather than exceptional events.
 
-## career goal
+## evaluation
 
-The technical work is only half of the project. Each major area should eventually be evaluated for both personal fit and civilian career value.
+As different areas are explored, they can be evaluated based on hands-on experience:
 
-The objective is to find the overlap between work that is enjoyable and work that provides a strong post-military career.
+- enjoyment
+- troubleshooting enjoyment
+- frustration
+- desire to go deeper
+- useful concepts learned
+- acceptable amount of scripting or automation
+- whether the technology is worth revisiting later
+
+There is no requirement to choose a specialization.
 
 See [`docs/principles.md`](docs/principles.md), [`docs/roadmap.md`](docs/roadmap.md), and [`hosts/shuri.md`](hosts/shuri.md) for the current source of truth.
