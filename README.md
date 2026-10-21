@@ -79,6 +79,10 @@ See [`hosts/shuri.md`](hosts/shuri.md) for current hardware and deployment state
 
 Additional physical hosts should be added only when the existing environment cannot reasonably satisfy a real learning requirement.
 
+## administration
+
+**Aso** is the primary personal administration workstation. **Ontake**, **Norikura**, and **Azuma** are alternative laptop clients. They are separate from disposable lab hosts. See [administration workstations](docs/administration.md) for roles, naming, and links to hardware records.
+
 ## direction
 
 Over time, gusuku should resemble a small fictional enterprise rather than an unrelated VM collection. Possible components include:
@@ -109,6 +113,7 @@ Hardware models, high-level topology, lab roles, generic configurations, and non
 .
 ├── README.md
 ├── docs/
+│   ├── administration.md
 │   ├── principles.md
 │   └── roadmap.md
 └── hosts/
