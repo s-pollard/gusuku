@@ -2,7 +2,8 @@
 
 [Local AI index](../README.md).
 
-- [Roadmap](evaluation-roadmap.md) — task coverage and priorities
+- [34-task catalog](evaluation-task-catalog.md) — canonical numbering for the current 34-task screen
+- [Roadmap](evaluation-roadmap.md) — earlier task coverage, variants and priorities
 - [Protocol](evaluation-protocol.md) — fixtures, controls and scoring
 - [Comparison set](evaluation-comparison-set.md) — proposed compact screen
 - [Run template](evaluation-run-template.md) — settings and per-attempt evidence
