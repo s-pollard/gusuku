@@ -9,3 +9,5 @@ Active review material is for the canonical Task 00–34 screen. Historical revi
 - [Granite 4.1 8B](2026-10-24-granite-41-8b-screen.md)
 - [Qwen 9B](2026-10-24-qwen-9b-screen.md)
 - [Model inventory and Ministral 14B](2026-10-24-model-inventory-and-ministral-screen.md)
+
+- [Current provisional model ranking: pros, cons and coverage](2026-10-24-model-ranking.md) — exploratory ordering, recorded-model attribution, supplemental completions and blocked models.
