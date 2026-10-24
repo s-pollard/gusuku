@@ -11,6 +11,14 @@ fujigoko = production
 
 A gusuku outage, rebuild, or complete loss must not materially affect normal home services.
 
+## current status
+
+Gusuku is on hold until the November 2026 move is complete and the lab hardware can be unpacked and rebuilt.
+
+Shuri remains the planned first physical Gusuku host, but it is currently packed/offline. No permanent Gusuku services or virtual infrastructure are being deployed before the move.
+
+Aso may be used in the meantime as a temporary test bed for local-AI administration experiments. This does not make Aso a Gusuku host and does not represent a planned permanent addition to Gusuku.
+
 ## lifecycle
 
 ```text
@@ -73,7 +81,7 @@ gusuku
 
 ### shuri
 
-First physical host and initial Proxmox platform for the lab.
+First physical host and initial Proxmox platform for the lab after the move.
 
 See [`hosts/shuri.md`](hosts/shuri.md) for current hardware and deployment state.
 
@@ -81,7 +89,7 @@ Additional physical hosts should be added only when the existing environment can
 
 ## administration
 
-**Aso** is the primary personal administration workstation. **Ontake**, **Norikura**, and **Azuma** are alternative laptop clients. They are separate from disposable lab hosts. See [administration workstations](docs/administration.md) for roles, naming, and links to hardware records.
+**Aso** is the primary personal administration workstation. **Ontake**, **Norikura**, and **Azuma** are alternative laptop clients. They are separate from disposable lab hosts. Aso's temporary local-AI testing does not change that boundary. See [administration workstations](docs/administration.md) for roles, naming, and links to hardware records.
 
 ## direction
 
@@ -99,7 +107,7 @@ Over time, gusuku should resemble a small fictional enterprise rather than an un
 
 The environment should periodically be subjected to intentional faults so diagnosis, repair, recovery, and documentation become normal lab activities.
 
-See [`docs/roadmap.md`](docs/roadmap.md) for the suggested progression.
+See [`docs/roadmap.md`](docs/roadmap.md) for the suggested progression after the lab resumes.
 
 ## public-repo boundary
 
