@@ -1,5 +1,7 @@
 # 27B follow-up: host preflight and diagnostic execution — 2026-10-23
 
+Later source recovery: [stored prompts and answers](2026-10-23-qwen-27b-follow-up-full-transcript.md) and [export catalogue](2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
+
 Follow-up to the [first pilot](2026-10-23-qwen-27b-pilot.md), using Hermes + the same reported Qwen 27B model on Aso. This records user-pasted responses, activity summaries and user-run fixture checks. It is not an independent replay, complete tool audit or a completed controlled baseline. Fresh chats were requested; persistent memory/skills and exact generation settings were not captured.
 
 ## additional task coverage

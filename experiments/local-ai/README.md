@@ -2,6 +2,7 @@
 
 Experiment records: 2026-10-21 through 2026-10-24 (America/Chicago). This records observations from interactive testing on Aso, not a declaration that the agents are production services. UTC logs can show the following date for the same evening.
 
+- [Recovered Qwen/Ministral full exports](results/2026-10-24-prior-model-export-index.md) — complete stored small-model prompts/answers, selected redacted 27B evaluation records and original task mapping
 - [Granite 4.1 8B full transcript](results/2026-10-24-granite-41-8b-transcript.md) — complete stored prompts/answers, tasks 0–34, 38 attempts and session boundaries
 - [Granite 4.1 8B reviewed screen](results/2026-10-24-granite-41-8b-screen.md) — first attempts, reruns, evidence failures and comparison limits
 - [Chat export and reviewed GitHub sync](chat-export.md) — read-only session exporter; full stored prompts/answers staged privately before publication
@@ -21,7 +22,7 @@ Experiment records: 2026-10-21 through 2026-10-24 (America/Chicago). This record
 - [Odysseus](odysseus.md) — setup, tool execution, routing diagnosis, local patches, and remaining work
 - [Workstation inventory](https://github.com/s-pollard/fujigoko/blob/main/hosts/workstations.md) — hardware source of truth
 
-The recovered transcripts preserve visible final-answer wording, including errors, separately from reviewer findings. Most original Qwen/Ministral questions were collapsed or absent in the chat, so those recovered records remain partial. The later Granite 4.1 database export supplies complete stored prompts/answers for that screen, with session and retry boundaries. No missing fixture text has been reconstructed; none of these records alone establishes a controlled benchmark.
+The recovered transcripts preserve visible final-answer wording, including errors, separately from reviewer findings. The earlier pasted Qwen/Ministral recoveries remain partial historical records. Later database exports recover their full small-model prompts/answers and selected redacted 27B evaluation history; see the export catalogue. The later Granite 4.1 database export supplies complete stored prompts/answers for that screen, with session and retry boundaries. No missing fixture text has been reconstructed; none of these records alone establishes a controlled benchmark.
 
 ## ownership and migration — 2026-10-24
 

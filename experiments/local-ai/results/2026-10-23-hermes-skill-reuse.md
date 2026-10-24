@@ -1,5 +1,7 @@
 # Hermes skill correction and reuse review — 2026-10-23
 
+Later source recovery: [stored prompts and answers](2026-10-23-24-qwen-27b-skill-full-transcript.md) and [export catalogue](2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
+
 Follow-up to the [27B execution record](2026-10-23-qwen-27b-follow-up.md). Evidence is user-pasted Hermes responses, displayed diffs/readbacks and activity summaries. The reviewer did not inspect the installed skill files, capture complete tool transcripts or independently replay these operations. This is a coached maintenance session, not a scored model comparison. The exact running model/settings were not recaptured; retain the prior reported 27B context without treating it as a new runtime verification.
 
 ## reported saved corrections

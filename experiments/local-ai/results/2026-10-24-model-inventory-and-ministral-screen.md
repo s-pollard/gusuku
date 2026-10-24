@@ -1,5 +1,7 @@
 # Model inventory and Ministral screen — 2026-10-24
 
+Later source recovery: [stored prompts and answers](2026-10-24-ministral-14b-full-transcript.md) and [export catalogue](2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
+
 [Recovered final-answer transcript](2026-10-24-ministral-14b-answer-transcript.md): visible answer bodies are preserved separately, including errors. Full original questions/fixtures are unavailable in the pasted chat; incomplete fragments are explicitly marked. This review does not substitute for those missing prompts.
 
 User-supplied Aso terminal output and Hermes answers, following the [Qwen 9B screen](2026-10-24-qwen-9b-screen.md). This is an exploratory record, not a controlled benchmark or deployment approval. No new production-host checks were performed for this documentation update.

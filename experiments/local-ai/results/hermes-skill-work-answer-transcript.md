@@ -1,5 +1,7 @@
 # Earlier Hermes skill work — recovered answer transcript
 
+Later source recovery: [stored prompts and answers](2026-10-23-24-qwen-27b-skill-full-transcript.md) and [export catalogue](2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
+
 Six earlier responses pasted before the smaller-model screens, retained separately because these concern skill review/editing and source investigation rather than the later fictional test cases. The full original user requests are unavailable. Exact model identity and execution dates are not established by these pasted answer bodies alone; no Qwen 27B attribution is asserted here. Reports of reading, editing or executing tools are the original agent's claims, not fresh verification.
 
 Some passages were subsequently corrected in later responses in this same extract. Preserve the sequence; do not treat the initial Loki rules or timestamp assertions as current guidance.
