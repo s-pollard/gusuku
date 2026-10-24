@@ -2,9 +2,11 @@
 
 Aso is the primary workstation used to administer Gusuku and Fujigoko. It is also the main personal desktop and most powerful non-server PC, used for gaming and photography.
 
+While Gusuku is paused until the November 2026 move, Aso may be used as a temporary test bed for local-AI administration experiments. This is not a permanent Gusuku role and does not make Aso part of the lab host inventory.
+
 | Workstation | Main role | Platform |
 | --- | --- | --- |
-| aso | Main desktop and primary server administration | Arch Linux / KDE |
+| aso | Main desktop and primary server administration; temporary local-AI test bed | Arch Linux / KDE |
 | ontake | Main gaming laptop; alternative administration | Bazzite / KDE |
 | norikura | Everyday portable browsing and off-site Tailscale tinkering | Arch Linux / COSMIC |
 | azuma | Everyday portable browsing and off-site Tailscale tinkering | macOS |
