@@ -2,25 +2,36 @@
 
 Experiment records: 2026-10-21 through 2026-10-24 (America/Chicago). This records observations from interactive testing on Aso, not a declaration that the agents are production services. UTC logs can show the following date for the same evening.
 
+## navigation
+
+| Find | Folder / guide |
+| --- | --- |
+| Current model evidence | [Native transcripts](results/native/README.md) |
+| Reviewed findings | [Reviews](results/reviews/README.md) |
+| Test plans and protocol | [Evaluation](evaluation/README.md) |
+| Agent setup and lessons | [Agents](agents/README.md) |
+| Earlier recovery records | [Legacy transcripts](results/legacy/README.md) |
+| Export and backup workflow | [Chat export](chat-export.md) |
+
 - [Native Hermes exports — primary readable records](results/native/2026-10-24/README.md) — 147 reviewed files, task indexes, tool results and source/public checksum scopes
-- [Recovered Qwen/Ministral full exports](results/2026-10-24-prior-model-export-index.md) — complete stored small-model prompts/answers, selected redacted 27B evaluation records and original task mapping
-- [Granite 4.1 8B full transcript](results/2026-10-24-granite-41-8b-transcript.md) — complete stored prompts/answers, tasks 0–34, 38 attempts and session boundaries
-- [Granite 4.1 8B reviewed screen](results/2026-10-24-granite-41-8b-screen.md) — first attempts, reruns, evidence failures and comparison limits
+- [Recovered Qwen/Ministral full exports](results/legacy/2026-10-24-prior-model-export-index.md) — complete stored small-model prompts/answers, selected redacted 27B evaluation records and original task mapping
+- [Granite 4.1 8B full transcript](results/legacy/2026-10-24-granite-41-8b-transcript.md) — complete stored prompts/answers, tasks 0–34, 38 attempts and session boundaries
+- [Granite 4.1 8B reviewed screen](results/reviews/2026-10-24-granite-41-8b-screen.md) — first attempts, reruns, evidence failures and comparison limits
 - [Native Hermes export and reviewed GitHub sync](chat-export.md) — native Markdown for readable records; private JSONL backups; custom exporter retained for legacy recovery
-- [Qwen 9B answer transcript](results/2026-10-24-qwen-9b-answer-transcript.md) — 35 recovered answers; missing full prompts explicitly marked
-- [Ministral 14B answer transcript](results/2026-10-24-ministral-14b-answer-transcript.md) — 34 recovered answers, plus a separately identified duplicate paste
-- [Earlier Hermes skill-work transcript](results/hermes-skill-work-answer-transcript.md) — six pasted responses, separate from the model screens
-- [Eight-model inventory and Ministral screen](results/2026-10-24-model-inventory-and-ministral-screen.md) — confirmed picker inventory, installation caveats, first-attempt failures and fair-comparison controls
-- [9B exploratory screen](results/2026-10-24-qwen-9b-screen.md) — installation lessons, first-attempt findings, 27B comparison limits and Granite/Ministral candidates
-- [Evaluation roadmap](evaluation-roadmap.md) — 24 tasks, revised variants, comparison rules, and model/framework scoring
-- [First 27B pilot](results/2026-10-23-qwen-27b-pilot.md) — original 22 attempts, fresh-chat reruns of 5–9, review corrections and coverage limits
-- [27B execution follow-up](results/2026-10-23-qwen-27b-follow-up.md) — host/evidence tasks, synthetic exporter, real Loki retrieval and runtime qualifications
-- [Hermes skill reuse review](results/2026-10-23-hermes-skill-reuse.md) — conflicting instructions, saved corrections, repeated compaction and smaller-model handoff
-- [Compact comparison set](evaluation-comparison-set.md) — proposed nine-case screen and preparation gates
-- [Evaluation protocol](evaluation-protocol.md) — fixture validation, memory/session controls, analysis versus execution, and scoring
-- [Run record template](evaluation-run-template.md) — repeatable per-attempt evidence and settings record
-- [Hermes Agent](hermes.md) — setup, homelab work, memory/skills, inference failures, and lessons
-- [Odysseus](odysseus.md) — setup, tool execution, routing diagnosis, local patches, and remaining work
+- [Qwen 9B answer transcript](results/legacy/2026-10-24-qwen-9b-answer-transcript.md) — 35 recovered answers; missing full prompts explicitly marked
+- [Ministral 14B answer transcript](results/legacy/2026-10-24-ministral-14b-answer-transcript.md) — 34 recovered answers, plus a separately identified duplicate paste
+- [Earlier Hermes skill-work transcript](results/legacy/hermes-skill-work-answer-transcript.md) — six pasted responses, separate from the model screens
+- [Eight-model inventory and Ministral screen](results/reviews/2026-10-24-model-inventory-and-ministral-screen.md) — confirmed picker inventory, installation caveats, first-attempt failures and fair-comparison controls
+- [9B exploratory screen](results/reviews/2026-10-24-qwen-9b-screen.md) — installation lessons, first-attempt findings, 27B comparison limits and Granite/Ministral candidates
+- [Evaluation roadmap](evaluation/evaluation-roadmap.md) — 24 tasks, revised variants, comparison rules, and model/framework scoring
+- [First 27B pilot](results/reviews/2026-10-23-qwen-27b-pilot.md) — original 22 attempts, fresh-chat reruns of 5–9, review corrections and coverage limits
+- [27B execution follow-up](results/reviews/2026-10-23-qwen-27b-follow-up.md) — host/evidence tasks, synthetic exporter, real Loki retrieval and runtime qualifications
+- [Hermes skill reuse review](results/reviews/2026-10-23-hermes-skill-reuse.md) — conflicting instructions, saved corrections, repeated compaction and smaller-model handoff
+- [Compact comparison set](evaluation/evaluation-comparison-set.md) — proposed nine-case screen and preparation gates
+- [Evaluation protocol](evaluation/evaluation-protocol.md) — fixture validation, memory/session controls, analysis versus execution, and scoring
+- [Run record template](evaluation/evaluation-run-template.md) — repeatable per-attempt evidence and settings record
+- [Hermes Agent](agents/hermes.md) — setup, homelab work, memory/skills, inference failures, and lessons
+- [Odysseus](agents/odysseus.md) — setup, tool execution, routing diagnosis, local patches, and remaining work
 - [Workstation inventory](https://github.com/s-pollard/fujigoko/blob/main/hosts/workstations.md) — hardware source of truth
 
 The recovered transcripts preserve visible final-answer wording, including errors, separately from reviewer findings. The earlier pasted Qwen/Ministral recoveries remain partial historical records. Later database exports recover their full small-model prompts/answers and selected redacted 27B evaluation history; see the export catalogue. The later Granite 4.1 database export supplies complete stored prompts/answers for that screen, with session and retry boundaries. No missing fixture text has been reconstructed; none of these records alone establishes a controlled benchmark.
@@ -88,21 +99,21 @@ Changes to an agent's own upstream source belong in that project's checkout; thi
 
 ## latest follow-up — 2026-10-24
 
-Qwen3.5-9B-Q4_K_M is reported working in Hermes after importing the existing GGUF through the supported desktop model-registration flow. Manual router-preset edits were regenerated and did not register the model durably. The [9B screen](results/2026-10-24-qwen-9b-screen.md) records two local-host attempts and short fictional analysis/planning cases. Most short answers took roughly 2–5 seconds, but there were material counting, exit-code/OOM, dated-evidence, rollback and backup-procedure errors, alongside frequent output-length misses.
+Qwen3.5-9B-Q4_K_M is reported working in Hermes after importing the existing GGUF through the supported desktop model-registration flow. Manual router-preset edits were regenerated and did not register the model durably. The [9B screen](results/reviews/2026-10-24-qwen-9b-screen.md) records two local-host attempts and short fictional analysis/planning cases. Most short answers took roughly 2–5 seconds, but there were material counting, exit-code/OOM, dated-evidence, rollback and backup-procedure errors, alongside frequent output-length misses.
 
-This is an exploratory baseline, not the frozen comparison pack or a quantified comparison with Qwen3.8 27B. Runtime, context, sampling and persistent-context controls remain incomplete; no new VRAM measurement was supplied. The later [model inventory and Ministral screen](results/2026-10-24-model-inventory-and-ministral-screen.md) confirms eight downloaded models visible in the local picker: Qwen 9B/27B/35B, Granite 8B, Ministral 14B, GPT-OSS 20B, Gemma 26B-A4B and GLM-4.7-Flash. Ministral loaded and produced exploratory answers, with material date arithmetic, evidence, OOM, Git and unsupported-verification errors. Granite 4.1 8B has since completed an exploratory screen, with [full stored prompts/answers](results/2026-10-24-granite-41-8b-transcript.md) and a [review](results/2026-10-24-granite-41-8b-screen.md). Its 36 exported sessions contain 35 distinct tasks and 38 test attempts, plus non-test terminal input. Several material evidence errors remain. Granite 4.2 8B is the next selected candidate; its download/load/test completion is unconfirmed. The four other newly added alternatives still have no supplied load/test results. Terminal model selection is available over SSH. Manual preset durability, effective serving budgets and new-model GPU fit remain unverified. No deployment model has been selected.
+This is an exploratory baseline, not the frozen comparison pack or a quantified comparison with Qwen3.8 27B. Runtime, context, sampling and persistent-context controls remain incomplete; no new VRAM measurement was supplied. The later [model inventory and Ministral screen](results/reviews/2026-10-24-model-inventory-and-ministral-screen.md) confirms eight downloaded models visible in the local picker: Qwen 9B/27B/35B, Granite 8B, Ministral 14B, GPT-OSS 20B, Gemma 26B-A4B and GLM-4.7-Flash. Ministral loaded and produced exploratory answers, with material date arithmetic, evidence, OOM, Git and unsupported-verification errors. Granite 4.1 8B has since completed an exploratory screen, with [full stored prompts/answers](results/legacy/2026-10-24-granite-41-8b-transcript.md) and a [review](results/reviews/2026-10-24-granite-41-8b-screen.md). Its 36 exported sessions contain 35 distinct tasks and 38 test attempts, plus non-test terminal input. Several material evidence errors remain. Granite 4.2 8B is the next selected candidate; its download/load/test completion is unconfirmed. The four other newly added alternatives still have no supplied load/test results. Terminal model selection is available over SSH. Manual preset durability, effective serving budgets and new-model GPU fit remain unverified. No deployment model has been selected.
 
 ## prior follow-up — 2026-10-23
 
-The user ran a Hermes + Qwen 27B pilot with client reasoning configured low covering the original 22 task IDs. Original tasks 5–9 shared a chat and were subsequently rerun with fresh-chat instructions; persistent memory/skills and exact runtime settings were not controlled. Strengths were scope restraint, concrete inventory and the reported isolated edit. Weaknesses included unsupported certainty, invented or stretched evidence, and excessive repository auditing. Most diagnostic tasks used supplied snapshots/fixtures rather than model-executed host/API checks. The reviewer also corrected a Loki timestamp assumption after inspecting source. See the [pilot report](results/2026-10-23-qwen-27b-pilot.md); this is not a completed controlled baseline or a live host audit.
+The user ran a Hermes + Qwen 27B pilot with client reasoning configured low covering the original 22 task IDs. Original tasks 5–9 shared a chat and were subsequently rerun with fresh-chat instructions; persistent memory/skills and exact runtime settings were not controlled. Strengths were scope restraint, concrete inventory and the reported isolated edit. Weaknesses included unsupported certainty, invented or stretched evidence, and excessive repository auditing. Most diagnostic tasks used supplied snapshots/fixtures rather than model-executed host/API checks. The reviewer also corrected a Loki timestamp assumption after inspecting source. See the [pilot report](results/reviews/2026-10-23-qwen-27b-pilot.md); this is not a completed controlled baseline or a live host audit.
 
-The roadmap now retains tasks 1–22 and adds execution-host verification (23) and conflicting-evidence/memory handling (24). Initial task 23/24 variants and isolated task 14/15 execution exercises are now recorded in the [follow-up](results/2026-10-23-qwen-27b-follow-up.md). Matching upstream server source supports request-level low overriding preset medium, conditional on the traced request; live request capture and full runtime controls remain incomplete. Prepare the [compact comparison set](evaluation-comparison-set.md) before smaller-model screening. No new production changes, deployment readiness or GPU fit were established.
+The roadmap now retains tasks 1–22 and adds execution-host verification (23) and conflicting-evidence/memory handling (24). Initial task 23/24 variants and isolated task 14/15 execution exercises are now recorded in the [follow-up](results/reviews/2026-10-23-qwen-27b-follow-up.md). Matching upstream server source supports request-level low overriding preset medium, conditional on the traced request; live request capture and full runtime controls remain incomplete. Prepare the [compact comparison set](evaluation/evaluation-comparison-set.md) before smaller-model screening. No new production changes, deployment readiness or GPU fit were established.
 
-The later [skill reuse review](results/2026-10-23-hermes-skill-reuse.md) records reported corrections to both Hermes skills, partial fresh-chat reuse, conflicting leftover instructions and an over-hour investigation with repeated compaction. Final reuse after all corrections remains untested. Smaller-model exploratory screening can begin next session; controlled comparison still requires equivalent skill/memory profiles and fresh 27B reference runs. No replacement has been selected.
+The later [skill reuse review](results/reviews/2026-10-23-hermes-skill-reuse.md) records reported corrections to both Hermes skills, partial fresh-chat reuse, conflicting leftover instructions and an over-hour investigation with repeated compaction. Final reuse after all corrections remains untested. Smaller-model exploratory screening can begin next session; controlled comparison still requires equivalent skill/memory profiles and fresh 27B reference runs. No replacement has been selected.
 
 ## earlier follow-up — 2026-10-22
 
-Aso's Fujigoko checkout was fast-forwarded to the consolidated `main`. Odysseus then demonstrated direct workspace file reads, creation and editing, cross-chat memory retrieval, and answering from a pinned homelab boundary without tools. A further local source patch added memory to the workspace toolset. A read-only Markdown target-file check executed and reported no missing targets. Private Tailscale Serve access was configured; external-client connectivity is not yet verified. See the [dated Odysseus follow-up](odysseus.md#follow-up--2026-10-22) for evidence and remaining limitations.
+Aso's Fujigoko checkout was fast-forwarded to the consolidated `main`. Odysseus then demonstrated direct workspace file reads, creation and editing, cross-chat memory retrieval, and answering from a pinned homelab boundary without tools. A further local source patch added memory to the workspace toolset. A read-only Markdown target-file check executed and reported no missing targets. Private Tailscale Serve access was configured; external-client connectivity is not yet verified. See the [dated Odysseus follow-up](agents/odysseus.md#follow-up--2026-10-22) for evidence and remaining limitations.
 
 ## native export transition — 2026-10-24
 
@@ -110,7 +121,7 @@ Aso supplied 156 native Markdown files and four manifests. All original complete
 
 ## next work
 
-Evaluation priority: prepare the proposed [nine-case comparison set](evaluation-comparison-set.md), with frozen reference answers and controlled profiles under the [evaluation protocol](evaluation-protocol.md). Complete missing/invalid 27B coverage, including the remaining task 23/24 variants. Keep pilot attempts and reviewer corrections separate from subsequent comparisons.
+Evaluation priority: prepare the proposed [nine-case comparison set](evaluation/evaluation-comparison-set.md), with frozen reference answers and controlled profiles under the [evaluation protocol](evaluation/evaluation-protocol.md). Complete missing/invalid 27B coverage, including the remaining task 23/24 variants. Keep pilot attempts and reviewer corrections separate from subsequent comparisons.
 
 1. Verify the server's serving window and both clients' effective budgets with authenticated discovery or an explicit supported override.
 2. Harden Odysseus tool selection across turns and wording. Explicit workspace read/create/edit access now passes; broad intent filtering remains an issue.

@@ -1,6 +1,6 @@
 # Qwen 27B — skill reuse and timestamp review source records
 
-**Legacy recovery record.** Use the [native Hermes archive](native/2026-10-24/README.md) as the primary readable source. This earlier extract remains unchanged below for historical row flags, omissions and recovery provenance; no native metadata has been fabricated.
+**Legacy recovery record.** Use the [native Hermes archive](../native/2026-10-24/README.md) as the primary readable source. This earlier extract remains unchanged below for historical row flags, omissions and recovery provenance; no native metadata has been fabricated.
 
 [Export catalogue and publication limits](2026-10-24-prior-model-export-index.md).
 

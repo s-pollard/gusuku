@@ -2,7 +2,7 @@
 
 Later source recovery: [stored prompts and answers](2026-10-24-qwen-9b-full-transcript.md) and [export catalogue](2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
 
-35 distinct pasted final answers: two local-host attempts and 33 short analysis/planning cases. Model attribution follows the user-reported switch sequence and Qwen3.5-9B-Q4_K_M banners; medium reasoning was later confirmed by the user, not independently traced at request level. See the [reviewed screen](2026-10-24-qwen-9b-screen.md).
+35 distinct pasted final answers: two local-host attempts and 33 short analysis/planning cases. Model attribution follows the user-reported switch sequence and Qwen3.5-9B-Q4_K_M banners; medium reasoning was later confirmed by the user, not independently traced at request level. See the [reviewed screen](../reviews/2026-10-24-qwen-9b-screen.md).
 
 The user clarified that Q01 was the desktop answer. Q02 was a separate CLI attempt; its final answer was pasted once alone and again inside an expanded activity view. The repeated Q02 body is retained below as a duplicate paste, not a third host attempt.
 

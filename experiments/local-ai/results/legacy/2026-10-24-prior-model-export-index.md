@@ -1,6 +1,6 @@
 # Recovered prior-model chats — 2026-10-24
 
-**Superseded for primary reading by the [reviewed native Hermes archive](native/2026-10-24/README.md).** This catalogue remains the historical custom-recovery inventory and task mapping. Native exports now include tool evidence absent from that earlier Markdown. Source and reviewed-public checksum scopes are documented in the native index.
+**Superseded for primary reading by the [reviewed native Hermes archive](../native/2026-10-24/README.md).** This catalogue remains the historical custom-recovery inventory and task mapping. Native exports now include tool evidence absent from that earlier Markdown. Source and reviewed-public checksum scopes are documented in the native index.
 
 These records were recovered from the user's Hermes database export and published in **Gusuku**, the home for local AI experiments. The raw archive/database/private JSON remain private. This is a source-recovery update, not a new benchmark or claim that all candidate sessions are independent tests.
 
@@ -73,4 +73,4 @@ No credentials, raw private archive or system/configuration dumps were published
 
 Tool outputs/arguments, system prompts and reasoning fields were not included in the Markdown-only archive. We cannot recover them from this upload or verify model-executed actions by reading assistant claims. Session model metadata is not a captured request-level backend identity. Runtime/sampling, persistent memory/skills and comparison controls remain incomplete.
 
-The earlier review reports remain qualitative and historical. This source update does not create an aggregate leaderboard, deployment approval or live production-health finding. Preserve future exports with explicit task/attempt labels and equivalent settings; use [the evaluation protocol](../evaluation-protocol.md).
+The earlier review reports remain qualitative and historical. This source update does not create an aggregate leaderboard, deployment approval or live production-health finding. Preserve future exports with explicit task/attempt labels and equivalent settings; use [the evaluation protocol](../../evaluation/evaluation-protocol.md).

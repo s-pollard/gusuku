@@ -1,6 +1,6 @@
 # Hermes skill correction and reuse review — 2026-10-23
 
-Later source recovery: [stored prompts and answers](2026-10-23-24-qwen-27b-skill-full-transcript.md) and [export catalogue](2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
+Later source recovery: [stored prompts and answers](../legacy/2026-10-23-24-qwen-27b-skill-full-transcript.md) and [export catalogue](../legacy/2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
 
 Follow-up to the [27B execution record](2026-10-23-qwen-27b-follow-up.md). Evidence is user-pasted Hermes responses, displayed diffs/readbacks and activity summaries. The reviewer did not inspect the installed skill files, capture complete tool transcripts or independently replay these operations. This is a coached maintenance session, not a scored model comparison. The exact running model/settings were not recaptured; retain the prior reported 27B context without treating it as a new runtime verification.
 
@@ -57,6 +57,6 @@ The saved replacement retains the versioned source link and recommends RFC3339 U
 
 Smaller-model exploratory testing can begin in the next session; no smaller model is selected or proven adequate. Keep 27B available as a reference. The 9B/14B sizes remain candidate ranges, not verified fit, speed or reliability claims.
 
-Use the existing [comparison pack and protocol](../evaluation-comparison-set.md): capture actual model/runtime/context settings, freeze an equivalent corrected skill/memory profile, run fresh 27B reference attempts and then one smaller candidate on the same cases. The old pilot and today's coached repairs are not substitutes for those reference runs. Record accuracy, tool use, scope, uncertainty, completion, latency, usable context and VRAM.
+Use the existing [comparison pack and protocol](../../evaluation/evaluation-comparison-set.md): capture actual model/runtime/context settings, freeze an equivalent corrected skill/memory profile, run fresh 27B reference attempts and then one smaller candidate on the same cases. The old pilot and today's coached repairs are not substitutes for those reference runs. Record accuracy, tool use, scope, uncertainty, completion, latency, usable context and VRAM.
 
 Final skill reuse remains pending and long-session compaction remains unresolved. Neither blocks a clearly labeled exploratory screen; neither should be silently treated as fixed in comparative scoring. No model switch, download, inference configuration change or hardware purchase was performed by this documentation update.

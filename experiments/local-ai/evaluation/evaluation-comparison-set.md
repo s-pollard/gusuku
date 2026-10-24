@@ -1,6 +1,6 @@
 # compact model comparison set
 
-Prepared after the [27B follow-up](results/2026-10-23-qwen-27b-follow-up.md), 2026-10-23. Runnable pack v1 and a separate evaluator key have been created and locally validated; no model comparison has been run on that pack. Host/runtime/memory controls still require capture before comparative scoring. No smaller model is selected here. Use the [protocol](evaluation-protocol.md) and [run template](evaluation-run-template.md).
+Prepared after the [27B follow-up](../results/reviews/2026-10-23-qwen-27b-follow-up.md), 2026-10-23. Runnable pack v1 and a separate evaluator key have been created and locally validated; no model comparison has been run on that pack. Host/runtime/memory controls still require capture before comparative scoring. No smaller model is selected here. Use the [protocol](evaluation-protocol.md) and [run template](evaluation-run-template.md).
 
 The purpose is a manageable first comparison of practical reliability, evidence discipline and latency. Retain the full 24-task roadmap for broader coverage. Passing this screen does not establish production or unattended readiness.
 

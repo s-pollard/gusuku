@@ -4,7 +4,7 @@ Dated experiment record: 2026-10-21. Evidence is the interactive session's comma
 
 ## setup and demonstrated use
 
-- Installed Hermes Agent v0.22.3 and selected local Qwen3.8-27B-UD-Q4_K_M through Hermes-managed llama.cpp Vulkan b11671; see the [shared setup](README.md).
+- Installed Hermes Agent v0.22.3 and selected local Qwen3.8-27B-UD-Q4_K_M through Hermes-managed llama.cpp Vulkan b11671; see the [shared setup](../README.md).
 - Selected the local terminal backend. Messaging platforms were not configured during the initial wizard. Later housekeeping logs mentioned gateway activity; the final service installation state was not independently reconciled.
 - Reduced reasoning effort from medium to low after output exhaustion. Cloud-dependent tools and provider configuration were not comprehensively validated; local model hosting does not make every enabled tool offline or keyless.
 - Used GitHub-authenticated local clones of Fujigoko and Gusuku for documentation orientation and audits. No repository-level AGENTS.md was reported during the inspection.
@@ -82,7 +82,7 @@ Ctrl+C after completed edits did not remove on-disk changes. Git status/diff wer
 
 Paid model API inference was used during later testing, with reported spend of at least $4.71. The exact provider/model and final total are not established by this record. These later results must not be presented as proof that the initial local model completed the same tasks.
 
-The intended ongoing homelab helper must use local inference; paid API inference is not the deployment option or a required fallback. Evaluation will use the available RX 7900 XTX now, targeting configurations that could later fit an RX 9060 XT 16 GB. The RTX 3060 Ti is currently inaccessible. No new model or GPU purchase is confirmed. See the [shared inference direction](README.md#inference-direction--2026-10-23).
+The intended ongoing homelab helper must use local inference; paid API inference is not the deployment option or a required fallback. Evaluation will use the available RX 7900 XTX now, targeting configurations that could later fit an RX 9060 XT 16 GB. The RTX 3060 Ti is currently inaccessible. No new model or GPU purchase is confirmed. See the [shared inference direction](../README.md#inference-direction--2026-10-23).
 
 The Paperless restore test provides a useful task benchmark: verified recovery, content search, original checksums, isolation, normal startup, restart persistence, and browser rendering. Its backup coverage remains incomplete because Yamanaka-to-Motosu backup setup has not been implemented; see [backup status](https://github.com/s-pollard/fujigoko/blob/main/backups/README.md).
 

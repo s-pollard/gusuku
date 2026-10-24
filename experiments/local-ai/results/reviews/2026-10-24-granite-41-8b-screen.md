@@ -1,10 +1,10 @@
 # Granite 4.1 8B exploratory screen — 2026-10-24
 
-[Full stored prompts and answers, with task/attempt numbers](2026-10-24-granite-41-8b-transcript.md).
+[Full stored prompts and answers, with task/attempt numbers](../legacy/2026-10-24-granite-41-8b-transcript.md).
 
 ## native source follow-up
 
-The [native archive](native/2026-10-24/granite-41-8b/README.md) is now the primary readable source and includes tool calls/results that were absent from the custom Markdown below. In particular, it resolves task 1's earlier tool-evidence gap. Historical source limitations below refer to the original recovery upload.
+The [native archive](../native/2026-10-24/granite-41-8b/README.md) is now the primary readable source and includes tool calls/results that were absent from the custom Markdown below. In particular, it resolves task 1's earlier tool-evidence gap. Historical source limitations below refer to the original recovery upload.
 
 ## evidence and scope
 

@@ -1,6 +1,6 @@
 # 27B follow-up: host preflight and diagnostic execution — 2026-10-23
 
-Later source recovery: [stored prompts and answers](2026-10-23-qwen-27b-follow-up-full-transcript.md) and [export catalogue](2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
+Later source recovery: [stored prompts and answers](../legacy/2026-10-23-qwen-27b-follow-up-full-transcript.md) and [export catalogue](../legacy/2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
 
 Follow-up to the [first pilot](2026-10-23-qwen-27b-pilot.md), using Hermes + the same reported Qwen 27B model on Aso. This records user-pasted responses, activity summaries and user-run fixture checks. It is not an independent replay, complete tool audit or a completed controlled baseline. Fresh chats were requested; persistent memory/skills and exact generation settings were not captured.
 
@@ -68,4 +68,4 @@ Other setup conclusions remain bounded:
 
 The execution exercises provide stronger evidence of concrete tool use than the original pasted-output fixtures, especially the independently seeded Loki reference. They still do not validate all variants or eliminate incomplete runtime/memory controls. Long source investigations illustrate a practical efficiency concern; their wall time does not isolate inference, tools, background work or model behavior.
 
-Do not launch another improvised full-suite rerun. Prepare the [compact comparison set](../evaluation-comparison-set.md), freeze and validate its prompts/reference answers, capture starting runtime/memory state, and run the 27B reference attempts before comparing a selected smaller candidate. This screening set is not a substitute for the full roadmap or authorization for unattended administration.
+Do not launch another improvised full-suite rerun. Prepare the [compact comparison set](../../evaluation/evaluation-comparison-set.md), freeze and validate its prompts/reference answers, capture starting runtime/memory state, and run the 27B reference attempts before comparing a selected smaller candidate. This screening set is not a substitute for the full roadmap or authorization for unattended administration.

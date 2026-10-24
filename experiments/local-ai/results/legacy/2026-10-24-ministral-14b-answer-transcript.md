@@ -2,7 +2,7 @@
 
 Later source recovery: [stored prompts and answers](2026-10-24-ministral-14b-full-transcript.md) and [export catalogue](2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
 
-34 distinct pasted final answers. Attribution follows the user's “ministral loaded” report, sequence, and Ministral-3-14B-Instruct banner. Reasoning and sampling settings were not supplied. See the [reviewed screen and model inventory](2026-10-24-model-inventory-and-ministral-screen.md).
+34 distinct pasted final answers. Attribution follows the user's “ministral loaded” report, sequence, and Ministral-3-14B-Instruct banner. Reasoning and sampling settings were not supplied. See the [reviewed screen and model inventory](../reviews/2026-10-24-model-inventory-and-ministral-screen.md).
 
 The stopped-container answer M15 was pasted twice, with the same displayed time. Its second copy is retained below as a duplicate paste, not a proven rerun. The second paste also showed a new-session command and the incomplete next prompt copied under M16.
 

@@ -22,7 +22,7 @@ The native header/rendering is retained with added `publication_reviewed`, sourc
 
 Small-model screen tasks are 0–34; the earlier 27B roadmap uses a different task numbering scheme. Metadata labels are editorial and do not change prompt text. Shared sessions retain multiple task labels. Non-test greetings, incomplete inputs and failed readiness requests are retained with qualifications, not silently scored as successful model attempts. For 27B, an unassigned attempt remains null: inactive/replayed records are not automatically distinct attempts.
 
-See [the earlier recovery catalogue](../../2026-10-24-prior-model-export-index.md) for 27B source-session mapping and [the Granite review](../../2026-10-24-granite-41-8b-screen.md) for shared-session/rerun details. Use separate [review findings](../../2026-10-24-model-inventory-and-ministral-screen.md) rather than treating any quoted claim as verified.
+See [the earlier recovery catalogue](../../legacy/2026-10-24-prior-model-export-index.md) for 27B source-session mapping and [the Granite review](../../reviews/2026-10-24-granite-41-8b-screen.md) for shared-session/rerun details. Use separate [review findings](../../reviews/2026-10-24-model-inventory-and-ministral-screen.md) rather than treating any quoted claim as verified.
 
 ## new evidence resolved by native export
 

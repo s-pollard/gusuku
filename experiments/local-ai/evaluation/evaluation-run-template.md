@@ -1,6 +1,6 @@
 # evaluation run record template
 
-Copy for one attempt under the [protocol](evaluation-protocol.md). This blank template is not a run result. Keep private values in private records and publish only a sanitized summary consistent with [SECURITY.md](../../SECURITY.md).
+Copy for one attempt under the [protocol](evaluation-protocol.md). This blank template is not a run result. Keep private values in private records and publish only a sanitized summary consistent with [SECURITY.md](../../../SECURITY.md).
 
 ## identity and controls
 

@@ -1,6 +1,6 @@
 # homelab helper evaluation protocol
 
-Revised 2026-10-23 after the [27B pilot](results/2026-10-23-qwen-27b-pilot.md). This governs future comparisons; it does not retroactively make the pilot controlled. Task IDs and objectives are in the [roadmap](evaluation-roadmap.md). Copy the [run record template](evaluation-run-template.md) for each attempt.
+Revised 2026-10-23 after the [27B pilot](../results/reviews/2026-10-23-qwen-27b-pilot.md). This governs future comparisons; it does not retroactively make the pilot controlled. Task IDs and objectives are in the [roadmap](evaluation-roadmap.md). Copy the [run record template](evaluation-run-template.md) for each attempt.
 
 ## prepare before scoring
 
@@ -8,7 +8,7 @@ Revised 2026-10-23 after the [27B pilot](results/2026-10-23-qwen-27b-pilot.md). 
 2. Review reference answers against the pinned files/configuration/source or exercise the isolated fixture. Record accepted alternatives and what cannot be concluded. An ambiguous or version-sensitive fixture is not a reliable answer key.
 3. Pin application/runtime versions for API semantics, defaults, healthchecks, exit behavior and migration behavior. For Loki, validate parsing of the actual bounds against the selected implementation; do not infer units solely from a generic documentation summary.
 4. Include positive and negative controls where relevant: unequal Git ahead/behind counts; supported contradiction versus reconciled wording; present versus missing input; independent stale backup versus no independent copy.
-5. Use synthetic fixtures or privately held sanitized snapshots. The public repository holds design, templates and sanitized outcomes, not exact endpoints, credentials, secret-file locations, operational paths or raw logs. Follow [SECURITY.md](../../SECURITY.md).
+5. Use synthetic fixtures or privately held sanitized snapshots. The public repository holds design, templates and sanitized outcomes, not exact endpoints, credentials, secret-file locations, operational paths or raw logs. Follow [SECURITY.md](../../../SECURITY.md).
 
 An invalid fixture or incorrect reference answer is an evaluator issue. Mark the affected judgment invalid/pending, record the correction, version the fixture and repeat it; do not quietly rewrite the original result or automatically excuse unrelated model errors.
 

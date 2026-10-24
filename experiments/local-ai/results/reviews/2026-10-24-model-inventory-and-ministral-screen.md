@@ -1,14 +1,14 @@
 # Model inventory and Ministral screen — 2026-10-24
 
-Later source recovery: [stored prompts and answers](2026-10-24-ministral-14b-full-transcript.md) and [export catalogue](2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
+Later source recovery: [stored prompts and answers](../legacy/2026-10-24-ministral-14b-full-transcript.md) and [export catalogue](../legacy/2026-10-24-prior-model-export-index.md). Earlier statements about unavailable prompt text describe the evidence at that time. The new export preserves source/session flags and explicitly marks omissions/redactions; original reviews and pasted outputs below are historical.
 
-[Recovered final-answer transcript](2026-10-24-ministral-14b-answer-transcript.md): visible answer bodies are preserved separately, including errors. Full original questions/fixtures are unavailable in the pasted chat; incomplete fragments are explicitly marked. This review does not substitute for those missing prompts.
+[Recovered final-answer transcript](../legacy/2026-10-24-ministral-14b-answer-transcript.md): visible answer bodies are preserved separately, including errors. Full original questions/fixtures are unavailable in the pasted chat; incomplete fragments are explicitly marked. This review does not substitute for those missing prompts.
 
 User-supplied Aso terminal output and Hermes answers, following the [Qwen 9B screen](2026-10-24-qwen-9b-screen.md). This is an exploratory record, not a controlled benchmark or deployment approval. No new production-host checks were performed for this documentation update.
 
 ## later Granite update — 2026-10-24
 
-The inventory/status below is the earlier snapshot. Granite 4.1 8B was subsequently tested: see the [35-task full transcript](2026-10-24-granite-41-8b-transcript.md) and [review](2026-10-24-granite-41-8b-screen.md). Three additional attempts preserve restore/deployment reruns. Granite 4.2 8B was selected as a ninth candidate; instructions were supplied, but download/load/test completion is not confirmed.
+The inventory/status below is the earlier snapshot. Granite 4.1 8B was subsequently tested: see the [35-task full transcript](../legacy/2026-10-24-granite-41-8b-transcript.md) and [review](2026-10-24-granite-41-8b-screen.md). Three additional attempts preserve restore/deployment reruns. Granite 4.2 8B was selected as a ninth candidate; instructions were supplied, but download/load/test completion is not confirmed.
 
 ## downloaded and registered models
 
@@ -50,7 +50,7 @@ See [Hermes local models](https://hermes-agent.nousresearch.com/docs/user-guide/
 
 ## native source follow-up
 
-Use the [native archive](native/2026-10-24/README.md) for primary readable records. Stored tool results now clarify the local-host test; the hostname/kernel came from uname -a, while the claimed hostname-file fallback was not executed in the recorded calls. Earlier custom-export limits below are historical.
+Use the [native archive](../native/2026-10-24/README.md) for primary readable records. Stored tool results now clarify the local-host test; the hostname/kernel came from uname -a, while the claimed hostname-file fallback was not executed in the recorded calls. Earlier custom-export limits below are historical.
 
 ## Ministral exploratory findings
 

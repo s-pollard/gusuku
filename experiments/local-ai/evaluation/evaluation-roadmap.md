@@ -1,6 +1,6 @@
 # homelab helper evaluation roadmap
 
-Evaluation design agreed 2026-10-23 and revised after the [first 27B pilot](results/2026-10-23-qwen-27b-pilot.md). The pilot attempted tasks 1–22 and reran tasks 5–9 in fresh chats; it is not a completed controlled baseline. Initial task 23/24 variants and isolated task 14/15 execution exercises are recorded in the [follow-up](results/2026-10-23-qwen-27b-follow-up.md); remaining revised variants are planned. This roadmap does not report live host state or task passes.
+Evaluation design agreed 2026-10-23 and revised after the [first 27B pilot](../results/reviews/2026-10-23-qwen-27b-pilot.md). The pilot attempted tasks 1–22 and reran tasks 5–9 in fresh chats; it is not a completed controlled baseline. Initial task 23/24 variants and isolated task 14/15 execution exercises are recorded in the [follow-up](../results/reviews/2026-10-23-qwen-27b-follow-up.md); remaining revised variants are planned. This roadmap does not report live host state or task passes.
 
 Use the [evaluation protocol](evaluation-protocol.md) and [run record template](evaluation-run-template.md). Exact prompts, reviewed reference answers and versioned fixtures must be prepared before scoring; the task table is not an executable prompt pack.
 
@@ -10,7 +10,7 @@ Establish a Hermes + Qwen3.8-27B-UD-Q4_K_M baseline on Aso before comparing smal
 
 Aso is the temporary test bed until the move. Complete missing or invalid coverage under the revised protocol rather than treating all pilot attempts as validated passes. Preserve original attempts, fresh-chat reruns, input repairs, coached corrections and reviewer amendments separately. The pilot used low reasoning by user report; verify the complete effective settings before the next comparison.
 
-Follow the [local inference direction](README.md#inference-direction--2026-10-23). The existing 27B configuration on a 24 GB GPU does not establish fit on a prospective 16 GB GPU. Record usable context capacity and memory use alongside task results.
+Follow the [local inference direction](../README.md#inference-direction--2026-10-23). The existing 27B configuration on a 24 GB GPU does not establish fit on a prospective 16 GB GPU. Record usable context capacity and memory use alongside task results.
 
 Earlier Odysseus runs are useful failure examples, not controlled evidence of how Qwen performs in Hermes. Distinguish prolonged drafting, repetitive generation, missing tools, and failed tool execution.
 
@@ -24,7 +24,7 @@ Earlier Odysseus runs are useful failure examples, not controlled evidence of ho
 - For database-engine identification, establish reference configuration evidence first. Correctly reporting an unknown engine is better than guessing from an image.
 - Use controlled fixtures for missing tools, denied SSH, partial restores and flawed procedures. Do not break production to manufacture a failure.
 - For host checks, use approved read-only access and record the observation time. Prefer the same saved, sanitized snapshot for comparisons; otherwise run close together and account for changes.
-- Keep raw logs, transcripts, exact endpoints, credentials and private operational details outside this public repository, following [SECURITY.md](../../SECURITY.md). Publish sanitized summaries only.
+- Keep raw logs, transcripts, exact endpoints, credentials and private operational details outside this public repository, following [SECURITY.md](../../../SECURITY.md). Publish sanitized summaries only.
 - A task description does not authorize host access or changes. State the allowed tools and scope explicitly in each prompt. No production changes are part of this suite.
 - Prepare the verification/recovery plan before the single authorized edit. Perform that edit in a disposable checkout or worktree, review the diff and leave it uncommitted.
 
@@ -113,7 +113,7 @@ Fabricated execution, unauthorized changes or secret exposure are automatic task
 
 Track framework behavior separately: tool availability, tool selection/routing, approval handling, execution errors, cancellation and delivery of tool results to the model. Do not blame the model for an unavailable tool; do assess whether it reported that limitation honestly.
 
-An incorrect reference answer is a reviewer/fixture issue: preserve the original judgment, record the correction and rerun the versioned fixture. The pilot's Loki finding is documented in the [dated result](results/2026-10-23-qwen-27b-pilot.md#reviewer-correction-loki-timestamp-fixture).
+An incorrect reference answer is a reviewer/fixture issue: preserve the original judgment, record the correction and rerun the versioned fixture. The pilot's Loki finding is documented in the [dated result](../results/reviews/2026-10-23-qwen-27b-pilot.md#reviewer-correction-loki-timestamp-fixture).
 
 ## result record
 
