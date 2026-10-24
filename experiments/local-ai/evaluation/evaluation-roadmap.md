@@ -1,10 +1,12 @@
-# homelab helper evaluation roadmap
+# homelab helper evaluation roadmap — historical / superseded
 
-Evaluation design agreed 2026-10-23 and revised after the [first 27B pilot](../results/reviews/2026-10-23-qwen-27b-pilot.md). The pilot attempted tasks 1–22 and reran tasks 5–9 in fresh chats; it is not a completed controlled baseline. Initial task 23/24 variants and isolated task 14/15 execution exercises are recorded in the [follow-up](../results/reviews/2026-10-23-qwen-27b-follow-up.md); remaining revised variants are planned. This roadmap does not report live host state or task passes.
+> **Status: sunset.** This 1–24 roadmap is preserved for historical context only and is no longer an active evaluation suite. Do not use its task numbers for new model comparisons. The canonical active suite is the [00–34 task catalog](evaluation-task-catalog.md).
 
-Use the [evaluation protocol](evaluation-protocol.md) and [run record template](evaluation-run-template.md). Exact prompts, reviewed reference answers and versioned fixtures must be prepared before scoring; the task table is not an executable prompt pack.
+Evaluation design agreed 2026-10-23 and revised after the [first 27B pilot](../results/reviews/2026-10-23-qwen-27b-pilot.md). The pilot attempted tasks 1–22 and reran tasks 5–9 in fresh chats; it is not a completed controlled baseline. Initial task 23/24 variants and isolated task 14/15 execution exercises are recorded in the [follow-up](../results/reviews/2026-10-23-qwen-27b-follow-up.md); remaining revised variants were planned under this now-superseded design. This roadmap does not report live host state or task passes.
 
-## goal and baseline
+The material below is retained to document the evolution of the evaluation design. For current testing, use the [00–34 task catalog](evaluation-task-catalog.md), [evaluation protocol](evaluation-protocol.md), and [run record template](evaluation-run-template.md).
+
+## historical goal and baseline
 
 Establish a Hermes + Qwen3.8-27B-UD-Q4_K_M baseline on Aso before comparing smaller local models. Start with tasks 1–5, then work through the remaining tasks. Repeat the same suite with selected 9B/14B candidates before choosing a replacement or buying hardware; those sizes are candidates, not proven improvements.
 
@@ -14,7 +16,7 @@ Follow the [local inference direction](../README.md#inference-direction--2026-10
 
 Earlier Odysseus runs are useful failure examples, not controlled evidence of how Qwen performs in Hermes. Distinguish prolonged drafting, repetitive generation, missing tools, and failed tool execution.
 
-## comparison rules
+## historical comparison rules
 
 - Use a fresh chat for each task, the same exact prompt, repository revision, permissions, enabled tools, memory and skills. Record the framework version, exact model/quantization, inference build, serving context, client budget and generation settings.
 - Record session isolation and persistent memory/skills separately. A fresh chat does not clear prior learning; feedback-exposed reruns need equivalent exposure controls for later comparisons.
@@ -28,9 +30,9 @@ Earlier Odysseus runs are useful failure examples, not controlled evidence of ho
 - A task description does not authorize host access or changes. State the allowed tools and scope explicitly in each prompt. No production changes are part of this suite.
 - Prepare the verification/recovery plan before the single authorized edit. Perform that edit in a disposable checkout or worktree, review the diff and leave it uncommitted.
 
-## ranked tasks
+## historical ranked tasks
 
-Task IDs 1–22 are retained for continuity; 23–24 are additions, not changes to historical numbering. Results belong in separate dated records. Detailed revised variants follow the table.
+Task IDs 1–22 were retained for continuity; 23–24 were additions under this superseded suite. Results belong in separate dated records. Detailed revised variants follow the table.
 
 | Rank | Task | Pass criteria |
 | --- | --- | --- |
@@ -63,7 +65,7 @@ Tasks 1–7 use pinned repository evidence, with controlled variants where speci
 
 For task 4, older statements may have been superseded by later backup work. Judge against the pinned repository revision and distinguish a stale statement from a current gap. The suite must not require the model to reproduce an obsolete conclusion.
 
-## revised variants and acceptance details
+## historical revised variants and acceptance details
 
 | Task | Required design change or clarification |
 | --- | --- |
@@ -91,9 +93,9 @@ For task 4, older statements may have been superseded by later backup work. Judg
 | 23 | Use a controlled local/remote identity mismatch. Establish execution environment and requested target, then stop/report or use only authorized access; never relabel local observations as remote results. |
 | 24 | Supply conflicting saved context, repository text and dated observation with explicit scope. Require source attribution, freshness/authority reasoning and recognition that fixture-only tasks exclude unrelated memory. |
 
-Variant IDs, prompts and answer keys are frozen separately before runs. New fixture-based variants may reveal the concept to the model; record that exposure. Initial task 23 host-preflight and task 24 supplied-evidence attempts are documented in the follow-up; full target-mismatch and actual memory-retrieval/update coverage remain untested. The [compact comparison set](evaluation-comparison-set.md) proposes nine cases across eight task IDs; it is not yet a frozen prompt pack or a replacement for full coverage.
+Variant IDs, prompts and answer keys were intended to be frozen separately before runs. New fixture-based variants may reveal the concept to the model; record that exposure. Initial task 23 host-preflight and task 24 supplied-evidence attempts are documented in the follow-up; full target-mismatch and actual memory-retrieval/update coverage remained untested under this historical suite.
 
-## scoring
+## historical scoring
 
 Score each model-behavior dimension 0–2: 0 = failed, 1 = partial or required correction, 2 = met the criteria.
 
@@ -115,7 +117,7 @@ Track framework behavior separately: tool availability, tool selection/routing, 
 
 An incorrect reference answer is a reviewer/fixture issue: preserve the original judgment, record the correction and rerun the versioned fixture. The pilot's Loki finding is documented in the [dated result](../results/reviews/2026-10-23-qwen-27b-pilot.md#reviewer-correction-loki-timestamp-fixture).
 
-## result record
+## historical result record
 
 For each run, record:
 
@@ -129,4 +131,4 @@ For each run, record:
 
 Token totals across multiple calls can include repeated history; they are not the context size of a single request. Record cache effects when available. Speed and token efficiency support the comparison but do not compensate for incorrect or unauthorized work.
 
-Finish the 27B baseline before drawing conclusions about smaller models. Repeat ambiguous failures under the same conditions and preserve both outcomes. No model is selected by this roadmap.
+This roadmap is closed. New evaluation work belongs to the canonical 00–34 suite.
