@@ -9,4 +9,4 @@
 
 For current local-AI work, use the native Hermes exports. Keep reviewer findings separate from source transcripts.
 
-Historical custom/pasted recoveries are outside the usable results tree under [`../archive/custom-exports/`](../archive/custom-exports/README.md).
+Historical custom/pasted recoveries are outside the active experiment tree under [`../../../archive/local-ai/custom-exports/`](../../../archive/local-ai/custom-exports/README.md).
