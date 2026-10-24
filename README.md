@@ -1,13 +1,14 @@
 # gusuku
 
-Gusuku is a disposable learning and career-exploration homelab for enterprise IT.
-
-It is deliberately separate from [`fujigoko`](https://github.com/s-pollard/fujigoko), the production home environment.
+Gusuku is the disposable learning and career-exploration environment within **/pleblab/**, the overall homelab.
 
 ```text
-fujigoko = production
- gusuku  = experimentation / learning
+/pleblab/
+├── fujigoko  -> production
+└── gusuku    -> experimentation / learning
 ```
+
+It is deliberately separate from [`fujigoko`](https://github.com/s-pollard/fujigoko), the production environment under /pleblab/.
 
 A gusuku outage, rebuild, or complete loss must not materially affect normal home services.
 
