@@ -2,7 +2,7 @@
 
 ## status
 
-Packed / offline. Proxmox conversion planned after unpacking.
+Packed / offline. Gusuku work is paused until the November 2026 move is complete. Proxmox conversion is planned after unpacking.
 
 This physical system was previously documented as `saiko` in the fujigoko repository. It is now part of gusuku as `shuri`.
 
@@ -10,7 +10,7 @@ This physical system was previously documented as `saiko` in the fujigoko reposi
 
 First physical host in gusuku.
 
-Initial responsibilities:
+Initial responsibilities after the lab resumes:
 
 - Proxmox virtualization host
 - primary platform for gusuku virtual infrastructure
@@ -36,6 +36,8 @@ Additional storage and hardware details should be documented only after they are
 - current platform: Bazzite
 - target platform: Proxmox VE
 - Proxmox version: TBD
+
+No Proxmox deployment work is planned before the November move.
 
 ## networking
 
