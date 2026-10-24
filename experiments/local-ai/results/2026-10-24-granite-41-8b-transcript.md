@@ -1,5 +1,7 @@
 # Granite 4.1 8B — full stored prompts and answers, 2026-10-24
 
+**Legacy recovery record.** Use the [native Hermes archive](native/2026-10-24/README.md) as the primary readable source. This earlier extract remains unchanged below for historical row flags, omissions and recovery provenance; no native metadata has been fabricated.
+
 [Review and limitations](2026-10-24-granite-41-8b-screen.md).
 
 ## source and numbering

@@ -1,0 +1,3011 @@
+{
+  "schema": 1,
+  "source_archive_sha256": "6b49c83d51f48af7e89ccd1b38c98a7bbaafd0c02ebb328d4e32d474da7ade05",
+  "source_native_files": 156,
+  "source_manifests": 4,
+  "source_file_hashes_verified": 156,
+  "published_reviewed_files": 147,
+  "excluded_pre_pilot_qwen27_sessions": 9,
+  "checksum_scope": "source_file hashes verified on original native files; source body hashes retained as exporter-reported only; reviewed_file hashes cover final public UTF-8 files",
+  "files": [
+    {
+      "path": "granite-41-8b/task-00-attempt-01.md",
+      "source_session_alias": "S01",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 0,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 4,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "abc16346f1793723da2bd98ea567c3c25298048adca55879712a29344f409f7f",
+      "source_reported_body_sha256": "4cd024b84aa8135a3a7a4a2e1d9417a567d76ae50458b7118f6a8fa3d9126291",
+      "reviewed_file_sha256": "efa000bd67020cc19de9595513dfdb1342b73ef860c3c4e7e3a0241cb97732b5",
+      "redactions": {
+        "session identifiers": 3,
+        "home usernames": 2
+      }
+    },
+    {
+      "path": "granite-41-8b/task-01-attempt-01.md",
+      "source_session_alias": "S02",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 1,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 6,
+      "source_tool_call_count": 2,
+      "source_file_sha256": "4f8a62fbb2cd3c78fef817421b73a4c67b999203a7738818ca3eda67dc542427",
+      "source_reported_body_sha256": "67c2b82232681e8217b6edbd8c1c5c450ac0813cdb99e1262034f92b029e551b",
+      "reviewed_file_sha256": "6d45b99d0a036ea6881a87f821fda99d1b6fabbf9dd39809d7af9b354d709f35",
+      "redactions": {
+        "session identifiers": 3,
+        "home usernames": 2
+      }
+    },
+    {
+      "path": "granite-41-8b/task-02-attempt-01.md",
+      "source_session_alias": "S03",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 2,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "e61c1d9fe573a32155b247a084b144f92bac5257c6ad87479991e240c3d9830d",
+      "source_reported_body_sha256": "63b70014e2c9ad8955638e8fb637408e42ce14a1462ef81903f13ff8ff19faec",
+      "reviewed_file_sha256": "1606e4c4b9f06a638c2d7010820f7811d567303ef957a05dc1601dbb408802d2",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-03-attempt-01.md",
+      "source_session_alias": "S04",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 3,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "a6e90c7c4b6ed85fcab6945fc1a202bd7883ca3bb168d0a5756b79c3a2e7b9e6",
+      "source_reported_body_sha256": "437f96c33515f005f4dbeeae4448048fed4879052c5e978d4f61bbea408d025f",
+      "reviewed_file_sha256": "12614e4d102226765621008e77a7bf86c8ea3a4424214dc5fdd2a97c8de1792a",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-04-attempt-01.md",
+      "source_session_alias": "S05",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 4,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "8cb942da220d1cdd54f500db3ace7ff7e433b8b4a125be1f7c721881e2cf9ff1",
+      "source_reported_body_sha256": "9d1315f1716d8dcb643618290ef27fe42fa012eb27907c8ad3297dc8e215a3e4",
+      "reviewed_file_sha256": "1c5f02049112e6bb2a48b30bb0959e23a2f4b1b55b693a0af5bafb11ab25889c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/session-S06-tasks-05-06-07.md",
+      "source_session_alias": "S06",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 5,
+          "attempt": 1
+        },
+        {
+          "task": 6,
+          "attempt": 1
+        },
+        {
+          "task": 7,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 6,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "67015431ffe5f4150027534a613b6b7a294f2154a19b83d70aaceb199d55d1b9",
+      "source_reported_body_sha256": "d0fe6131c7128962388739e4fab872bb8d1b04014bc34a0fbe8dbcdc985375da",
+      "reviewed_file_sha256": "6dca920fe22bc228c9bbbf0a9e3103588591bdc12bc2635c5057863898fc87f8",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-06-attempt-02.md",
+      "source_session_alias": "S07",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 6,
+          "attempt": 2
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "a5dac1d5874d81270aba372e7ea552501c1f7d36734ea55409f3d484d15305d1",
+      "source_reported_body_sha256": "131bf497a9c3fd3689505949257bfec30d516a3ee26098bcda415801bf93c63d",
+      "reviewed_file_sha256": "2616cd32e6fbf46a58db3b20b2322fc39bf11aef3b55d492aad4ae17e1a9537c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-05-attempt-02.md",
+      "source_session_alias": "S08",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 5,
+          "attempt": 2
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "d4491f2d00b1ddaba742b080f47d05602750a98c6a4262aad15f40f4b7cfb1ae",
+      "source_reported_body_sha256": "805d635cf1db7ecded9e9442458cc6549cdd45c769f1cf96a3962180ea7fac47",
+      "reviewed_file_sha256": "4fb6b3c165e183e9c15affdb80c3ac497cfc8fb79df10570d18215082a85359e",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-06-attempt-03.md",
+      "source_session_alias": "S09",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 6,
+          "attempt": 3
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "a238ab7b61538c180522db42014ace25e5e49283b9f3ed04f5393119a3889286",
+      "source_reported_body_sha256": "3f101fabf101b589562729b0dbe8916bb6611e4804fdbe3c2bed96ea6484fc5e",
+      "reviewed_file_sha256": "b90d999e996fbad7be7fe591bb076a25e8888a9eb0698d7d0b67055ce8f42149",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-08-attempt-01.md",
+      "source_session_alias": "S10",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 8,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "2f23e2144e2f9987243cd0fcc25cc6de259da692f42a076098d8362ccc3b27e8",
+      "source_reported_body_sha256": "010cf833c07b379e47cd7bfe37cc0364c753684fe01f4b8d58d2ba6c0cc02605",
+      "reviewed_file_sha256": "44a641d0abb9513b910b7e3ac977672b79b77cfb5466cca5ed7e8dc4e696da5b",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-09-attempt-01.md",
+      "source_session_alias": "S11",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 9,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "737f83117fee614455a7f0de4d2796bc079afa17f6212892886fcbf255e98619",
+      "source_reported_body_sha256": "29b6dffbfefa2da398698bf0bc2022a3eb202ab2caa33918b6cf1fe79c552101",
+      "reviewed_file_sha256": "6dff7a1b99acd8343becde67671cf1897481259008464cff83e0e8ae2b78eeb0",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-10-attempt-01.md",
+      "source_session_alias": "S12",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 10,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "7be6601301c31c0afb0dfb40f67c28ce500b1171673ff50d0643b40b17237edb",
+      "source_reported_body_sha256": "b78ddd59049eca9232dea14197154ab0dcb877a047929bb70a6fd0e3d088bc59",
+      "reviewed_file_sha256": "380b3376b1559e9599d7b5e86e261b2d1e0014aad75405dd153ce66159401862",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-11-attempt-01.md",
+      "source_session_alias": "S13",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 11,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "aa6eb932e2181e6c21eddf0e29a21dd5b019cc238fcd2ac969aa30fdc794add1",
+      "source_reported_body_sha256": "301a2d13b3cc6c4228347c8bf0e217cbd8e5693da253acac2eb4c8b3694607ac",
+      "reviewed_file_sha256": "a30fa88c9886977b8dd5a05813fd3b56554d45865abdc127d91c19708b33fd01",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-12-attempt-01.md",
+      "source_session_alias": "S14",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 12,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "1f0098ebf61a81d51faec3e092b034437c93743e13b388107ac9c97a9d854edd",
+      "source_reported_body_sha256": "671a81785ef290d1d63eb30428eb8a579f6d937408f1a2ab385cd19f1eada975",
+      "reviewed_file_sha256": "1bd564027ed4ed0d509f767f5e21513a154f489b874c924b16dc1c9d0a39db4e",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-13-attempt-01.md",
+      "source_session_alias": "S15",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 13,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "8f26b0b6971706741d7326a371df161768fd8fc91025bc5c6d6eb7cf705174bd",
+      "source_reported_body_sha256": "f8cbe73724133714b09a5fc18b7b8f93e1a8f7be87c108871702a5baef9f7131",
+      "reviewed_file_sha256": "6d1c9854240b778ab7e04aa924a3e0e1aec5f48560a485876f76a46ca3d1d0e8",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-14-attempt-01.md",
+      "source_session_alias": "S16",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 14,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "f1a8b1f168ec79b4850bcff16d39638f0325f19281476cbbdc931816f8211f3b",
+      "source_reported_body_sha256": "9907d4ca6bf6c7e0a5b91e84a137585410a03cdcaba6cab4d8ee2128842d1275",
+      "reviewed_file_sha256": "6448318e94f44cb06d445a4188c4ff578cdefbaa81fda20902369604887c35df",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-15-attempt-01.md",
+      "source_session_alias": "S17",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 15,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "cd2217dfd287ed27253bd30f7ad8e0df30b898e3f661d6fa7bee11836b1ba2cb",
+      "source_reported_body_sha256": "9f66f34c22130dc54d66fb8ecb98c13e95e7f461c81f30a28a9078e8fbed0aa4",
+      "reviewed_file_sha256": "f9a03555fe8d4241b1d5965e2413d60f037d4329a57bb386dd3642cc97be118d",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-16-attempt-01.md",
+      "source_session_alias": "S18",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 16,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "590c1a3f0983633cdb94937e081c75fc665bcfb93047ad969b572e038dbb968e",
+      "source_reported_body_sha256": "a656cf5020dc352882e9f1b945331e636b602295bd447d502f99cdb55e51b618",
+      "reviewed_file_sha256": "4cd64e5adf91c1ecc5ce58f3285ae90d65f8c6fe2277067fbab5133e22327bd1",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-17-attempt-01.md",
+      "source_session_alias": "S19",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 17,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "85e9646aaf0a3a99253330905cce7d24df3fcae5046ae183360b47faad93a55d",
+      "source_reported_body_sha256": "8592838afef87df7924a8136333552da819cb21db83ecc961167f82a420095d8",
+      "reviewed_file_sha256": "45e877f2cf416535fadafa547b9e721514a4a794911d892262791d7dae6e67e8",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-18-attempt-01.md",
+      "source_session_alias": "S20",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 18,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "e0367f001d79aedd1bfab12d709c92eb1a6b1aed44612d23aa89e57a5ea86890",
+      "source_reported_body_sha256": "3bf4dd6892b53290c8005739e42e18babcda56d375d14a55a22be92787efe292",
+      "reviewed_file_sha256": "00be57443dc0aaad39f60348a87cbccb7b24f23cd4e8656159ec389030f3f2ab",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-19-attempt-01.md",
+      "source_session_alias": "S21",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 19,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "df115aef1e85840bc5c5319efad7cbc7894de92b65934c4a941a501fff9e7c80",
+      "source_reported_body_sha256": "acff644b3217ea9a6ba673a5c798dffd1d76061106165a0623e40abc60daece2",
+      "reviewed_file_sha256": "6e77b25e5697362c27ec38fc6314875c47dcb0631d8eb7e0b9f3fba9e45baea8",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-20-attempt-01.md",
+      "source_session_alias": "S22",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 20,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "6136b9fce9e05b2f87867301b7376b371c37f72705c2c8e101f3f168bedc3636",
+      "source_reported_body_sha256": "a57fb8b103fad1621e1f40f24dab7ed78628f5f91d5f4bffa536723880a72e6f",
+      "reviewed_file_sha256": "b68f5e72939ce96b2d68e2114e3a9cf7ae0b9bc952046fd0a7943a27b63f0fbe",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-21-attempt-01.md",
+      "source_session_alias": "S23",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 21,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "fe2937c49e373a4705d811f4e65e1d0b2b30291e2589cf20e1d492b0289ebaf7",
+      "source_reported_body_sha256": "2547544bc7147ec00d33628dd62a13bfbe45020ae71c67d88ac7e226344262b2",
+      "reviewed_file_sha256": "0a952f2ea684dd229c760cacd72ecf7157feee99f768b06a524993f466933bc8",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-22-attempt-01.md",
+      "source_session_alias": "S24",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 22,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "25bee8e9637a5449cafc53588efbdd634bf7d056a7edac96b19507217be49b77",
+      "source_reported_body_sha256": "eba5cb582193c7629f390ff5c5872e1c9de22c432204d6a291c88e06c8e12cb5",
+      "reviewed_file_sha256": "4d5562296dbfaa63a8a9a758b92ae6299f6112389d69231fd6b2c94a5cd507f3",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-23-attempt-01.md",
+      "source_session_alias": "S25",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 23,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "e85af1dc62dcf41501c4ebfc873e4fd383e254baacf33fb09f79656833dd7d9d",
+      "source_reported_body_sha256": "fdb94db07bee96edb9e26120226fba839f8deee8659f1b9855d97a94c029ca3e",
+      "reviewed_file_sha256": "efe3e22acd98c4bd98a20e486429ee727b60686dfad07e5b51897b3562fa3634",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-24-attempt-01.md",
+      "source_session_alias": "S26",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 24,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "b75774971e26fba0e46dc57db15904726d92e9afac33f629ab56e6bd8a5f16bc",
+      "source_reported_body_sha256": "89271b781c9644bf87a34ed30d3ae82e88f2952be525660c71d08770cdeecfde",
+      "reviewed_file_sha256": "ef14735db5ce17c1577cd44462d0f3cbab7d1ec342e5f62b12416fdede01f6ee",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-25-attempt-01.md",
+      "source_session_alias": "S27",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 25,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "74c8fda26835f4c63a39e4eb53ad6a363e6f88d8c9017763db83a4417ec9dbf2",
+      "source_reported_body_sha256": "b994b6ad2b5f2e2770e77ee4d0435657599b4c7a32b634e67449f76a32bfb364",
+      "reviewed_file_sha256": "3c28027b0b39e7f0270cb5620495114593a59a4275013242aa3a227e5ab40f66",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-26-attempt-01.md",
+      "source_session_alias": "S28",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 26,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "607a5ee27d18efe766c44fb444b2f2cd4936c82adcdcfae55caaf2553842ef6a",
+      "source_reported_body_sha256": "89949d8dc8cafe05fb32955c057e52d4ed57be61741d6131c7c05c208155709d",
+      "reviewed_file_sha256": "5439a36d6010f3acefefbf5f552ba63cf265a085aeb36da03bcfb4e16f0d49da",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-27-attempt-01.md",
+      "source_session_alias": "S29",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 27,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "22a3fc63c581a56ec587b3d1ef12ae6e9c3dc67683daf5d3965436af6d63c378",
+      "source_reported_body_sha256": "daa6c935925f674d21b353a1f28ab0170f3ae82aecb42edb7367e586da21ed1b",
+      "reviewed_file_sha256": "8d1300a78233a3d51dcb422aaee3ce3993cd77db903579b9bec69e6f71dcfeb5",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-28-attempt-01.md",
+      "source_session_alias": "S30",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 28,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "8a5bbc1140dc8a2a71ddb249f3720ec35e42d53e82e8692bd21724ef078977b7",
+      "source_reported_body_sha256": "d547d45426a3789c2ff9abe1623374d2786c696afaa047acd4ead31db2617c7b",
+      "reviewed_file_sha256": "55bcc5543c8272d8c459232878dc91fe9a05b73d189c56b11507e65e84346b70",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-29-attempt-01.md",
+      "source_session_alias": "S31",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 29,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "a373d1db983de1a9c185c8aa064191efde17dbcaf702e206886cbbab9cc2ec03",
+      "source_reported_body_sha256": "daea757f5f9e5c0cf159fd978f77854fb4e5a0ac27ed46b3e270699b3f5d15df",
+      "reviewed_file_sha256": "c60232ba4cfe5c771c4797ef9b17ccad3227d950607cdc4ee248985a3f1a865c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-30-attempt-01.md",
+      "source_session_alias": "S32",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 30,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "5c781ad760777ed6b5d5f86de799db9a87a6d875a2a9f7177e439bd84be03269",
+      "source_reported_body_sha256": "5100743a6bc5baa2faafcdcadfe0ef85722f78169381ad62c67ba4c71930615a",
+      "reviewed_file_sha256": "ef6e9a863c33008d3fd2d2889213b82f91de0284ddb5f47c7b5a788c3c61592a",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-31-attempt-01.md",
+      "source_session_alias": "S33",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 31,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "cdcdb6b518e813b2c8c56ac32b70ba63baa064d236e01f557cef65acfeb66a4e",
+      "source_reported_body_sha256": "53f5a2b18d387d12efcaef0134cc235c9bed01e7b1a704cc49f7dd2bad6c0fa8",
+      "reviewed_file_sha256": "d2c4e0d10c7aa1175a054a43eedc78b3c50fb173da49acc12d811a11a6ea03ad",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-32-attempt-01.md",
+      "source_session_alias": "S34",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 32,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "554827b280c6b638420fc3f4155a0e48a5a054ec2a935cf461de971e325c3088",
+      "source_reported_body_sha256": "9f5a2d10faea754f1f60c6d6e13445a31441c38110cbfe841b6f3d4fd554eaad",
+      "reviewed_file_sha256": "510d06d5a56f0be0d3c041e530dc6351fc0f25da3b2d23178b5231548eb44dba",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-33-attempt-01.md",
+      "source_session_alias": "S35",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 33,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "493be5bc4059faad9ca311e0c31d0d947e8c770b497973b74c05319804d4eac4",
+      "source_reported_body_sha256": "b478baf12c3f464559941228eb2ff4c0bc0370b200e53c58c853bbfe62d20a42",
+      "reviewed_file_sha256": "4dd3780ab22187c0d94be32e59a7bb869b79b32c0d64df85f482d9d0a3ff909c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "granite-41-8b/task-34-attempt-01.md",
+      "source_session_alias": "S36",
+      "recorded_model": "granite-4.1-8b-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 34,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "185f9fbbe81cba529e2c20fc3e4be8dfb137add1578cf3b375d4bdafefae8e1d",
+      "source_reported_body_sha256": "db0e550c520404f0f76dcf6267e42fd7f3a9598421704dd6caa796f50d985d07",
+      "reviewed_file_sha256": "46cf0d7f3e97c219c3d5dcc39e15792c72378a0ce1dcd87c939e6a0729e9f563",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-01-attempt-01.md",
+      "source_session_alias": "S01",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 1,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 5,
+      "source_tool_call_count": 2,
+      "source_file_sha256": "855daae4a73e27f00d111eff0de9bf1001bf618c89e6e76d93d1044acf5a86ed",
+      "source_reported_body_sha256": "a0fab7dfb54a9587edf1f682e34bb679c3f2d162652879a98df3b7ebcbe26e56",
+      "reviewed_file_sha256": "aee7e39880237d5573e184d35f4f28e0b6c6b89e24e938827c78e80cc6404c29",
+      "redactions": {
+        "session identifiers": 3,
+        "home usernames": 2
+      }
+    },
+    {
+      "path": "ministral-14b/task-02-attempt-01.md",
+      "source_session_alias": "S02",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 2,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "2aeac5e4f5314822966bdb9e827089848f77fefe6fc88f34566051457ab60288",
+      "source_reported_body_sha256": "4f84985e3cfbff1d5711752f75151f68a3bd8c2121b65c486604b836f0477d63",
+      "reviewed_file_sha256": "655a699b8fabc61c4914cf75a827dfb1f5ed3706790186a15e1e650142cac7b4",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-03-attempt-01.md",
+      "source_session_alias": "S03",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 3,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "1346a79ff01330d487727d92ea937cc6b8300a03eb90be1ac63f9af2570c81ad",
+      "source_reported_body_sha256": "c6934c9430b8a6be737757d083cd26ca88c469a3b66935e66d76de725c2b2f0c",
+      "reviewed_file_sha256": "022f00fcf97e85b12651309a2dedf70918edc1b5f5387b271bea7d9892d983c2",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-04-attempt-01.md",
+      "source_session_alias": "S04",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 4,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "b600ff4f410c344dded7992bf514774b97566267e453c0f955ae6a26db4abc05",
+      "source_reported_body_sha256": "867a1de4e016e65be1c96a0bca100aa83db87cb1a607ba601bcaf34aa52c567d",
+      "reviewed_file_sha256": "94858527058bacb8e29953b0c96d8cc25a287e18e847690efe7b2fa07e78ab5d",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-05-attempt-01.md",
+      "source_session_alias": "S05",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 5,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "002b44f9af2b5fbb2b4abb66e9d0b9ff0334cea3ee3b17e45ad74495a9118a4d",
+      "source_reported_body_sha256": "7fbbf6b2fa3f97ec99c0f8dfe1ceb8ed8a836b9243756b905b3d784fbd7455ca",
+      "reviewed_file_sha256": "da05222925a8500087f9554426901b9501b66ab9e1f85a9231f02faed9484795",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-06-attempt-01.md",
+      "source_session_alias": "S06",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 6,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "6f285f678804e10257a3f8b3094119510b40d0f9f9e1da812e81800b027c7a6a",
+      "source_reported_body_sha256": "028ece986462b5e1166642cccab5584069ae4780ecb41924c63e103f3bfde29f",
+      "reviewed_file_sha256": "64ec6762898542b4c6af082bcb30627e5fd195c931528fbf462ef44068ba6307",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-07-attempt-01.md",
+      "source_session_alias": "S07",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 7,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "c9cdda66649f8aa57e6b1928fb00f299c9b573c9f1c31aae32512b3f5ccb9895",
+      "source_reported_body_sha256": "088ce8ed8b71b74ed20842882deb18911ac0cb78130e3197f11351be34b031db",
+      "reviewed_file_sha256": "aa911ae6375695d0c40a5a746204fed67b08a0a64b16f913fbf1e19ba56dbc46",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-08-attempt-01.md",
+      "source_session_alias": "S08",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 8,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "7a24f384dd182127a6962423c2ad49f11a7d05e84551015623eec3585546edd0",
+      "source_reported_body_sha256": "ab7dbf203feec19c2b517c93849ce56169e6677f1f4561e98dd811e59297505d",
+      "reviewed_file_sha256": "e0724675a435650255506a03f353d8f6022d0a5d1e4f46be850fe7bfb22d916e",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-09-attempt-01.md",
+      "source_session_alias": "S09",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 9,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "2d79391399210a13703257a0586d8cddafea112f1ff771c3dd8a372d6392fbd9",
+      "source_reported_body_sha256": "065e94a58310ac544a879e7c0ac1af34e479fb96f66ce7a696c7d0f19fdd749e",
+      "reviewed_file_sha256": "da431a6eac4040a119981e36793a9122c29b296fe2ed97d8da53dd245e600373",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-10-attempt-01.md",
+      "source_session_alias": "S10",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 10,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "b6f2971ebd0605df98eac5f0688534a073a2fc284a5004041b86d09b614b3ea8",
+      "source_reported_body_sha256": "dec06dd62fb4ecc24181b4d0665eed1596c8c8e7aba2efeae1861957be42f677",
+      "reviewed_file_sha256": "447ba84b5b0e40d7751c6e6cb2377226cf25b785c5f0e591e85c70b15d79a7eb",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-11-attempt-01.md",
+      "source_session_alias": "S11",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 11,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "70a6f74223a9f032924c26286f4e914b0b3c9265b0ba3a440f71c0304e84416a",
+      "source_reported_body_sha256": "eb0161c1b1874a83df19c4d37ebb4015bc0f60f27e7d973f34248951d817dc47",
+      "reviewed_file_sha256": "738726f3fde2e32129f16e9f0d497e59e8aa9a777e90b105122f9982b8c7c9da",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-12-attempt-01.md",
+      "source_session_alias": "S12",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 12,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "3cf10fe06d9c241187b80bb3850499c70b61cd7bf276d9b775db75b28dc3760f",
+      "source_reported_body_sha256": "341d6338e0c8ed81d676a72ea74fca86419ec776c98d9cd1ed260048c381d821",
+      "reviewed_file_sha256": "43974d3f323578906b52a528ea8b19caf8d0fc1182297b8146a75089cb3f8e9e",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-13-attempt-01.md",
+      "source_session_alias": "S13",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 13,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "05dddd69608eb6dda05a82dcff22652176b5780bf57af45fbd1e8708f6923936",
+      "source_reported_body_sha256": "db41f20bf924322033a1d518a595086e8bb5a76949af66a95ff16c005b557b9d",
+      "reviewed_file_sha256": "563b2cc85952aeeae07c82f870817b0f96f5294cf67d67174cc04052f3d7f7e9",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-14-attempt-01.md",
+      "source_session_alias": "S14",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 14,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "5d3fc837f5dea81e0b7d7aff473da7abf1d7d2bc175de1df423b5be7317df7c2",
+      "source_reported_body_sha256": "e44683dfb3a25d3523c41cbb61514adcde86c1b4fe145e7657c79cd27f27a5a9",
+      "reviewed_file_sha256": "ef387140524ddef3aa9bf81ca175cd12ebaaba6a74d528a0ff92e009132afc29",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-15-attempt-01.md",
+      "source_session_alias": "S15",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 15,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "29b26425382991460565680f556ffe837a08a5b09acfe77eb3a83adbcb468382",
+      "source_reported_body_sha256": "ab07efd801077d536ff64899e207a94100eda6a43c396343f3936a5a215a0e56",
+      "reviewed_file_sha256": "08f6ce7e2e7851bf7ed8ac00926bea8ec8e5176a01021b2b1498d4418f427a18",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-16-attempt-01.md",
+      "source_session_alias": "S16",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 16,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "64e21701c11afd0325aa5aaf839d2c1d4c6e57a4776a1696ed43b6b40f7cd62c",
+      "source_reported_body_sha256": "2cb4ed2541f27918c70500629acee8444be9c38d77130ab053266c15ad05f360",
+      "reviewed_file_sha256": "0f67183b39820c20166a8fa804790352e085202f7de56c66d34f0f10255376d1",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-17-attempt-01.md",
+      "source_session_alias": "S17",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 17,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "efebb36c50ec8ad917cbb6a6e643835364145681f326e3930459e56969626f82",
+      "source_reported_body_sha256": "409aa4e3cec4d4658382eaedd67f6a4137e0e28f1f1970a5a9e47c4c3eb74ae1",
+      "reviewed_file_sha256": "0bd9529b6c727544ac78062106b8b60e9e3222850e6fe46b3f8dc0d8f8689a42",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-18-attempt-01.md",
+      "source_session_alias": "S18",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 18,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "55303977f936dc410be88ccb0ce17ed0d74c744a65ec9de8f8c4c6d907853ef6",
+      "source_reported_body_sha256": "6f2b29034c595e5701eb3be9c2c06a3a0828183467befa90c3aec557655a231f",
+      "reviewed_file_sha256": "b32ff8837566d530b31e1814cc9189611b6d18991c67ad764c076c10863269eb",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-19-attempt-01.md",
+      "source_session_alias": "S19",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 19,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "7416c69636f09d9ce3b8577c4a28a4bdba2750b12df5a0eb5c3b7ca466051066",
+      "source_reported_body_sha256": "cae84ebfb46584ce092009fd4fba68455a555909479ec6f7b821f13ce9b81c88",
+      "reviewed_file_sha256": "54ad6028d3e2640e24e264d42d39b503425058126ede52a2a72a97194c702866",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-20-attempt-01.md",
+      "source_session_alias": "S20",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 20,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "2285b3055d9c935c1cd3c729f90b1f4e6f32b263fc07cc864d92ebe22afc1045",
+      "source_reported_body_sha256": "4b61256c169490d79bf468e0eff02d908deacad4c73a0a352acfbf4787f99f06",
+      "reviewed_file_sha256": "bf6f9c6f5f388728db63b91c6e645ba574eb02da18a145628104b2770eb4400c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-21-attempt-01.md",
+      "source_session_alias": "S21",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 21,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "222a1a77e4c57511fa54550a3deaf7d6ddbb86c17a50dd485abe868cf2b36e73",
+      "source_reported_body_sha256": "eeb8a90fef9d510cca8427899cc9f1b736bf0208478a55af6b5f1a665d69fd09",
+      "reviewed_file_sha256": "3dfe741b2607dee6ba740839dcdbb07d9ea2c17cd6a03a506134a19cc3c742a4",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-22-attempt-01.md",
+      "source_session_alias": "S22",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 22,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "a1a78fdf6bb6da03e3ec160795b8dbe43b762ea28fd6a9694c044ded44d419ea",
+      "source_reported_body_sha256": "c4747ff0b2343269e23a1d8794ce5848260eb2951562c51df9b96dd1aacd4466",
+      "reviewed_file_sha256": "fc8121ce9d26c827bb1ea4ffe9a8a6d91b3921a3f7746c176d5f0ba0cbcc17cd",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-23-attempt-01.md",
+      "source_session_alias": "S23",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 23,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "415318fbb189f638e1ede02fdf74da8967911489d821117df13b581d0eb56786",
+      "source_reported_body_sha256": "86c455da9f89360a2b32debdc847f6997c9c1605deeaf98fb872485c11af36e9",
+      "reviewed_file_sha256": "eefcc29ed57d8f9216678da5d96ea74156e538feb0af82d955835b1e9e529733",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-24-attempt-01.md",
+      "source_session_alias": "S24",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 24,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "e84c07ec69aae25b168bcae1e75d8d3b42e1ba46bac4f3699056c3fd17083d7b",
+      "source_reported_body_sha256": "59564f76291c070bffdc6cb66c98794152a74e3a7aafaca7dab8264dcdc094c2",
+      "reviewed_file_sha256": "7b99479283c5fb55723ed06cdd0cb0513703b5c90b4b8ac2c6629fa6c9b84381",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-25-attempt-01.md",
+      "source_session_alias": "S25",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 25,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "b7903777581867bd3740a6cb72e07fe9f67fe25ef048ecff42eb20e6158d32e4",
+      "source_reported_body_sha256": "c1cfabde0109395d801835e9c46a7fccf62373eb394f0e4a15381e4e91699130",
+      "reviewed_file_sha256": "8a36e4da9321bd278f5d5acd7b4b9e39a23c8b28716f28c1c39459e31cd7d485",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-26-attempt-01.md",
+      "source_session_alias": "S26",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 26,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "3c9265df72923d54759f37fb942d9d47d6b8472ebbbf908330c809b2f805fed0",
+      "source_reported_body_sha256": "7bc0558df7f2487fc63ab2f4b67bd9a9ff91a49b7ac35f1fb1df07629410f63d",
+      "reviewed_file_sha256": "e099858cc126528d508600bac268af4f995de4cfc3aa7c13b097b585495ec194",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-27-attempt-01.md",
+      "source_session_alias": "S27",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 27,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "3d1c4243af125c2d38cb46c4e3b0bc202120964cac90fecdae315f849405eb23",
+      "source_reported_body_sha256": "4c7a1919e717d06ae7fc0ba25e0435f03a8822c20938d8db039a736d9cf48b10",
+      "reviewed_file_sha256": "a66849a9678db720364b4a41753300b8a2d3094754c8633e1b6ce6d6ee493db0",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-28-attempt-01.md",
+      "source_session_alias": "S28",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 28,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "a1ee85a0cf1b79dd30ebea1fbd670da76865e78a84d15c67285fd49fb9ca386a",
+      "source_reported_body_sha256": "6be15767cfe6e13c30a7482d14e07859a2da30dbff88e2288924c4a929388e71",
+      "reviewed_file_sha256": "e5c735d6ffa5ddced8a2d41cb85d526a0a698c41f9f4d12dd805c4d38cc991b6",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-29-attempt-01.md",
+      "source_session_alias": "S29",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 29,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "07ef44f1111bb7c94657a11205c3deecd90883e5d998f61a0d569e979d9c6f29",
+      "source_reported_body_sha256": "38af3410120ff26edc9d5f259e6ab0a5fe50633bebda91e1998c90ea6322ea74",
+      "reviewed_file_sha256": "8943ecd2327b2b7e66ace754186d0197a217ac5a699d111bf8d8d19177058ea4",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-30-attempt-01.md",
+      "source_session_alias": "S30",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 30,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "1a7991d9d4defa25e986d62e55243396318813bdbcbb52a67a0b07a3f347d56a",
+      "source_reported_body_sha256": "7a4077d96584f92cbf3ad4db20c683a0c2866e74a83fbc98440f459a9dc746d9",
+      "reviewed_file_sha256": "23c151bfc33e16c1cda9e18c885aa4def5ef34bd08b961d42edc26b41af80209",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-31-attempt-01.md",
+      "source_session_alias": "S31",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 31,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "fd06739e46db26727901620c090fd62fff0b3a75bf0b74dfa39265fbe3779952",
+      "source_reported_body_sha256": "46206289aeebfb4c5cdd7c0911049d2da7911144330f1fb75ca9d1461c81a98d",
+      "reviewed_file_sha256": "d898ca4a5d7cfe67dbdd13a82d0f0d67d8503808219cb181929e9818d3faaeee",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-32-attempt-01.md",
+      "source_session_alias": "S32",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 32,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "b740561e0fdc91e49647389d749ffbb95543d41bbe5bd113c652215245aec520",
+      "source_reported_body_sha256": "5429203251f4e2979cfa98277743d65312c4c1dc9f996d86bc91aad28d548d9c",
+      "reviewed_file_sha256": "2b37362097bfb27fd30a2fc74c4538b6e16f3259215db67d6ac22612c1351620",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-33-attempt-01.md",
+      "source_session_alias": "S33",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 33,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "3853eedfe090874bbf2136a29c860f832ca791777cb395f2d2ac00dcc53e4b67",
+      "source_reported_body_sha256": "ff418413a841c5746897752438a2d0e66aa9ef4eb6bbaea545669617c0ff198e",
+      "reviewed_file_sha256": "a4a85e581bd31cc08d50b0df7077220a9729f018d5501cf154e1077ec758e844",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "ministral-14b/task-34-attempt-01.md",
+      "source_session_alias": "S34",
+      "recorded_model": "Ministral-3-14B-Instruct-2512-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 34,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "a4acfe2c7221ca1228664d7a4609f05213aa943f10f40f0e50fe4b16944ff583",
+      "source_reported_body_sha256": "3f2f5fe1f7217545a928a73ea34ca8fe8ae0f23965651dbeee40a43e48683c2a",
+      "reviewed_file_sha256": "4611b8cc8c7cd6f62c3d96f190970e3ae96f67069162ebe6a2b1acf222eb4ac1",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P10.md",
+      "source_session_alias": "P10",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 1,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 5,
+      "source_tool_call_count": 2,
+      "source_file_sha256": "7a0b268dcf04da7ea7dbf5f3aee49fcb9d1465af0b267e93e5614b85addc3bc8",
+      "source_reported_body_sha256": "9521b6d0e80a85d60471a917e65d76042481c722dc1443ae3a4db2ccc9814e78",
+      "reviewed_file_sha256": "32990637ab600ed7d545e6219659224ffd35b944fc53fccae0663ee5bc345b10",
+      "redactions": {
+        "session identifiers": 3,
+        "SSH key locations": 1,
+        "home usernames": 7,
+        "login username": 1,
+        "email addresses": 1
+      }
+    },
+    {
+      "path": "qwen-27b/source-P11.md",
+      "source_session_alias": "P11",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 2,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 4,
+      "source_tool_call_count": 1,
+      "source_file_sha256": "a2f7c5b5b9ee52a39b40f611c82ad00ba209271c0046144d5076614d207412e6",
+      "source_reported_body_sha256": "14c00ac2109b83c8134df9b09b938717237cf09e526e6522092dfd1e3966dd55",
+      "reviewed_file_sha256": "350628c1a1f922ef5c2003df123d48f460f11dd8d051069892d15ab281e83bc3",
+      "redactions": {
+        "session identifiers": 3,
+        "home usernames": 2
+      }
+    },
+    {
+      "path": "qwen-27b/source-P12.md",
+      "source_session_alias": "P12",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 3,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 14,
+      "source_tool_call_count": 8,
+      "source_file_sha256": "0c7cdeb8ae241e2c4c1ff3c193b87c2318d491ba94134c11c90213f26c884265",
+      "source_reported_body_sha256": "6a223604ec26d99961f8e8024d7fa4da0baa5de799903f8c35f1f437b72b76e4",
+      "reviewed_file_sha256": "08ae888a4376d015d4950baef122ce3e0bd715320ea57637ea82b03683465067",
+      "redactions": {
+        "session identifiers": 3,
+        "SSH key locations": 1,
+        "home usernames": 34,
+        "login username": 1,
+        "email addresses": 1
+      }
+    },
+    {
+      "path": "qwen-27b/source-P13.md",
+      "source_session_alias": "P13",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 4,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 20,
+      "source_tool_call_count": 12,
+      "source_file_sha256": "c42368787edb98e76035fee938891b7540a2c60ad64969554ac0dadf14920ac1",
+      "source_reported_body_sha256": "675c5a5b69094ca6f0c62710bd5f38e8638c879a048bbbc5ca30cf99e0763d10",
+      "reviewed_file_sha256": "498774f1673e8ba5ea02494cd57a29c4c3177e478e215bea364f0579ee5b23f4",
+      "redactions": {
+        "session identifiers": 3,
+        "SSH key locations": 1,
+        "home usernames": 15,
+        "login username": 1,
+        "email addresses": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P14.md",
+      "source_session_alias": "P14",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 5,
+          "attempt": null
+        },
+        {
+          "task": 6,
+          "attempt": null
+        },
+        {
+          "task": 7,
+          "attempt": null
+        },
+        {
+          "task": 8,
+          "attempt": null
+        },
+        {
+          "task": 9,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 112,
+      "source_tool_call_count": 2,
+      "source_file_sha256": "303139b1f1653e68436a3851663e9c7428e0121b6b9abf0874fae3f9ad394fe8",
+      "source_reported_body_sha256": "7383e0d05001ff41b306df3e1ad3d7aa04a06a8bf120e132959aecac1d944f52",
+      "reviewed_file_sha256": "3842b8abf6c3e2e060cd1464b943ec6b148fb6fabf9ac215f4fdc2f2d85e8504",
+      "redactions": {
+        "session identifiers": 9,
+        "SSH key locations": 1,
+        "home usernames": 277,
+        "login username": 1,
+        "email addresses": 1
+      }
+    },
+    {
+      "path": "qwen-27b/source-P15.md",
+      "source_session_alias": "P15",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 10,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 4,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "336c6356879c2eec13df2fffb317ee7e76fd9a5abe18c93b389ca6fe4c9c9332",
+      "source_reported_body_sha256": "62b767a4a9d215440c61a2a5115c075c7ccc25bfdc4b321b510fa2d863d2343f",
+      "reviewed_file_sha256": "b83a5f337b5922281e3132993421f55567977a52e662ac1e4b93f5b39a5f4b4b",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P16.md",
+      "source_session_alias": "P16",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 11,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "e67e1ebc7764591d96d22a7a1a13d5ac07f2cfe01f3e111548dfc8589b561d65",
+      "source_reported_body_sha256": "84c982a86a86a17a1a5ae1e972b64ba0fbdcf1dd2d790872bca1c4a6aa3a1b94",
+      "reviewed_file_sha256": "08151f0d2510a7a213771257ed49dabcb1dc1cf6b7d7f3a79d558dc2adb310c2",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P17.md",
+      "source_session_alias": "P17",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 12,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "1baf05a46fad7025458dfb18e508d02a56228fc208d656a2c54e979df825e1b7",
+      "source_reported_body_sha256": "36dac4fa4bce74c63af6daeaf048adb56457cca97ce3bc805e2811b122012cd5",
+      "reviewed_file_sha256": "142cb00a06f26f298e07ac976427fb4e4f293d79bc483e9cf932cf5f35e77269",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P18.md",
+      "source_session_alias": "P18",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [],
+      "source_exported_messages": 4,
+      "source_tool_call_count": 1,
+      "source_file_sha256": "db59b146eb0c0195fbe1957bd3facb5c5ed5b3a82cb16e8948e75bf42044c068",
+      "source_reported_body_sha256": "ded1aed0f03e90ba7dc742951a6432fe62cdee9fd1f72c1f91a9f047f18d3df6",
+      "reviewed_file_sha256": "f3c81c5bbae0047539d7643b2cdfe86409a842d0e84f299728064c6da767539c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P19.md",
+      "source_session_alias": "P19",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 13,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "b0db7e09d020e4791c274e034d1f16eb4ec8343f040bb19aca59e2920d963c40",
+      "source_reported_body_sha256": "5e5bbf4679859518483b80eb46f52778f0fecea5637763bb84be5725d6c76148",
+      "reviewed_file_sha256": "65d0caac50472abce4a1a60a4e5ea3ace3381d65d06e9227f9cb937480695c0d",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P20.md",
+      "source_session_alias": "P20",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 14,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "efefbd61e6732260444e810c5a4cd27f9b746f67462aa00751778119630a0d80",
+      "source_reported_body_sha256": "cf1217ebf4c7bc52d601c01a3e345c8d44c697b790466eeb439296a254102746",
+      "reviewed_file_sha256": "80cec7643c6216ac3cd94f93778cd731d26e4401de05e7dd1ba927ce9164f674",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P21.md",
+      "source_session_alias": "P21",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 15,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "96c5a4a88a1bc2d393f29debcac457d9d6abd50fc2d084fab187210e8466a945",
+      "source_reported_body_sha256": "227e3020e79a7d316bc8c0cbd84a1c663507ad48cfd3e3c38b7674ee12e58005",
+      "reviewed_file_sha256": "90f4bcb034efed38c5b69644ea219b2e0ecf05b12a6e4583ea2db009f88efc26",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P22.md",
+      "source_session_alias": "P22",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 16,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "77527a999df52f15dd841b0a725e17ba0403cbca0a5b6ae8090e5b7ab22dd5aa",
+      "source_reported_body_sha256": "51231f4d436eda0132047c5b315faccb5ac6036680b29b1e4a9d6ff845225ab9",
+      "reviewed_file_sha256": "c5a1ddf6e0e05136ff22a4ee4956049cfdec668b4e9b2af739460c12cece3c9c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P23.md",
+      "source_session_alias": "P23",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 17,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "410a3839c08eb6d5e0e2c96181d592b72b97ae5dc71075a797b50a3b836780c6",
+      "source_reported_body_sha256": "101eeb1c37022b52e1a5ad88ce58fb8936ca7da133e656a044bb8b80f5b47945",
+      "reviewed_file_sha256": "67952f880f08ea2e0afbb2e220e0b5f0d1a6ae0807328550055647baaa57b3b9",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P24.md",
+      "source_session_alias": "P24",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 18,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "bc4f036e212c778be65fbf78e82b7736d99e57ac514fd32b082da0d603f02641",
+      "source_reported_body_sha256": "1029c551db5cdfd912f10e3bee191c9e51e373201f0b93832e2b9cb91032662c",
+      "reviewed_file_sha256": "e51dfd7d0a79c4c0b2e846e598109ba2eb32df5254708843919b9ffc5e79f854",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P25.md",
+      "source_session_alias": "P25",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 19,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "a8ee180f83442558ea72728531ddd488930463dc782ba943ec80d1ff93e4ea06",
+      "source_reported_body_sha256": "64cfe1f084a81d8e5de1125944509afb58199f37007cf79ee65d20c56d2c06d9",
+      "reviewed_file_sha256": "b467dccb86b81ff8c4367134729f7a94b1a2568ef67de7ddb6ec6de954b7c6fb",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P26.md",
+      "source_session_alias": "P26",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 20,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "177f0706334662b14150c89627541e427d2270747e9468993cb66a8d2f0b1469",
+      "source_reported_body_sha256": "5aa0ffdd9849b554741bf9dddf7f6139222adaeed55e77891f99e80692adfa54",
+      "reviewed_file_sha256": "461c9320da31b8e9e434d9cac4e76a6146336d3de677faee3a290882cf985e3c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P27.md",
+      "source_session_alias": "P27",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 21,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "a180d9cb3494deb333b35bee03e3e911832e5648c6278565854cf6b701f8d8af",
+      "source_reported_body_sha256": "e2c881b49b32a7e14c95bb550ec7ba52801c7edc184a6df355ae9e0994707adf",
+      "reviewed_file_sha256": "3056382f2e29104c37f87aed8cfe0b4c938dce138f6dbef4cfc2aa3fb135ad74",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P28.md",
+      "source_session_alias": "P28",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 22,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 19,
+      "source_tool_call_count": 9,
+      "source_file_sha256": "168644f2a02061067f8934369017468e8b520a60ebdcb0305a0ffc18c5d5f12e",
+      "source_reported_body_sha256": "ead6031f8b8c8c2704dd8f3ee0a9d1971f3732f4eee333b4f68d24fb56f6e43e",
+      "reviewed_file_sha256": "a78d46a7bcc85d9bb901e6ccc4fefef8f5b5fcbbc4ebb6a74219e2b106d680eb",
+      "redactions": {
+        "session identifiers": 3,
+        "home usernames": 32
+      }
+    },
+    {
+      "path": "qwen-27b/source-P29.md",
+      "source_session_alias": "P29",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 5,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 17,
+      "source_tool_call_count": 9,
+      "source_file_sha256": "7cf0c150712b2788dbc04fe09340af5714f60904f38960a38812ccf5d2661012",
+      "source_reported_body_sha256": "96ea6a44a42351bd5d01cb0aa47c3917a4c327d9ed7741e9eeebf0af4f790ead",
+      "reviewed_file_sha256": "fa6fa0f2d2b918cb72cbc11d26bf91c5bcd3186d3f4a33eac78d08c5e4ffb438",
+      "redactions": {
+        "session identifiers": 3,
+        "SSH key locations": 1,
+        "home usernames": 38,
+        "login username": 1,
+        "email addresses": 1
+      }
+    },
+    {
+      "path": "qwen-27b/source-P30.md",
+      "source_session_alias": "P30",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 6,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 24,
+      "source_tool_call_count": 16,
+      "source_file_sha256": "9e04893226060e5d70fa25d6c41203a9cdf9afb4c131bf1854b7f7e2ad4be805",
+      "source_reported_body_sha256": "d8c44056fbd6dbd5abf26485dbc670e158cd3141baacf87dd73869ff6294c21d",
+      "reviewed_file_sha256": "881c81209e91118abb2ec0d6f09310acef3d3196ebb131a9bd8080a02c033672",
+      "redactions": {
+        "session identifiers": 3,
+        "SSH key locations": 1,
+        "home usernames": 30,
+        "login username": 1,
+        "email addresses": 1
+      }
+    },
+    {
+      "path": "qwen-27b/source-P31.md",
+      "source_session_alias": "P31",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 7,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 42,
+      "source_tool_call_count": 7,
+      "source_file_sha256": "a502b6505b47cbf576cdfdf7dbef4344d0acc7006afda6b2c6bca6f09e70db7c",
+      "source_reported_body_sha256": "d9ccf468f67ba5abbb107589d3bd611bb1273422a1ca6f80e5ba64c2becc205a",
+      "reviewed_file_sha256": "a524366b789dcb6e506948bc4e86a4c2a9aa7eb190b864a038a0a5337f39704e",
+      "redactions": {
+        "session identifiers": 6,
+        "SSH key locations": 1,
+        "home usernames": 127,
+        "login username": 1,
+        "email addresses": 1
+      }
+    },
+    {
+      "path": "qwen-27b/source-P32.md",
+      "source_session_alias": "P32",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 8,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "aab3055668f76f9ae1a54d558c6c01fb3aba8f69f7193919dccaa99a56f36500",
+      "source_reported_body_sha256": "5cc9d15659536a0fb2a901b40b64aa78ed48a1a33d541421c7f8aeee49e1f945",
+      "reviewed_file_sha256": "8cc1d6e5bdf4f9634ebfbe528d216d9bdfe4f0c34b9645e4db84b2cb22de3c82",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P33.md",
+      "source_session_alias": "P33",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 9,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "179e884f182891c93b4b2a85dba32abd1bccc7de74611090fce39af907985e82",
+      "source_reported_body_sha256": "63e22c1b1752bda69d03a0663e7000612624afa89363127ddcaf49f4c451c4b4",
+      "reviewed_file_sha256": "9798f3d65db9d67db1b7cc7b30bb3352e1b86a0db2a5a7d3e4a13079cce2668c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P34.md",
+      "source_session_alias": "P34",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 23,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 6,
+      "source_tool_call_count": 2,
+      "source_file_sha256": "5d19f63486fe928d71c2cf175b14c0dfb02b26996216b1d8c868788c76f20d7f",
+      "source_reported_body_sha256": "98395e2c7b4c9fa65059cb04a15b38cf67ce6a2adcaec466e82aa93894222531",
+      "reviewed_file_sha256": "e5ab6f5aeef88a6661d6760393f60e8b0c7847191b5798de678d7d7133337818",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P35.md",
+      "source_session_alias": "P35",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 23,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 7,
+      "source_tool_call_count": 3,
+      "source_file_sha256": "83e69290784232209465fdd23cca677d0853651d30eeec79aa87672e5cd2a0c3",
+      "source_reported_body_sha256": "777e62728ba3a0140d55fef08db59e03d2db4d819fdd0879750277cbea403c31",
+      "reviewed_file_sha256": "4ce4fba6b9da8ea2f5d9f5910188dfa3f60880d26d9d9f88a3f4cef06d0a962f",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P36.md",
+      "source_session_alias": "P36",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [],
+      "source_exported_messages": 53,
+      "source_tool_call_count": 18,
+      "source_file_sha256": "e4fa8089f63b6a91f35ee2d4449f62235b7ae343214773844c3a6c8030ab7486",
+      "source_reported_body_sha256": "738f6485b3052ada244f9b9818935452ae45b1d51f5b2d25918a06fe4cba6751",
+      "reviewed_file_sha256": "3422ef48a02f40fd99a32884f849c16e5335cb09d87ce4951a283b844a3f1b5e",
+      "redactions": {
+        "session identifiers": 6,
+        "historical session identifiers": 1,
+        "credential-file locations": 2,
+        "home usernames": 70,
+        "non-public or partial URLs": 4,
+        "loopback host/port": 3,
+        "non-documentation IPv4": 3,
+        "credential-shaped values": 4
+      }
+    },
+    {
+      "path": "qwen-27b/source-P37.md",
+      "source_session_alias": "P37",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 24,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 106,
+      "source_tool_call_count": 29,
+      "source_file_sha256": "f9b408af9ba6b7853f924bcfe78dbbd27fa8be3e4002624e8564d50d7e3094ad",
+      "source_reported_body_sha256": "60e2572eb2c4d5f4f5841f6118f36b8acc924fefcccb18904fb9e2194eff9672",
+      "reviewed_file_sha256": "c82380fbb7579f01e9df0ddacec58a8867a91bdb8583f464b38ea3b1457437df",
+      "redactions": {
+        "session identifiers": 10,
+        "home usernames": 204,
+        "non-public or partial URLs": 1,
+        "loopback host/port": 2,
+        "non-documentation IPv4": 4
+      }
+    },
+    {
+      "path": "qwen-27b/source-P38.md",
+      "source_session_alias": "P38",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 14,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 10,
+      "source_tool_call_count": 5,
+      "source_file_sha256": "172717b051c8badb1e6ba76fba883167b818ad29331ce00de22ae8e097396a49",
+      "source_reported_body_sha256": "c9428ee245fd575aa08375984d64f276f0058da6fd5f40d6159c1dd45d866752",
+      "reviewed_file_sha256": "8e8943232dc3155350085d843f810bc5245c30da7c8e2632cff6fabe8052f643",
+      "redactions": {
+        "session identifiers": 3,
+        "non-public or partial URLs": 6,
+        "loopback host/port": 3,
+        "non-documentation IPv4": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P39.md",
+      "source_session_alias": "P39",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [
+        {
+          "task": 15,
+          "attempt": null
+        }
+      ],
+      "source_exported_messages": 53,
+      "source_tool_call_count": 6,
+      "source_file_sha256": "f874e6e870feebe46ef71a829076386cf1a9220ee485dc64989a54adb8ac5cce",
+      "source_reported_body_sha256": "e42bd9ecb6bff45dab5aa0aad797d02d27d77029dbc9e026a272c55e0ef0ec26",
+      "reviewed_file_sha256": "9dba7efbc8d7db57a30992225fd99506d1f9842a194df7d50a767ba0702820e6",
+      "redactions": {
+        "session identifiers": 115,
+        "SSH key locations": 18,
+        "home usernames": 119,
+        "login username": 17,
+        "email addresses": 1,
+        "non-public or partial URLs": 71,
+        "loopback host/port": 6,
+        "non-documentation IPv4": 30
+      }
+    },
+    {
+      "path": "qwen-27b/source-P40.md",
+      "source_session_alias": "P40",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [],
+      "source_exported_messages": 39,
+      "source_tool_call_count": 7,
+      "source_file_sha256": "9949d3f1e263acf3a16dba6bc35c3565f261b8108d8dd9082eaf2ed0f1e613a4",
+      "source_reported_body_sha256": "bdb1d902629c78ca63772b6c19ff01288d089ad7f7ec4fabb039d6d3a38826f8",
+      "reviewed_file_sha256": "f4680892a4f07bd23dfd588bfc53f84ef980df4c2dc872d2c0758ea6a28d30a0",
+      "redactions": {
+        "session identifiers": 90,
+        "SSH key locations": 2,
+        "home usernames": 603,
+        "login username": 1,
+        "non-public or partial URLs": 3,
+        "loopback host/port": 2,
+        "non-documentation IPv4": 20
+      }
+    },
+    {
+      "path": "qwen-27b/source-P41.md",
+      "source_session_alias": "P41",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [],
+      "source_exported_messages": 5,
+      "source_tool_call_count": 2,
+      "source_file_sha256": "b58b488c87d15d56c66bd8da55bd07b2a09d71f8f5ca81fde6e3cf7ee8674e5c",
+      "source_reported_body_sha256": "3f9c6018016b7b154ea5b3e0421683b2a8e0b2dd6d5793eeafeed190079f98c4",
+      "reviewed_file_sha256": "b32dfbd8fefea33070d14a8bcaaf583c54b0a629ef29b80acec1497ebcd9933b",
+      "redactions": {
+        "session identifiers": 3,
+        "SSH key locations": 1,
+        "home usernames": 2,
+        "login username": 1,
+        "email addresses": 1
+      }
+    },
+    {
+      "path": "qwen-27b/source-P42.md",
+      "source_session_alias": "P42",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [],
+      "source_exported_messages": 9,
+      "source_tool_call_count": 5,
+      "source_file_sha256": "5b0d49132b72acd457215e38a138378e1caaef48ada1fc845b598d2869303fed",
+      "source_reported_body_sha256": "ac8d1578ff43d45b87d73148d881ced40405b6352ee7a26323eca42067627d14",
+      "reviewed_file_sha256": "9fc0b6e7ad244e335ecd7eea24c939a2022b249d58012489be1b62c14aa11acc",
+      "redactions": {
+        "session identifiers": 3,
+        "SSH key locations": 2,
+        "home usernames": 15,
+        "login username": 1,
+        "email addresses": 1,
+        "non-documentation IPv4": 1
+      }
+    },
+    {
+      "path": "qwen-27b/source-P43.md",
+      "source_session_alias": "P43",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [],
+      "source_exported_messages": 37,
+      "source_tool_call_count": 6,
+      "source_file_sha256": "9dae2ebcf41e2c90b55cce72d9c70ee9de77551147b4f4c5cfa774048e0dcbbf",
+      "source_reported_body_sha256": "0727494309127c3968136604cb6cbc411a9a02dd0fa5c3222399e83bdf056074",
+      "reviewed_file_sha256": "5dffd70a7fe781cd8e8ebbf8e3910f50366410a2027daf41f675c1c90e129e39",
+      "redactions": {
+        "session identifiers": 6,
+        "SSH key locations": 5,
+        "home usernames": 36,
+        "login username": 3,
+        "email addresses": 1,
+        "non-documentation IPv4": 3
+      }
+    },
+    {
+      "path": "qwen-27b/source-P44.md",
+      "source_session_alias": "P44",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [],
+      "source_exported_messages": 23,
+      "source_tool_call_count": 15,
+      "source_file_sha256": "539bed7c3be2e6235da6c0a4fcee09e48c2f58110956bc7c073291b20eb95a94",
+      "source_reported_body_sha256": "4de3f1e6fd756c293e7a2ae7d4c60c1aefa478a7d8fc7fe735d7fc57f4012d06",
+      "reviewed_file_sha256": "e79ea0dd970dc7a96bd18c3ab5a1fab58ba154895606af20865f6b418b39c201",
+      "redactions": {
+        "session identifiers": 3,
+        "SSH key locations": 1,
+        "home usernames": 55,
+        "login username": 1,
+        "email addresses": 1,
+        "non-documentation IPv4": 1
+      }
+    },
+    {
+      "path": "qwen-27b/source-P45.md",
+      "source_session_alias": "P45",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [],
+      "source_exported_messages": 151,
+      "source_tool_call_count": 10,
+      "source_file_sha256": "e766faef0f803f94533b620b69bdb51206ff12ab9fca9bd865011299b291eec4",
+      "source_reported_body_sha256": "37a4bf046f3bc17ab3dfdba8f8dea93398f814373f377dba73090edc0c4ecbda",
+      "reviewed_file_sha256": "04f5d024d14cfb27ffd63fc6567a6823b179f0a7608c9626195d0f2e644e5662",
+      "redactions": {
+        "session identifiers": 39,
+        "SSH key locations": 1,
+        "home usernames": 301,
+        "login username": 1,
+        "email addresses": 1,
+        "non-public or partial URLs": 6
+      }
+    },
+    {
+      "path": "qwen-27b/source-P46.md",
+      "source_session_alias": "P46",
+      "recorded_model": "Qwen3.8-27B-UD-Q4_K_M",
+      "task_namespace": "27b-roadmap",
+      "task_attempts": [],
+      "source_exported_messages": 39,
+      "source_tool_call_count": 17,
+      "source_file_sha256": "cc614bc5fd4ac1a7e7fd2ea030e51e124ebcbaacc1dcf2717e18ddafd3dd2f19",
+      "source_reported_body_sha256": "8109dc721476e2b7dc53fede901f9da2eeb59f0699810837c4aa15ebd25bd775",
+      "reviewed_file_sha256": "ca0f70491ec426452ea9bc20bcee0b2700586e5082b0be9599b9514c45c781ef",
+      "redactions": {
+        "session identifiers": 3,
+        "home usernames": 4
+      }
+    },
+    {
+      "path": "qwen-9b/task-00-attempt-01.md",
+      "source_session_alias": "S03",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 0,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "e5d337da001ac645423dffe291d4e7151de9974d27c6e881608bfb3e8a09919e",
+      "source_reported_body_sha256": "7e2001958fdfe3bade553e9adc239580ad3be522229424824ae2f5164720f4ad",
+      "reviewed_file_sha256": "67c65546ebaa24520c24732037c5c0b58955140db0b2e5116c9e3dc1bdb52929",
+      "redactions": {
+        "session identifiers": 3,
+        "home usernames": 2
+      }
+    },
+    {
+      "path": "qwen-9b/non-test-S04.md",
+      "source_session_alias": "S04",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "e6b068db79ae1d772eca08aec9ced1c74c863be60ae27ade1fa2aa6ad6242141",
+      "source_reported_body_sha256": "31b5b1797aa8e5d1018434a8428d0e06d221e50660898bee6a78cb2c4c4ac1bc",
+      "reviewed_file_sha256": "7a0711e6f1b2cceac21e3efbcf97c9ab2441d258e34e27ee6e944ddb9829023d",
+      "redactions": {
+        "session identifiers": 4,
+        "home usernames": 2
+      }
+    },
+    {
+      "path": "qwen-9b/task-00-attempt-02.md",
+      "source_session_alias": "S05",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 0,
+          "attempt": 2
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "cc6da959e8df99154d3c8f59c0b665c854784c7434a179e8b81b7f459a515de9",
+      "source_reported_body_sha256": "e2e64d196127520d06d283c88d9a17dd90ad33b4a40a273963eaac5b61729a07",
+      "reviewed_file_sha256": "c41c00595b4c04d00a947a55ff3ea7e12f6e1783108cf8e7b761f6a2a37a5750",
+      "redactions": {
+        "session identifiers": 3,
+        "home usernames": 2
+      }
+    },
+    {
+      "path": "qwen-9b/task-01-attempt-01.md",
+      "source_session_alias": "S06",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 1,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 6,
+      "source_tool_call_count": 2,
+      "source_file_sha256": "e9f45a118aa12b938ceeb52ff7877402ecc1992abfea8cead650f1b0257d2547",
+      "source_reported_body_sha256": "f6ce286176c18763b9b9146c1400bce71cd2fb9f6b80c927743fec3d0ea3303c",
+      "reviewed_file_sha256": "51a6b2e839971d513203545dca1cc1b210780f54dd66831a22e66856deec1fc3",
+      "redactions": {
+        "session identifiers": 3,
+        "home usernames": 2
+      }
+    },
+    {
+      "path": "qwen-9b/task-01-attempt-02.md",
+      "source_session_alias": "S07",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 1,
+          "attempt": 2
+        }
+      ],
+      "source_exported_messages": 8,
+      "source_tool_call_count": 3,
+      "source_file_sha256": "377003355132ca3050e0377cf3844e687dd3993d2cb09dd7a5d7d30179898caf",
+      "source_reported_body_sha256": "09275d56febd130f5011b7887aa670dd5c14ec0cbfe09153fa149c6b5fb45cce",
+      "reviewed_file_sha256": "6f259fc8290999efa25b0c9e9b8c133ed6e29750b714a7acc1d6f39ae95016f9",
+      "redactions": {
+        "session identifiers": 3,
+        "home usernames": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-02-attempt-01.md",
+      "source_session_alias": "S08",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 2,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "3053e23d450d225380e5bafce8e9b5fcfed9f45002de355a9c91a5b4f258ca23",
+      "source_reported_body_sha256": "c1be6a52b6ac1c88bac3a4d7a1d9c2c68f7f477e0e25653a3c3334392e64917b",
+      "reviewed_file_sha256": "ac96cd6d274b6816653d3040118bbae8ecec9fc6b669954bb49ef53a352d3ade",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-03-attempt-01.md",
+      "source_session_alias": "S09",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 3,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "fa68b961b4ab99672ba78b089342fcc2d0e68dce7325ee527d48e09c5b8f0dea",
+      "source_reported_body_sha256": "6c7f09263c953dba703e9e7ee58b968461fb7cd54d2d8258f63b4e6ae611be24",
+      "reviewed_file_sha256": "b4e7a7b5b223a7249979d82eb76d1da88577964b08d4ff375d2fc5bfd00c6687",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-04-attempt-01.md",
+      "source_session_alias": "S10",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 4,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "e25667591450163b9f688735e47f09f1bca595a8733af5b8781d94f4d96674c4",
+      "source_reported_body_sha256": "d7a5ea233e3ebe5ad827d8478a2a70d211bb690d403cfd5012df62f58b5d56b8",
+      "reviewed_file_sha256": "054cf16df4198249f2e17a5d515b2f840f65f9b05a9d3ef24310eef98fd130c3",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-05-attempt-01.md",
+      "source_session_alias": "S11",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 5,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "6fa93c5513bc8eb900f174037869a4a44fc48c323982cea4fe68ec0332aaeccf",
+      "source_reported_body_sha256": "298c01eff43d440e2fa48555c65badd7bfdb8ad2cacf224f9efdaddaf12c39c0",
+      "reviewed_file_sha256": "4414f14415776912a0fc9ecc4bfd90ecc38705774a38f05c9f87fee13a1fb2ea",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/non-test-S12.md",
+      "source_session_alias": "S12",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "15880ecae70b9553463ae2b263238c7c0c3838c13776f35f0ead8e8dc83d77c8",
+      "source_reported_body_sha256": "f2adbb84814806eec7776a86d534b1506cc971e67241fe2f90a7409fc6aaf156",
+      "reviewed_file_sha256": "5705357d34ba47720669fd9fc9109e6b5a11f6e265960c4fc9897677ffad9230",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-06-attempt-01.md",
+      "source_session_alias": "S13",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 6,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "59b9aabaa32792b8b5162611e69fbc3850b02f57a15bfa7af4ef1412429aa2e9",
+      "source_reported_body_sha256": "2fd15ed51ae4382ec5470c4ae35e4624d1e7a6ecb277699f96cc920bfd33458c",
+      "reviewed_file_sha256": "b716c2277ed42fdc8eff127148addf00291eafd539d1863895468f75ab658383",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-07-attempt-01.md",
+      "source_session_alias": "S14",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 7,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "28c2eacc29552ef3985640f86f830cff2b52620e7606f6b829a8136c91e5d4f2",
+      "source_reported_body_sha256": "aa799dc122ea7f7ea29103f51b8d86daf50eb023d1401da4c405bd8713f1d42a",
+      "reviewed_file_sha256": "8eb95b69329e2ef16fcbf1a5208b10563b4013ffe1c1a881225386c355281545",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-08-attempt-01.md",
+      "source_session_alias": "S15",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 8,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "f65b311234b40626e7b15eac79a181c5c495acdb533e629e71b8f35cfc07b84c",
+      "source_reported_body_sha256": "4d58a4d9bc4dbbe228008581ff1af35c85c3d135d7b20214fdb9da5a1125049b",
+      "reviewed_file_sha256": "9b519026a1aedc1444642beb4e64f0c102f061312317ccac9675636f9db687c0",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-09-attempt-01.md",
+      "source_session_alias": "S16",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 9,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "081399ebfc88f1bcfd76c7620420c634bf7a3b9d1c93db27485f75c8b354f543",
+      "source_reported_body_sha256": "980215216146f3477b679a68ec64de5110f913611e23331f35c4ce0e738385f7",
+      "reviewed_file_sha256": "b1f92c1c1be26c55e6e245335d004f55376fe0d816b563394911d7591c625095",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-10-attempt-01.md",
+      "source_session_alias": "S17",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 10,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "54045ea60cb4795b2a77d297bddeae35978cc75f60b0ba2101396d11041b92cf",
+      "source_reported_body_sha256": "4f8a6a0669eb3a45519f4a309504bb7429d096bee9986584ea9abd0360a79957",
+      "reviewed_file_sha256": "3c793838059ce0e7586914d1407359f89b5f85f1ad89796a7018ef5bcb6d58d0",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-11-attempt-01.md",
+      "source_session_alias": "S18",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 11,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "9cf1fa7af80b7ec5924de0789ec69ddb2bb8ac690734a5f54f15e5679421713a",
+      "source_reported_body_sha256": "8bba51a173ff853f62fbaba5395d4fcb2777ee1642fa01930837791f9ef793ef",
+      "reviewed_file_sha256": "8bf8c30ec14e6ef7332f26f663c7dd1d9c2db18485651b1ca37bd55eab6559aa",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-12-attempt-01.md",
+      "source_session_alias": "S19",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 12,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "6fdb8d4b49d0b38ddb854bdd1207de5ad1d105ae3c8c2a643386342d81bb8bab",
+      "source_reported_body_sha256": "9f89336473f103c910b06aa8809355ea03b7c1453a4451bee083c5ecb4eba28f",
+      "reviewed_file_sha256": "c0a1f23f544bc23086d4fc6d04b6cca8b46608667901d7a2a2da23bda50d17d6",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-13-attempt-01.md",
+      "source_session_alias": "S20",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 13,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "8cc08a018490fca8c0b441209901a784959e120405210547502c0434e3a8ed86",
+      "source_reported_body_sha256": "3c18efa812cbe857d9348518bcabd8e67c7b7e5ed876d4e771adc13cfdedafe8",
+      "reviewed_file_sha256": "8d6c17a3f89b53d985e2c3b6ab3e0f45c8b5e8456bca393747ee7208e2c767ea",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-14-attempt-01.md",
+      "source_session_alias": "S21",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 14,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "6e3a95cb419bafe03aef5eb84d91c8ae29741d05f68c95085689fdc210b14b90",
+      "source_reported_body_sha256": "cc325af230081442161c5de51118fab8ca70b21df0820908e1673a8af254351f",
+      "reviewed_file_sha256": "34d4240beda2f7ba0f794b4ede518f54d3a9e198349c54dc31f17ae803c967a9",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-15-attempt-01.md",
+      "source_session_alias": "S22",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 15,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "0e0ab3f1b2d38f1f5efb955db7f63c802ec6e50f24e4cefa8922b58f808abd90",
+      "source_reported_body_sha256": "2a07442f30bfa81e89189d79b81773299415c459135ff8873d22554fa32ae972",
+      "reviewed_file_sha256": "ebd626a8a576405a68b1b4aa5a645b34e093279e6506f8c45cf0eaf1569eb0c0",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-16-attempt-01.md",
+      "source_session_alias": "S23",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 16,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "0a3db8129d342c846ae9c89669175b2f95c92fba7adbb4accc0b2b2044a7fa21",
+      "source_reported_body_sha256": "75467459740727984b4a69db6604a08e0f55adfbf7ff836df033b986e0fd5e27",
+      "reviewed_file_sha256": "ca5d15ea6b2c18d4fa6427d689c24557add752b952ebdbd4c68fbcdf4926f100",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-17-attempt-01.md",
+      "source_session_alias": "S24",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 17,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "27798cf2f21a09ca3080442e99ddc8b092f8b38ae5a8933de5c51606f0921875",
+      "source_reported_body_sha256": "4ae404dc545d1fe13fc06bbb5aa3c1bae8c33faea94975c40587e66eb67a61a6",
+      "reviewed_file_sha256": "8827c692447999c5aaed87af2e5a820af1d5a22bdf0e52c6a0459d4336bed4ce",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-17-attempt-02.md",
+      "source_session_alias": "S25",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 17,
+          "attempt": 2
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "f5dde41796c265c47eea7cd3777805ada6c60fcb3ed591c1b9e937757d27cc54",
+      "source_reported_body_sha256": "ea92f3986ec5f2b4bd77a67fb78d7d9dfd578676beb01c7976cef684d035e09a",
+      "reviewed_file_sha256": "826108a74cbf45d40c15e0209bf28266f9dfe6b3977a7bd082fe3d761b0ba35e",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-18-attempt-01.md",
+      "source_session_alias": "S26",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 18,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "79b8f1adfdabe371630679e6b00d807b6e65995c8fa2f90f39276bf1a424a103",
+      "source_reported_body_sha256": "e9b39c575aaf4a6711210f06d13be89aa4ecb9091fb59355ecd5eb4687f5a21e",
+      "reviewed_file_sha256": "383a24dfc1af8a7bc9897f0a06687d5b5ba14cb5030c2bd5ff4984062c835e26",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-19-attempt-01.md",
+      "source_session_alias": "S27",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 19,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "e6e6a4362d49dfa02a9775b3f0909a194be0a1303fa363e8d5d02117a174e4b0",
+      "source_reported_body_sha256": "4a5e37399ced6110b3e2dcf61b37c49cb2c723b0a313878f26a1d384768d93a8",
+      "reviewed_file_sha256": "9fee67237bf9a115dedde9939d15c3b5bff2562d1bb2973e177c7dcf005dec5c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-20-attempt-01.md",
+      "source_session_alias": "S28",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 20,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "3c6011182730fb13bc9e1ff7e5f1721e52d23eb1bd303983e14edd8937565ba1",
+      "source_reported_body_sha256": "0355233bc98132064624f08cd29d6ecffe214fb4b71a84562143d55fc67554c1",
+      "reviewed_file_sha256": "cd97cfb1efda9f64b6435b3debf7bdd79263b522657ad0b4568d51e5160698be",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-21-attempt-01.md",
+      "source_session_alias": "S29",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 21,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "bf7a79bfd70126ebace62c963b1269fb76cea4f46ce7dc305ebfe9624811d58a",
+      "source_reported_body_sha256": "1f3d08b2e6fc19ea71de0b7e21868fb1d827e6a969627486bb074e74651d0fd8",
+      "reviewed_file_sha256": "b6c1d5001f202e2480be193a8031cb842b0e136e1b728743c2bf8efd6f1183ff",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-22-attempt-01.md",
+      "source_session_alias": "S30",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 22,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "ff063ce71023a909d88cd7eed714083d5bdd38baa1bf2f9a0b9f81bd29de8648",
+      "source_reported_body_sha256": "c183ffacdaebe7bd071f4c199b64fd2d2306667d23e977fbc2fe89d6363116b8",
+      "reviewed_file_sha256": "8fcbab441eda50cb9c623cb31500d74e104955314ec8f6480651de4387288849",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-23-attempt-01.md",
+      "source_session_alias": "S31",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 23,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "abb266742f5bf8690836069d3d46c7118d834d93ec32724f32aeab0f91576d25",
+      "source_reported_body_sha256": "8f3d8057cf3cbc2e0e9a763d0741902e8c7aa914a3c4e291bc9f6faf2aa0b09b",
+      "reviewed_file_sha256": "0994edf3430e64f7ebe040404d5c979c072e9563e36bc53bd73a716795f81b41",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-24-attempt-01.md",
+      "source_session_alias": "S32",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 24,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "763b2805963c6093bc9d9e97eeb11e0f57eda78cf002fca61f8596ee03773a9b",
+      "source_reported_body_sha256": "f44ff6e98770cf0739c7e63d75219786f2db5e22e6d6dc02e2453243bbbd6779",
+      "reviewed_file_sha256": "0370bec248ec8da62d28928f7ca9b6d4fa498c18e210d3d14b3b0444a53db93d",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-25-attempt-01.md",
+      "source_session_alias": "S33",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 25,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "6065d126036f226aaeb1e4c6c0aa4d14609f0dcf76797c8a66d65c59782ce3ed",
+      "source_reported_body_sha256": "69a095f76150f4a66bced8229558b9bc565996258a58af7918a93cb5591ea961",
+      "reviewed_file_sha256": "aab17c118450576620b879474a3ad7512386c06adccf04c74c7c7bb9595f9343",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-26-attempt-01.md",
+      "source_session_alias": "S34",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 26,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "936556bc233850d977ce90578e4019dabb696fd8f0b6cf1b6573491297fb8d5c",
+      "source_reported_body_sha256": "4ee3355b410bb1866df78112cdbff35e618d1ee057de57d26767a650f8a4453e",
+      "reviewed_file_sha256": "30b8261693d3942e24a9c10240dfc54c3afde13bba48a3c38d3ddee47f9600e7",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-27-attempt-01.md",
+      "source_session_alias": "S35",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 27,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "9e47a774b9db9a4f65c0cf4c385a7d5f720e7f1e03bc2ceca734007d7b0632cd",
+      "source_reported_body_sha256": "0bcdacf482ba934c1bb8f5565451213c80b41129d767e0683aece003a7139089",
+      "reviewed_file_sha256": "9bf9acd730305c03d594eb2225eb4090fffe7915e6fb5c110f335f66ae8fb27c",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-28-attempt-01.md",
+      "source_session_alias": "S36",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 28,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "b3f59521db2715a2d9179ea092350cf4eb8b22636882cb25e3ab566c7bad721b",
+      "source_reported_body_sha256": "3b839b3fb45cdaab6a0c0e8bcbc89a5c46ed6b4d9c4071f3ee9c34cb9d288c38",
+      "reviewed_file_sha256": "f122e4ad10e544c09403ee7a10f31d7c84fcdf1bf311c026988dbfae927bc418",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-29-attempt-01.md",
+      "source_session_alias": "S37",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 29,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "35d39f8d5194e6e2a8a7da44470bcf52f9b40ae6b5132d7b6bf43cdf13fa6d96",
+      "source_reported_body_sha256": "c09bb9f19fae00bdcb83e8216033c50ce9f95978944ffe7ab256bfaf7a35a13a",
+      "reviewed_file_sha256": "7f90507c0e1310f8d3377ebeb504a2cafd286a9f6d4859db9e554648f3aafaa2",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-30-attempt-01.md",
+      "source_session_alias": "S38",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 30,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "6455ed630f2de32713706f41b4132ac7db7e32df2009ecb9f81dd9f918736918",
+      "source_reported_body_sha256": "e83d7f6d881cdc5cd77764f719e5f41ec270ba2eaa2056bb2f5c017b03007053",
+      "reviewed_file_sha256": "14a5b40274d221f7306bc14d5bfe5cc9bd23049598dc4a01a0af702aa705d32b",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-31-attempt-01.md",
+      "source_session_alias": "S39",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 31,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "fc07a8bfb1bca5132b0f3dccd34587c2361c93f4d1e5b6ff5e46b5022d9abf08",
+      "source_reported_body_sha256": "d5c68541990c8046e8676a846d310a7363f015571946a07d49c301e4643a6f81",
+      "reviewed_file_sha256": "ce35d30f582592a0534ce3c94ca843933447f46dae972c33d3871cb7c85395e7",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-32-attempt-01.md",
+      "source_session_alias": "S40",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 32,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "417381e0152f9d0d0eee45e76ed15f03cc110e6af48dc706b9c0212ce7750cd2",
+      "source_reported_body_sha256": "75249a906d9dd65d57691a3089472a6edb956a2384592206961b4450e1d9ef00",
+      "reviewed_file_sha256": "7fc879b8438e1b62c7ad81d2db145c6fb20d0abe8ebf600aa69943db46a301bb",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-33-attempt-01.md",
+      "source_session_alias": "S41",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 33,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "f67cad30f2b823e91ba2a1eeb6efd8fdaab43ae90cd9acd56a345534bb6dca4f",
+      "source_reported_body_sha256": "f401e71454a02ce3ca130ab691053459a9252d4e4834c6d86eb86c7619bc2822",
+      "reviewed_file_sha256": "8da0643979d105e1c758c7925efbf7bb475e5fb2835991161582cb966c088721",
+      "redactions": {
+        "session identifiers": 3
+      }
+    },
+    {
+      "path": "qwen-9b/task-34-attempt-01.md",
+      "source_session_alias": "S42",
+      "recorded_model": "Qwen3.5-9B-Q4_K_M",
+      "task_namespace": "small-model-screen",
+      "task_attempts": [
+        {
+          "task": 34,
+          "attempt": 1
+        }
+      ],
+      "source_exported_messages": 2,
+      "source_tool_call_count": 0,
+      "source_file_sha256": "06d15cfebccadab7fee960c21a100a2d6f41210b1e6dfd6331832dcef3b098d1",
+      "source_reported_body_sha256": "be8305c0974a35bc82f5733962ac34d62746a1c89bb4dbf02a083dbd4f78c7c6",
+      "reviewed_file_sha256": "607e7093c21c491582c30b166ba4856c6d9adecc6a4327704e072c66d7d51193",
+      "redactions": {
+        "session identifiers": 3
+      }
+    }
+  ]
+}

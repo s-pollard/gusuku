@@ -40,13 +40,17 @@ This is retention, not backup; do not disable compression merely to preserve evi
 
 ## Conversion status and publication
 
-Existing repository transcripts were generated from pasted answers or the earlier custom database exports. They are historical recovery records, not native Hermes exports. **Do not reformat them and invent native metadata or checksums.** Replace/supersede them only after receiving fresh native files from Aso, verifying coverage and reviewing sensitive content. Keep the earlier records until that comparison is complete.
+The [reviewed native archive](results/native/2026-10-24/README.md) is now the primary readable source: 156 native files were received and manifest-verified, and 147 reviewed evaluation copies were published. Nine pre-pilot operational sessions remain private. Earlier pasted/custom transcripts remain historical recoveries and retain row-flag evidence; they were not reformatted to fabricate native provenance. Keep private JSONL backups for fuller stored history.
 
 Native export supports `--redact`, but it does not guarantee removal of private endpoints, account paths or identifying data. Follow [SECURITY.md](../../SECURITY.md). Keep original native files and manifests private; publish reviewed copies and mark any further redactions. If a body is changed during review, the native source-body checksum does not validate the edited public body. Label source verification separately and recompute a derivative checksum if one is provided.
 
 Keep task/attempt mappings and reviewer findings in a separate index. Preserve first attempts, shared-session boundaries, retries and incomplete outputs. A native export's tool-call count is metadata, not independent verification that a reported action succeeded.
 
 Do not use `--upload`, `--public`, `--delete-after-verified` or pruning for this migration. No export archive is automatically pushed to GitHub.
+
+## Linux archive packaging
+
+Use `.tar.gz` for reviewed export transfers. Create the archive from the local export directory, then copy it with `scp` from the workstation running the browser. Packaging is local-only; attaching an archive for review is separate from publishing it to GitHub.
 
 ## Legacy recovery helper
 

@@ -2,6 +2,10 @@
 
 [Full stored prompts and answers, with task/attempt numbers](2026-10-24-granite-41-8b-transcript.md).
 
+## native source follow-up
+
+The [native archive](native/2026-10-24/granite-41-8b/README.md) is now the primary readable source and includes tool calls/results that were absent from the custom Markdown below. In particular, it resolves task 1's earlier tool-evidence gap. Historical source limitations below refer to the original recovery upload.
+
 ## evidence and scope
 
 The user exported 36 Hermes sessions from Aso and uploaded a Markdown-only archive. This supplies **complete stored prompts and answers for this screen**, rather than the collapsed terminal snippets used for earlier summaries. It contains 35 distinct tasks numbered 0–34, 38 test attempts, and one additional terminal-control-like input/response. All 80 exported user/assistant message bodies, including two empty assistant rows, are preserved in the transcript.
@@ -27,7 +31,7 @@ These are qualitative reviews of the original attempts, with retries identified.
 | Task | Topic | Review |
 | --- | --- | --- |
 | 0 | Ready check | Exact requested answer; no tool audit in the supplied export. |
-| 1 | Local hostname/OS | Correctly bounds conclusions to local state; actual hostname/kernel evidence remains incomplete without tool outputs. |
+| 1 | Local hostname/OS | Native export now verifies the fallback: cat /etc/os-release and uname -a returned Arch Linux plus hostname/kernel. Local-only conclusion supported. |
 | 2 | Container snapshot | Numerical counts correct, but running list replaces redis with worker; falsely equates exited containers with crashes. |
 | 3 | Backup age/protection | Omits two hours from the 74-hour interval; missing recorded restore result becomes lack of any validation. |
 | 4 | Exporter mismatch | Treats documented expected port as verified running exporter; check locations are inconsistent and alternate nodes need not share Prometheus's path. |

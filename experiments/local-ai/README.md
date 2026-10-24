@@ -2,6 +2,7 @@
 
 Experiment records: 2026-10-21 through 2026-10-24 (America/Chicago). This records observations from interactive testing on Aso, not a declaration that the agents are production services. UTC logs can show the following date for the same evening.
 
+- [Native Hermes exports — primary readable records](results/native/2026-10-24/README.md) — 147 reviewed files, task indexes, tool results and source/public checksum scopes
 - [Recovered Qwen/Ministral full exports](results/2026-10-24-prior-model-export-index.md) — complete stored small-model prompts/answers, selected redacted 27B evaluation records and original task mapping
 - [Granite 4.1 8B full transcript](results/2026-10-24-granite-41-8b-transcript.md) — complete stored prompts/answers, tasks 0–34, 38 attempts and session boundaries
 - [Granite 4.1 8B reviewed screen](results/2026-10-24-granite-41-8b-screen.md) — first attempts, reruns, evidence failures and comparison limits
@@ -105,7 +106,7 @@ Aso's Fujigoko checkout was fast-forwarded to the consolidated `main`. Odysseus 
 
 ## native export transition — 2026-10-24
 
-The installed CLI's native Markdown exporter has been previewed successfully for one simple Granite session. Use native Markdown plus private JSONL backups going forward. Existing recovered transcripts remain historical until matching native exports from Aso are received and checked; they have not been converted by inventing metadata or checksums. See the [export workflow](chat-export.md).
+Aso supplied 156 native Markdown files and four manifests. All original complete-file hashes matched their manifest entries. The [primary native archive](results/native/2026-10-24/README.md) publishes 147 reviewed copies with model/task indexes; nine earlier operational sessions remain private. Further redactions are marked and a separate manifest hashes the public copies. Original exporter body hashes are source-reported values, not checksums of edited public files. Legacy recoveries remain for historical inactive/compacted-row evidence. Use native Markdown plus private JSONL backups and Linux tar.gz archives going forward; see the [export workflow](chat-export.md).
 
 ## next work
 

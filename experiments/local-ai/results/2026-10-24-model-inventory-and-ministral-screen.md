@@ -48,6 +48,10 @@ The initial Qwen download URL returned 404 because the supplied filename omitted
 
 See [Hermes local models](https://hermes-agent.nousresearch.com/docs/user-guide/local-models) and [CLI interface](https://hermes-agent.nousresearch.com/docs/user-guide/cli). Installed-version behavior must be checked rather than assumed from newer documentation.
 
+## native source follow-up
+
+Use the [native archive](native/2026-10-24/README.md) for primary readable records. Stored tool results now clarify the local-host test; the hostname/kernel came from uname -a, while the claimed hostname-file fallback was not executed in the recorded calls. Earlier custom-export limits below are historical.
+
 ## Ministral exploratory findings
 
 The user reported Ministral loaded, and the banner identified Ministral 3 14B Instruct. Most short fictional answers displayed roughly 2–4 seconds; the local-host attempt displayed 14.4 seconds. Context display was around 14K against 262K. These are informal UI readings, not verified context or comparable performance measurements. Reasoning/sampling configuration was not supplied. Many original prompts were collapsed, so do not reconstruct exact scores or word-limit compliance.
@@ -58,7 +62,7 @@ Material errors and limitations in the pasted answers:
 
 | Case | Finding |
 | --- | --- |
-| Hostname/OS | Claimed hostname from a file convention without a visible file read; kernel output alone does not establish distribution. |
+| Hostname/OS | Native tool results show hostname failed and uname -a succeeded. The latter supports hostname/kernel, but no hostname-file fallback or OS-release read is recorded; Arch distribution identity remains unsupported by those tools. |
 | Backup age | Reported five days rather than the fixture's 74 hours; called protection untested despite only a missing recorded result. |
 | Dated deployment notes | Called the older deployment claim false from later named-container absence and a timed-out request; neither proves historical falsity. |
 | Git state | Claimed a clean working tree means no unpushed changes; committed divergence is independent of working-tree cleanliness. |

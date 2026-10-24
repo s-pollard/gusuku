@@ -1,5 +1,7 @@
 # Qwen 27B — execution and retrieval follow-up source records
 
+**Legacy recovery record.** Use the [native Hermes archive](native/2026-10-24/README.md) as the primary readable source. This earlier extract remains unchanged below for historical row flags, omissions and recovery provenance; no native metadata has been fabricated.
+
 [Export catalogue and publication limits](2026-10-24-prior-model-export-index.md).
 
 Source: selected user-supplied Hermes Markdown database exports. Archive SHA-256: `8df6b38fed287cf6ea3c1b73aba99aa291e488d80de42d87be879bc36845da44`. The raw archive/database/private JSON are not published. Session aliases replace original IDs and hashed filenames. Recorded model metadata is not independently verified per-turn backend identity.

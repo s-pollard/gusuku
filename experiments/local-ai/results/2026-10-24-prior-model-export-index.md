@@ -1,5 +1,7 @@
 # Recovered prior-model chats — 2026-10-24
 
+**Superseded for primary reading by the [reviewed native Hermes archive](native/2026-10-24/README.md).** This catalogue remains the historical custom-recovery inventory and task mapping. Native exports now include tool evidence absent from that earlier Markdown. Source and reviewed-public checksum scopes are documented in the native index.
+
 These records were recovered from the user's Hermes database export and published in **Gusuku**, the home for local AI experiments. The raw archive/database/private JSON remain private. This is a source-recovery update, not a new benchmark or claim that all candidate sessions are independent tests.
 
 ## what was recovered
