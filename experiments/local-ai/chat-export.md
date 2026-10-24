@@ -1,5 +1,57 @@
 # Exporting Hermes evaluation chats
 
+## Preferred format — native Hermes export
+
+Use Hermes's own exporter for new archives and to replace the earlier custom extracts. A native Markdown export was verified from the installed Aso CLI: it included the full two-message prompt/answer, YAML session/model/provider metadata, timestamps, message counts and an exported-body checksum. Tool-heavy, compressed and rewound cases still need comparison with the existing recovery records.
+
+```bash
+hermes sessions export --format md --redact --session-id SESSION_ID PRIVATE_OUTPUT_DIRECTORY
+```
+
+Use an explicit session ID to avoid bulk filters silently skipping still-open sessions. Keep `--lineage single` for a one-session-per-file source inventory; choose logical lineage deliberately when reviewing compressed continuations. Names and session titles should identify model, task and attempt. Do not alter historical prompts to add retrospective labels.
+
+For future tests, start a fresh session and title it, for example:
+
+```text
+/new
+/title granite42-8b-task02-attempt01
+```
+
+## Private backup
+
+JSONL is the fuller private backup of stored history; Markdown is the readable display export. Do not assume the two contain identical sets of inactive/rewound rows. Keep both while reviewing complex sessions. The installed command help supports the following:
+
+```bash
+(
+umask 077
+mkdir -p "$HOME/.hermes/exports"
+hermes sessions export --format jsonl \
+  "$HOME/.hermes/exports/history-$(date -u +%Y%m%dT%H%M%SZ).jsonl"
+)
+```
+
+To keep old sessions from being automatically pruned:
+
+```bash
+hermes config set sessions.auto_prune false
+```
+
+This is retention, not backup; do not disable compression merely to preserve evidence. Check the installed help before relying on options from newer documentation.
+
+## Conversion status and publication
+
+Existing repository transcripts were generated from pasted answers or the earlier custom database exports. They are historical recovery records, not native Hermes exports. **Do not reformat them and invent native metadata or checksums.** Replace/supersede them only after receiving fresh native files from Aso, verifying coverage and reviewing sensitive content. Keep the earlier records until that comparison is complete.
+
+Native export supports `--redact`, but it does not guarantee removal of private endpoints, account paths or identifying data. Follow [SECURITY.md](../../SECURITY.md). Keep original native files and manifests private; publish reviewed copies and mark any further redactions. If a body is changed during review, the native source-body checksum does not validate the edited public body. Label source verification separately and recompute a derivative checksum if one is provided.
+
+Keep task/attempt mappings and reviewer findings in a separate index. Preserve first attempts, shared-session boundaries, retries and incomplete outputs. A native export's tool-call count is metadata, not independent verification that a reported action succeeded.
+
+Do not use `--upload`, `--public`, `--delete-after-verified` or pruning for this migration. No export archive is automatically pushed to GitHub.
+
+## Legacy recovery helper
+
+The [custom exporter](export_hermes_chats.py) is retained for reproducing the earlier recovery workflow and inspecting stored inactive/compacted rows if needed. It is no longer the preferred export format.
+
 This helper reads the user-supplied Hermes SQLite schema using Python's standard library. It writes private review copies and never runs Git, contacts a host, calls a model, or publishes chats.
 
 ## List local sessions

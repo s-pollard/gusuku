@@ -5,7 +5,7 @@ Experiment records: 2026-10-21 through 2026-10-24 (America/Chicago). This record
 - [Recovered Qwen/Ministral full exports](results/2026-10-24-prior-model-export-index.md) — complete stored small-model prompts/answers, selected redacted 27B evaluation records and original task mapping
 - [Granite 4.1 8B full transcript](results/2026-10-24-granite-41-8b-transcript.md) — complete stored prompts/answers, tasks 0–34, 38 attempts and session boundaries
 - [Granite 4.1 8B reviewed screen](results/2026-10-24-granite-41-8b-screen.md) — first attempts, reruns, evidence failures and comparison limits
-- [Chat export and reviewed GitHub sync](chat-export.md) — read-only session exporter; full stored prompts/answers staged privately before publication
+- [Native Hermes export and reviewed GitHub sync](chat-export.md) — native Markdown for readable records; private JSONL backups; custom exporter retained for legacy recovery
 - [Qwen 9B answer transcript](results/2026-10-24-qwen-9b-answer-transcript.md) — 35 recovered answers; missing full prompts explicitly marked
 - [Ministral 14B answer transcript](results/2026-10-24-ministral-14b-answer-transcript.md) — 34 recovered answers, plus a separately identified duplicate paste
 - [Earlier Hermes skill-work transcript](results/hermes-skill-work-answer-transcript.md) — six pasted responses, separate from the model screens
@@ -102,6 +102,10 @@ The later [skill reuse review](results/2026-10-23-hermes-skill-reuse.md) records
 ## earlier follow-up — 2026-10-22
 
 Aso's Fujigoko checkout was fast-forwarded to the consolidated `main`. Odysseus then demonstrated direct workspace file reads, creation and editing, cross-chat memory retrieval, and answering from a pinned homelab boundary without tools. A further local source patch added memory to the workspace toolset. A read-only Markdown target-file check executed and reported no missing targets. Private Tailscale Serve access was configured; external-client connectivity is not yet verified. See the [dated Odysseus follow-up](odysseus.md#follow-up--2026-10-22) for evidence and remaining limitations.
+
+## native export transition — 2026-10-24
+
+The installed CLI's native Markdown exporter has been previewed successfully for one simple Granite session. Use native Markdown plus private JSONL backups going forward. Existing recovered transcripts remain historical until matching native exports from Aso are received and checked; they have not been converted by inventing metadata or checksums. See the [export workflow](chat-export.md).
 
 ## next work
 

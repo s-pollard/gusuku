@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read selected Hermes sessions into private review files; never commit or push."""
+"""Legacy recovery helper. Prefer native `hermes sessions export`; see chat-export.md.\n\nRead selected sessions into private review files; never commit or push.\n"""
 
 import argparse
 from datetime import datetime, timezone
