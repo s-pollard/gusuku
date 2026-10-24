@@ -2,7 +2,9 @@
 
 ## purpose
 
-gusuku exists to support learning and experimentation in enterprise IT.
+**/pleblab/** is the overall homelab. Gusuku is its learning and experimentation environment; Fujigoko is its production environment.
+
+Gusuku exists to support learning and experimentation in enterprise IT.
 
 It is not optimized for production uptime. It is optimized for learning from building, operating, breaking, troubleshooting, and recovering systems.
 
@@ -87,7 +89,7 @@ A new host should solve a real learning or infrastructure requirement that canno
 
 ### 6. gusuku is not production
 
-gusuku is an experimental environment. Services, configurations, and platforms running in gusuku should be considered disposable and should not become required parts of the real home environment.
+gusuku is the experimental environment within /pleblab/. Services, configurations, and platforms running in gusuku should be considered disposable and should not become required parts of the real home environment.
 
 If an experiment proves genuinely useful in day-to-day life, the result should be redeployed on an appropriate fujigoko system rather than promoted in place inside gusuku.
 
@@ -99,7 +101,7 @@ experiment in gusuku → validate → redeploy on fujigoko if useful
 
 ### 7. fujigoko remains independent
 
-gusuku may eventually monitor, manage, automate, or interact with selected fujigoko systems for learning purposes.
+fujigoko is the production environment within /pleblab/. Gusuku may eventually monitor, manage, automate, or interact with selected fujigoko systems for learning purposes.
 
 fujigoko must not depend on gusuku for critical or required services.
 
