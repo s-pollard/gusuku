@@ -18,7 +18,7 @@ Gusuku is on hold until the November 2026 move is complete and the lab hardware 
 
 Shuri remains the planned first physical Gusuku host, but it is currently packed/offline. No permanent Gusuku services or virtual infrastructure are being deployed before the move.
 
-Local AI administration experiments are active on Aso as a temporary test bed and belong to this repository under [experiments/local-ai](experiments/local-ai/README.md). Model evaluations, transcripts, agent setup and export tooling live there. This does not make Aso a disposable Gusuku host or change the pause on physical lab deployment.
+The [v4 local AI maintenance evaluation](experiments/local-ai/evaluation/README.md) is available for temporary testing on Aso. The active kit includes individual prompts, offline fixtures, evaluator guidance and a tar.gz download. Earlier setup records, tests and transcripts remain in the repository-level archive. Aso is a personal administration workstation, not a disposable Gusuku host; practical candidate execution needs a separate isolated environment.
 
 ## lifecycle
 
@@ -118,7 +118,7 @@ Hardware models, high-level topology, lab roles, generic configurations, and non
 
 ## local AI experiments
 
-See the [local AI experiment index](experiments/local-ai/README.md) for Hermes/Odysseus setup, model tests, full reviewed transcripts and remaining limitations. Experimental agents are not required production services. Raw chat databases/exports remain private; see [SECURITY.md](SECURITY.md).
+See the [local AI experiment index](experiments/local-ai/README.md) for the active v4 maintenance evaluation, downloadable kit and testing instructions. Earlier model tests, transcripts and agent setup records are preserved in the [root archive](archive/README.md). Experimental agents are not required production services. Raw chat databases/exports remain private; see [SECURITY.md](SECURITY.md).
 
 ## repository structure
 
