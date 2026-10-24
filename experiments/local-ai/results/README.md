@@ -4,8 +4,8 @@
 
 | Folder | Contents |
 | --- | --- |
-| [native](native/README.md) | Primary readable Hermes exports, organized by date and model, with task indexes and checksum provenance |
-| [reviews](reviews/README.md) | Findings, limitations and model inventory |
-| [legacy](legacy/README.md) | Earlier pasted/custom recoveries and source mapping; retained as historical evidence |
+| [native](native/README.md) | **Primary source of record:** reviewed native Hermes exports, organized by date and model, with task indexes and checksum provenance |
+| [reviews](reviews/README.md) | Findings, limitations and model inventory; use native Hermes exports for transcript evidence |
+| [legacy](legacy/README.md) | Archived custom/pasted recoveries retained only for historical provenance; not an active evidence source |
 
-Start with a review for interpretation, then follow its source links. Keep original answers separate from reviewer findings.
+For current local-AI work, use the native Hermes exports. Keep reviewer findings separate from source transcripts.

@@ -1,24 +1,9 @@
-# legacy recovery records
+# Legacy/custom export archive
 
-[Results index](../README.md) · [Primary native transcripts](../native/README.md).
+[Results index](../README.md) · [Primary native Hermes transcripts](../native/README.md).
 
-These are the earlier pasted-answer and custom-export records. They are retained for recovery provenance, row flags and historical comparison.
+This directory is retained only for historical provenance. **Do not use these custom database exports or pasted-answer recoveries as the active local-AI evidence source.** The native Hermes exports are the source of record for current evaluation work.
 
-## source catalogue
+Historical files are under [`archive/`](archive/).
 
-- [Recovered prior-model catalogue and task mapping](2026-10-24-prior-model-export-index.md)
-
-## custom database exports
-
-- [Qwen 9B](2026-10-24-qwen-9b-full-transcript.md)
-- [Ministral 14B](2026-10-24-ministral-14b-full-transcript.md)
-- [Granite 4.1 8B](2026-10-24-granite-41-8b-transcript.md)
-- [Qwen 27B pilot](2026-10-23-qwen-27b-pilot-full-transcript.md)
-- [Qwen 27B follow-up](2026-10-23-qwen-27b-follow-up-full-transcript.md)
-- [Qwen 27B skill work](2026-10-23-24-qwen-27b-skill-full-transcript.md)
-
-## earlier pasted answers
-
-- [Qwen 9B](2026-10-24-qwen-9b-answer-transcript.md)
-- [Ministral 14B](2026-10-24-ministral-14b-answer-transcript.md)
-- [Hermes skill work](hermes-skill-work-answer-transcript.md)
+The old filenames at this directory level are retained only as warning stubs so older documentation links do not silently point at custom-export content.
