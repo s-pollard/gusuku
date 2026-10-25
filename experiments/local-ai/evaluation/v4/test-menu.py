@@ -73,24 +73,97 @@ def display_model(model):
             + ' | reasoning: ' + (model['reasoning'] or 'configured default'))
 
 
+def downloaded_models(roots=None):
+    """List GGUF filename-based IDs without reading weights or changing libraries."""
+    home = Path.home()
+    if roots is None:
+        hermes_home = Path(os.environ.get('HERMES_HOME', str(home / '.hermes')))
+        roots = [hermes_home / 'models', home / 'Models']
+    found = {}
+    for root in map(Path, roots):
+        if not root.is_dir():
+            continue
+        try:
+            for path in sorted(root.rglob('*.gguf')):
+                relative = path.relative_to(root)
+                if 'assets' in {part.lower() for part in relative.parts[:-1]}:
+                    continue
+                if path.name.lower().startswith(('mmproj', 'projector')):
+                    continue
+                try:
+                    if not path.is_file():
+                        continue
+                except OSError:
+                    continue
+                item = found.setdefault(path.stem, {'model': path.stem, 'paths': []})
+                location = str(path.absolute())
+                if location not in item['paths']:
+                    item['paths'].append(location)
+        except OSError:
+            continue
+    return sorted(found.values(), key=lambda item: item['model'].casefold())
+
+
+def choose_reasoning():
+    print('Reasoning:')
+    for number, effort in enumerate(EFFORTS):
+        print(f'  {number}. {effort or "Configured default"}')
+    while True:
+        answer = input('Reasoning [Enter = configured default]: ').strip().lower()
+        if not answer:
+            return ''
+        if answer.isdigit() and 0 <= int(answer) < len(EFFORTS):
+            return EFFORTS[int(answer)]
+        if answer in EFFORTS:
+            return answer
+        print('Choose a listed number or effort name.')
+
+
 def choose_model(state):
     while True:
         print('\nMODEL SELECTION')
-        for number, model in enumerate(state['models'], 1):
-            print(f'  {number}. {display_model(model)}')
-        print('  N. Add a model / settings combination\n  Q. Quit')
+        entries = []
+        if state['models']:
+            print('Saved model/settings combinations:')
+        for model in state['models']:
+            entries.append(('saved', model))
+            print(f'  {len(entries)}. {display_model(model)}')
+        saved_ids = {model['model'] for model in state['models']}
+        local = [item for item in downloaded_models() if item['model'] not in saved_ids]
+        if local:
+            print('Downloaded GGUF files (requested IDs come from filenames):')
+        for item in local:
+            entries.append(('downloaded', item))
+            locations = f" [{len(item['paths'])} locations]" if len(item['paths']) > 1 else ''
+            print(f"  {len(entries)}. {item['model']}{locations}")
+        if not local and not state['models']:
+            print('No main GGUF files found in the model directories.')
+        print('  R. Refresh downloaded files\n  N. Enter another model / alias manually\n  Q. Quit')
         choice = input('Model: ').strip()
         if choice.lower() == 'q':
             return None
-        if choice.isdigit() and 1 <= int(choice) <= len(state['models']):
-            return state['models'][int(choice) - 1]
+        if choice.lower() == 'r':
+            continue
+        if choice.isdigit() and 1 <= int(choice) <= len(entries):
+            kind, value = entries[int(choice) - 1]
+            if kind == 'saved':
+                return value
+            print('Selected file name: ' + value['model'])
+            for location in value['paths']:
+                print('  ' + location)
+            print('Using the existing configured provider. Hermes must accept this ID;\n'
+                  'file discovery alone does not verify the model served by your backend.')
+            model = {'model': value['model'], 'provider': '', 'reasoning': choose_reasoning()}
+            state['models'].append(model)
+            save_state(state)
+            return model
         if choice.lower() != 'n':
-            print('Choose a listed number or N.')
+            print('Choose a listed number, R or N.')
             continue
         print('Use the exact Hermes model ID or configured alias. Do not enter API keys or URLs.')
         model = {'model': input('Model ID / alias: ').strip(),
                  'provider': input('Provider name [Enter = existing configured provider]: ').strip(),
-                 'reasoning': input('Reasoning [Enter = configured default; e.g. medium]: ').strip().lower()}
+                 'reasoning': choose_reasoning()}
         try:
             validate_model(model)
         except ValueError as exc:

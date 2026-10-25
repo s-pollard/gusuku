@@ -1,12 +1,16 @@
 # Interactive model/test menu
 
-Start `python3 test-menu.py` from the extracted kit. Choose N to add an exact Hermes model ID or alias, an optional provider name, and a reasoning effort (Enter keeps the configured value). Saved combinations appear as numbered choices on future runs. These are your saved selections, not an automatically discovered model inventory. No credentials or endpoints are requested.
+Start `python3 test-menu.py` from the extracted kit. The model screen lists saved configurations and automatically discovers main GGUF files under `~/.hermes/models` (or `$HERMES_HOME/models`) and `~/Models`. Choose a number; no model-name typing is needed. Repeated filenames are grouped into one downloaded choice with their location count; this is not a byte-identity check. The scan excludes `assets/` and projector filenames, reads no model weights and does not move or register files. R refreshes the list; N retains manual ID/alias entry. For a newly selected downloaded model, choose reasoning by number or press Enter for the configured default. The existing provider is retained. Saved choices remain available on later runs.
 
 The task menu defaults to Core24 plus controls. Select a number or type an ID such as E01 or P02. A shows the full bank, C returns to the core profile, M changes the model, E displays operator-only incident evidence, and Q exits. The launcher displays the full prompt, prepares the appropriate environment and opens fresh Hermes after Enter. Paste the prompt; exit Hermes with /quit to return to the menu. Requested model/provider/reasoning are passed explicitly to Hermes for each run and recorded. The installed CLI is checked for the corresponding options; unsupported overrides stop instead of being silently ignored. Normal saved Hermes configuration is not changed.
 
 Runs are grouped as `~/runs/<model-and-settings-label>/ID-attemptNN/`. Different provider/reasoning selections receive separate groups. `model-selection.json` records the selected settings; each attempt retains its own requested-inference record. These are requested settings, not independent proof of which backend served the request. Preserve native session evidence and any model switches/fallbacks. Menu settings are saved privately under `$XDG_STATE_HOME/homelab-ai-evaluation/menu.json`, defaulting to `~/.local/state/homelab-ai-evaluation/menu.json`. Prepared-attempt counts are not grades or completed coverage.
 
 Update test-menu.py, run-test.py, run-practical.py and eval_clipboard.py together. The menu refuses launchers that predate model overrides. The downloadable `evaluation-launchers.tar.gz` contains those four files only; extract it inside the existing v4 kit. The original task bank, prompts, fixtures and previous attempts are unchanged.
+
+## Downloaded filename IDs
+
+Downloaded choices send the GGUF filename stem (without `.gguf`) as the requested Hermes model ID. This removes typing, but does not independently establish library registration, which model a manually managed single-model server loaded, or what backend actually served a request. Native Hermes acceptance and session/backend evidence remain required. If your setup needs a different ID or configured alias, retain it as a saved choice or use N. The menu does not silently relabel an error as a successful model switch, and it does not import external GGUF files into Hermes's library.
 
 ## Last selection and automatic clipboard
 
