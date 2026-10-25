@@ -80,6 +80,15 @@ def requested_model():
             "backend_verified": False}
 
 
+def prompt_clipboard(text):
+    try:
+        from eval_clipboard import announce_copy
+    except ImportError:
+        print("Clipboard helper missing; copy the displayed prompt manually.", flush=True)
+        return {"status": "unavailable", "method": "none"}
+    return announce_copy(text)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('task')
@@ -108,13 +117,14 @@ def main():
             return 0
         print('Copy this complete prompt before continuing:\n', flush=True)
         print(prompt.read_text(), flush=True)
+        clipboard = prompt_clipboard(prompt.read_text())
         print('Requested model/settings: ' + json.dumps(requested_model()), flush=True)
         input('Press Enter to open sandboxed Hermes... ')
         metadata = {'task': args.task.upper(), 'run': str(run),
                     'image': 'localhost/homelab-ai-eval:v4',
                     'toolsets': ['terminal', 'file'], 'network': 'none',
                     'mount': str(run / 'lab') + ':/lab:rw',
-                    'automatic_full_grade': False, 'requested_inference': requested_model()}
+                    'automatic_full_grade': False, 'requested_inference': requested_model(), 'clipboard': clipboard}
         (run / 'launcher-record.json').write_text(
             json.dumps(metadata, indent=2) + '\n')
         help_result = subprocess.run(['hermes', 'chat', '--help'], capture_output=True, text=True, check=True)

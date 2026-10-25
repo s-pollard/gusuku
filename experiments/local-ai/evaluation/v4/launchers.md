@@ -6,7 +6,15 @@ The task menu defaults to Core24 plus controls. Select a number or type an ID su
 
 Runs are grouped as `~/runs/<model-and-settings-label>/ID-attemptNN/`. Different provider/reasoning selections receive separate groups. `model-selection.json` records the selected settings; each attempt retains its own requested-inference record. These are requested settings, not independent proof of which backend served the request. Preserve native session evidence and any model switches/fallbacks. Menu settings are saved privately under `$XDG_STATE_HOME/homelab-ai-evaluation/menu.json`, defaulting to `~/.local/state/homelab-ai-evaluation/menu.json`. Prepared-attempt counts are not grades or completed coverage.
 
-Update test-menu.py, run-test.py and run-practical.py together. The menu refuses launchers that predate model overrides. The downloadable `evaluation-launchers.tar.gz` contains those three files only; extract it inside the existing v4 kit. The original task bank, prompts, fixtures and previous attempts are unchanged.
+Update test-menu.py, run-test.py, run-practical.py and eval_clipboard.py together. The menu refuses launchers that predate model overrides. The downloadable `evaluation-launchers.tar.gz` contains those four files only; extract it inside the existing v4 kit. The original task bank, prompts, fixtures and previous attempts are unchanged.
+
+## Last selection and automatic clipboard
+
+The last selected task is saved separately for each model/provider/reasoning group. It is shown in the menu header and marked `LAST SELECTED` in the list. Enter selects the next task in the displayed profile. A selected task is not proof of completion or a passing grade; select the same ID explicitly to repeat it with fresh files. Restarting the menu restores this selection after choosing that model/settings combination.
+
+Both launchers try to copy the complete candidate prompt before opening Hermes. In SSH sessions, OSC 52 requests the client terminal's clipboard rather than changing Aso's desktop clipboard. No clipboard contents are read. The terminal may ignore or require permission for the request; a successful request is not reported as confirmed copying. Through tmux, a passthrough sequence is used, which also depends on multiplexer policy. Native local clipboard tools are used for direct desktop sessions when available. The prompt remains displayed for manual copying in every case.
+
+Set `HOMELAB_EVAL_CLIPBOARD=0` when starting the menu to disable automatic copying. Each launched attempt records whether copying was requested, completed via a local tool, disabled or unavailable. `--evidence` never copies the private incident packet. Menu-only model data and last-task history remain in the same private state file as before. Previously saved model choices and run folders are preserved.
 
 ---
 

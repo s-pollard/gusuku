@@ -33,6 +33,8 @@ def load_state():
             raise ValueError('Unexpected saved-menu format.')
         for model in value['models']:
             validate_model(model)
+        if not isinstance(value.get('last_tests', {}), dict):
+            raise ValueError('Unexpected last-test settings.')
         return value
     except FileNotFoundError:
         return {'models': []}
@@ -139,11 +141,20 @@ def run_task(task, model, evidence=False):
     return result.returncode
 
 
+def next_task(shown, last):
+    ids = [task['id'] for task in shown]
+    if not last:
+        return ids[0] if ids else None
+    if last not in ids or ids.index(last) + 1 == len(ids):
+        return None
+    return ids[ids.index(last) + 1]
+
+
 def main():
     try:
-        for name in ['run-test.py', 'run-practical.py', 'tasks.json']:
+        for name in ['run-test.py', 'run-practical.py', 'eval_clipboard.py', 'tasks.json']:
             if not (HERE / name).is_file():
-                raise ValueError('Missing ' + name + '; download all three launcher files.')
+                raise ValueError('Missing ' + name + '; download the complete launcher update.')
         for name in ['run-test.py', 'run-practical.py']:
             spec = importlib.util.spec_from_file_location('menu_check_' + name.replace('.', '_'), HERE / name)
             module = importlib.util.module_from_spec(spec)
@@ -154,19 +165,27 @@ def main():
         model = choose_model(state)
         bank = tasks()
         full = False
-        last = None
+        last = state.get('last_tests', {}).get(group_name(model)) if model else None
         while model:
             shown = bank if full else [task for task in bank if task['core']]
             parent = HERE.parent / 'runs' / group_name(model)
             print('\nHOMELAB AI EVALUATION — ' + display_model(model))
             print('Profile: ' + ('full bank' if full else 'Core24 + controls'))
             print('Runs: ' + str(parent))
+            suggested = next_task(shown, last)
+            print('Last selected: ' + (last or 'none recorded') + ' | Next in this profile: ' + (suggested or 'none'))
             for number, task in enumerate(shown, 1):
                 count = sum(p.is_dir() for p in parent.glob(task['id'] + '-attempt*')) if parent.exists() else 0
                 suffix = f' [{count} prepared attempt(s)]' if count else ''
-                print(f" {number:2d}. {task['id']}  {task['title']}{suffix}")
+                marker = '  <-- LAST SELECTED' if task['id'] == last else ''
+                print(f" {number:2d}. {task['id']}  {task['title']}{suffix}{marker}")
             print('\nChoose number or task ID. A=all tasks, C=core, M=model, E=incident evidence, Q=quit')
-            choice = input('Test: ').strip().upper()
+            choice = input('Test [Enter = next]: ').strip().upper()
+            if not choice:
+                if not suggested:
+                    print('No next test in this profile; choose an ID or change profile.')
+                    continue
+                choice = suggested
             if choice == 'Q':
                 break
             if choice in {'A', 'C'}:
@@ -174,6 +193,7 @@ def main():
                 continue
             if choice == 'M':
                 model = choose_model(state)
+                last = state.get('last_tests', {}).get(group_name(model)) if model else None
                 continue
             if choice == 'E':
                 incident = input('Incident ID' + (f' [{last}]' if last and last.startswith('M') else '') + ': ').strip().upper()
@@ -190,6 +210,8 @@ def main():
                 print('Unknown test ID or menu option.')
                 continue
             last = choice
+            state.setdefault('last_tests', {})[group_name(model)] = choice
+            save_state(state)
             run_task(choice, model)
         return 0
     except (OSError, ValueError, KeyError) as exc:

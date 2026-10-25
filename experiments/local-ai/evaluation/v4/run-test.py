@@ -122,6 +122,15 @@ def requested_model():
             "backend_verified": False}
 
 
+def prompt_clipboard(text):
+    try:
+        from eval_clipboard import announce_copy
+    except ImportError:
+        print("Clipboard helper missing; copy the displayed prompt manually.", flush=True)
+        return {"status": "unavailable", "method": "none"}
+    return announce_copy(text)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('task')
@@ -177,6 +186,7 @@ def main():
             return 0
         print('Copy this complete prompt:\n', flush=True)
         print(prompt.decode(), flush=True)
+        record['clipboard'] = prompt_clipboard(prompt.decode())
         print('Requested model/settings: ' + json.dumps(requested_model()), flush=True)
         print(f'Optional chat title: /title {run.name}', flush=True)
         if task[0] == 'M':
