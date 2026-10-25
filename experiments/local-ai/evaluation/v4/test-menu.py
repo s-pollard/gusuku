@@ -15,6 +15,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+import eval_save
 
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
@@ -240,8 +241,7 @@ def screen_choice(shown, model, section, last, parent, positions):
         except curses.error:
             pass
         index = min(positions.get(section, 0), max(0, len(shown) - 1))
-        counts = {t['id']: sum(p.is_dir() for p in parent.glob(t['id'] + '-attempt*'))
-                  for t in shown}
+        counts = {t['id']: eval_save.status_summary(parent, t['id']) for t in shown}
         while True:
             height, width = screen.getmaxyx()
             screen.erase()
@@ -262,11 +262,11 @@ def screen_choice(shown, model, section, last, parent, positions):
             start = min(max(0, index - visible // 2), max(0, len(shown) - visible))
             for offset, task in enumerate(shown[start:start + visible]):
                 n = start + offset
-                suffix = f" [{counts[task['id']]} attempts]" if counts[task['id']] else ''
+                suffix = f" [{counts[task['id']]}]" if counts[task['id']] else ''
                 marker = '  LAST SELECTED' if task['id'] == last else ''
                 line(5 + offset, f" {'>' if n == index else ' '} {task['id']}  {task['title']}{suffix}{marker}", n == index)
             line(height - 3, 'C controls | E planning | P practical | M incidents | L live | A all | K core')
-            line(height - 2, 'S model | V incident evidence | Q quit | : type test ID/number')
+            line(height - 2, 'S model | V incident evidence | U export runs | Q quit | : type test ID/number')
             line(height - 1, f'Up/Down select | Enter launch | PgUp/PgDn scroll  ({index + 1}/{len(shown)})')
             screen.refresh()
             key = screen.get_wch()
@@ -284,7 +284,7 @@ def screen_choice(shown, model, section, last, parent, positions):
             elif key in ('\n', '\r', curses.KEY_ENTER):
                 positions[section] = index
                 return shown[index]['id']
-            elif isinstance(key, str) and key.upper() in 'CE PMLAKSVQ'.replace(' ', ''):
+            elif isinstance(key, str) and key.upper() in 'CE PMLAKSVQU'.replace(' ', ''):
                 positions[section] = index
                 return key.upper()
             elif key == ':' or (isinstance(key, str) and key.isdigit()):
@@ -310,7 +310,7 @@ def screen_choice(shown, model, section, last, parent, positions):
 
 def main():
     try:
-        for name in ['run-test.py', 'run-practical.py', 'eval_clipboard.py', 'tasks.json']:
+        for name in ['run-test.py', 'run-practical.py', 'eval_clipboard.py', 'eval_save.py', 'export-runs.py', 'tasks.json']:
             if not (HERE / name).is_file():
                 raise ValueError('Missing ' + name + '; download the complete launcher update.')
         for name in ['run-test.py', 'run-practical.py']:
@@ -343,12 +343,12 @@ def main():
                 suggested = next_task(shown, last)
                 print('Last selected: ' + (last or 'none recorded') + ' | Next in this profile: ' + (suggested or 'none'))
                 for number, task in enumerate(shown, 1):
-                    count = sum(p.is_dir() for p in parent.glob(task['id'] + '-attempt*')) if parent.exists() else 0
-                    suffix = f' [{count} prepared attempt(s)]' if count else ''
+                    count = eval_save.status_summary(parent, task['id'])
+                    suffix = f' [{count}]' if count else ''
                     marker = '  <-- LAST SELECTED' if task['id'] == last else ''
                     print(f" {number:2d}. {task['id']}  {task['title']}{suffix}{marker}")
                 print('\nSections: C=controls, E=evidence/planning, P=practical, M=incidents, L=live lab')
-                print('A=all tasks, K=Core24, S=select model, V=view incident evidence, Q=quit')
+                print('A=all tasks, K=Core24, S=select model, V=view incident evidence, U=export runs, Q=quit')
                 print('Choose a section, test number or full task ID (such as P02).')
                 choice = input('Test [Enter = next]: ').strip().upper()
             if not choice:
@@ -356,6 +356,11 @@ def main():
                     print('No next test in this profile; choose an ID or change profile.')
                     continue
                 choice = suggested
+            if choice == 'U':
+                subprocess.run([sys.executable, '-B', str(HERE / 'export-runs.py')], cwd=HERE)
+                if fullscreen:
+                    input('Press Enter to return to the test menu: ')
+                continue
             if choice == 'Q':
                 break
             if choice in {'A', 'K', 'C', 'E', 'P', 'M', 'L'}:

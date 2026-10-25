@@ -14,6 +14,7 @@ import re
 import shutil
 import subprocess
 import sys
+import eval_save
 
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
@@ -96,11 +97,12 @@ def main():
     parser.add_argument('--prepare-only', action='store_true',
                         help='Create fresh inputs without launching Hermes.')
     args = parser.parse_args()
+    run, metadata = None, {}
     try:
         if not (HERE / 'lab.py').is_file():
             raise ValueError('Place this launcher beside lab.py in the v4 kit.')
         if not args.prepare_only:
-            for binary in ['podman', 'hermes']:
+            for binary in ['podman', 'hermes', 'script']:
                 if not shutil.which(binary):
                     raise ValueError(f'{binary} is not available in PATH.')
             result = subprocess.run(
@@ -112,27 +114,25 @@ def main():
                             'localhost/homelab-ai-eval:v4'], check=True)
         run = prepare(args.task.upper(), args.group)
         prompt = run / 'candidate-prompt.txt'
+        metadata = {'task': args.task.upper(), 'run': str(run),
+                    'image': 'localhost/homelab-ai-eval:v4',
+                    'toolsets': ['terminal', 'file'], 'network': 'none',
+                    'mount': str(run / 'lab') + ':/lab:rw',
+                    'requested_inference': requested_model()}
+        eval_save.save(run, metadata, 'PREPARED')
         print(f'\nFresh run: {run}\nPrompt: {prompt}\n', flush=True)
         if args.prepare_only:
             return 0
         print('Copy this complete prompt before continuing:\n', flush=True)
         print(prompt.read_text(), flush=True)
-        clipboard = prompt_clipboard(prompt.read_text())
+        metadata['clipboard'] = prompt_clipboard(prompt.read_text())
         print('Requested model/settings: ' + json.dumps(requested_model()), flush=True)
         input('Press Enter to open sandboxed Hermes... ')
-        metadata = {'task': args.task.upper(), 'run': str(run),
-                    'image': 'localhost/homelab-ai-eval:v4',
-                    'toolsets': ['terminal', 'file'], 'network': 'none',
-                    'mount': str(run / 'lab') + ':/lab:rw',
-                    'automatic_full_grade': False, 'requested_inference': requested_model(), 'clipboard': clipboard}
-        (run / 'launcher-record.json').write_text(
-            json.dumps(metadata, indent=2) + '\n')
         help_result = subprocess.run(['hermes', 'chat', '--help'], capture_output=True, text=True, check=True)
         command = ['hermes', 'chat', '--toolsets', 'terminal,file'] + model_arguments(help_result.stdout)
-        result = subprocess.run(command, env=environment(run), cwd=HERE.parent)
+        result = eval_save.capture(run, metadata, command, environment(run), HERE.parent)
         metadata['hermes_exit_code'] = result.returncode
-        (run / 'launcher-record.json').write_text(
-            json.dumps(metadata, indent=2) + '\n')
+        eval_save.save(run, metadata)
         print(f'\nRun preserved at {run}', flush=True)
         if result.returncode:
             print('Hermes exited with an error; preserve it as setup/runtime evidence.')
@@ -143,13 +143,16 @@ def main():
         (run / 'checker-result.json').write_text(checked.stdout)
         if checked.stderr:
             (run / 'checker-stderr.txt').write_text(checked.stderr)
+        eval_save.save(run, metadata, checker_exit_code=checked.returncode, checker_file='checker-result.json')
         print('Objective checker output saved; full grading waits for log review.')
         print('The next task uses the same command with its ID, e.g. P05.')
         return 0
     except (ValueError, OSError, subprocess.CalledProcessError) as exc:
+        eval_save.failure(run, metadata, exc)
         print(f'Launcher error: {exc}', file=sys.stderr)
         return 1
-    except (KeyboardInterrupt, EOFError):
+    except (KeyboardInterrupt, EOFError) as exc:
+        eval_save.failure(run, metadata, exc, interrupted=True)
         print('\nCancelled; any prepared run remains intact.', file=sys.stderr)
         return 130
 

@@ -6,7 +6,7 @@ The task menu defaults to Core24 plus controls. Select a number or type an ID su
 
 Runs are grouped as `~/runs/<model-and-settings-label>/ID-attemptNN/`. Different provider/reasoning selections receive separate groups. `model-selection.json` records the selected settings; each attempt retains its own requested-inference record. These are requested settings, not independent proof of which backend served the request. Preserve native session evidence and any model switches/fallbacks. Menu settings are saved privately under `$XDG_STATE_HOME/homelab-ai-evaluation/menu.json`, defaulting to `~/.local/state/homelab-ai-evaluation/menu.json`. Prepared-attempt counts are not grades or completed coverage.
 
-Update test-menu.py, run-test.py, run-practical.py and eval_clipboard.py together. The menu refuses launchers that predate model overrides. The downloadable `evaluation-launchers.tar.gz` contains those four files only; extract it inside the existing v4 kit. The original task bank, prompts, fixtures and previous attempts are unchanged.
+Update test-menu.py, run-test.py, run-practical.py, eval_clipboard.py, eval_save.py and export-runs.py together. The menu refuses launchers that predate model overrides. The downloadable `evaluation-launchers.tar.gz` contains those six files only; extract it inside the existing v4 kit. The original task bank, prompts, fixtures and previous attempts are unchanged.
 
 ## Downloaded filename IDs
 
@@ -87,13 +87,41 @@ only under its separately prepared and tested infrastructure/authority contract.
 
 ## Logs
 
-C/E/M attempts contain candidate-prompt.txt, launcher-record.json, an empty lab/
-workspace and, when util-linux `script` is installed, hermes-terminal.log.
-The transcript can contain ANSI/TUI control sequences; retain the native Hermes
-exports for readable final review. If `script` is absent, the launcher records
-terminal_transcript=false and native exports are required. No grading is done
-during these runs. Keep logs private and send one tar.gz after testing.
+C/E/M/P attempts save candidate-prompt.txt, launcher-record.json, events.jsonl,
+lab/ and hermes-terminal.log. util-linux `script` is required; a missing recorder
+stops the launch rather than silently losing the transcript. Terminal logs may
+contain ANSI/TUI sequences. Native exports remain useful for readable structured
+review and backend verification; native session IDs are explicitly null until
+independently linked. Global Hermes history/configuration is never copied.
 
 `--prepare-only` creates a fresh prompt/run without launching Hermes or requiring
 Podman. It is setup, not a model result. A prepared folder does not prove that a
 model ran or that a no-tool instruction was obeyed.
+
+
+## Attempt records and export
+
+Every prepared attempt receives a UUID, creation/update timestamps, exact prompt
+SHA256, a kit fingerprint, requested inference settings and atomic metadata
+updates. events.jsonl preserves lifecycle transitions. P also saves checker output
+and its exit code. Status is PREPARED, STARTED, SESSION_CLOSED, INTERRUPTED,
+RUNTIME_ERROR, LAUNCHER_ERROR or INFRA_BLOCKED. SESSION_CLOSED means Hermes exited
+normally, not that the task was completed or passed. A killed launcher may remain
+STARTED; the menu labels this started/unclosed. Existing attempts are not migrated
+or overwritten. Menu rows summarize these statuses instead of counting them as
+completed tests.
+
+Quit active launchers, then press U in the menu or run:
+
+```bash
+python3 -B export-runs.py
+```
+
+A new dated archive and .sha256 file are written under
+~/evaluation-exports/. The tar.gz includes evaluation attempt files, index.json
+and a SHA256SUMS manifest. Export refuses STARTED/unclosed attempts and never
+overwrites an archive. Symlinks and special files are omitted and listed in the
+index; candidate links cannot pull host files into the export. Global Hermes
+history, settings, credentials and unrelated chat sessions are excluded. Do not
+manually edit run files while exporting. The archive contains local test outputs;
+review it before sharing publicly.

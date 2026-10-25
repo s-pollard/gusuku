@@ -19,6 +19,7 @@ import shutil
 import subprocess
 import sys
 import time
+import eval_save
 
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
@@ -73,7 +74,7 @@ def helper():
 
 
 def ready():
-    for binary in ['podman', 'hermes']:
+    for binary in ['podman', 'hermes', 'script']:
         if not shutil.which(binary):
             raise ValueError(f'{binary} is missing from PATH.')
     result = subprocess.run(
@@ -140,6 +141,7 @@ def main():
                         help='Operator-only M evidence; does not launch Hermes.')
     args = parser.parse_args()
     task = args.task.upper()
+    run, record = None, {}
     try:
         validate(task)
         if args.evidence:
@@ -170,7 +172,7 @@ def main():
         record_path = run / 'launcher-record.json'
         if task[0] == 'L':
             record['status'] = 'INFRA_BLOCKED'
-            record_path.write_text(json.dumps(record, indent=2) + '\n')
+            eval_save.save(run, record)
             (run / 'live-preparation-brief.md').write_text(section(task))
             print(f'Live infrastructure is not supplied. Brief saved at {run}.\n')
             print(section(task))
@@ -180,7 +182,7 @@ def main():
                       tools_visible=['terminal', 'file'], tools_authorized=False,
                       tool_workspace='empty isolated /lab; no evaluator files',
                       network='none', status='PREPARED')
-        record_path.write_text(json.dumps(record, indent=2) + '\n')
+        eval_save.save(run, record)
         print(f'\n{task}: {run}\n', flush=True)
         if args.prepare_only:
             return 0
@@ -196,26 +198,19 @@ def main():
                   flush=True)
         input('Press Enter to open fresh Hermes, then paste the prompt... ')
         command, hermes_command, ignore_rules, captured = launch_command(run / 'hermes-terminal.log')
-        record.update(status='STARTED', command=hermes_command,
-                      ignore_rules=ignore_rules, terminal_transcript=captured,
-                      started_at=datetime.datetime.now(datetime.timezone.utc).isoformat())
-        record_path.write_text(json.dumps(record, indent=2) + '\n')
-        start = time.monotonic()
+        record.update(ignore_rules=ignore_rules)
         env = module.environment(run)
         if ignore_rules:
             env['HERMES_IGNORE_RULES'] = '1'
-        result = subprocess.run(command, env=env, cwd=run / 'lab')
-        record.update(status='SESSION_CLOSED' if result.returncode == 0 else 'RUNTIME_ERROR',
-                      exit_code=result.returncode,
-                      session_wall_seconds=round(time.monotonic() - start, 3),
-                      ended_at=datetime.datetime.now(datetime.timezone.utc).isoformat())
-        record_path.write_text(json.dumps(record, indent=2) + '\n')
+        result = eval_save.capture(run, record, hermes_command, env, run / 'lab')
         print(f'\nSaved run: {run}. Keep native Hermes exports for final review.')
         return result.returncode
     except (OSError, ValueError, subprocess.CalledProcessError) as exc:
+        eval_save.failure(run, record, exc)
         print(f'Launcher error: {exc}', file=sys.stderr)
         return 1
-    except (EOFError, KeyboardInterrupt):
+    except (EOFError, KeyboardInterrupt) as exc:
+        eval_save.failure(run, record, exc, interrupted=True)
         print('\nCancelled; any prepared run remains intact.', file=sys.stderr)
         return 130
 
