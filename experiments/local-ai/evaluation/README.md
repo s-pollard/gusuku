@@ -28,6 +28,34 @@ python3 -B selftest.py
 
 If you already have a Gusuku checkout, update it with your normal Git workflow and use `experiments/local-ai/evaluation/v4/` directly. Do not discard local changes to update it.
 
+## One-command launchers
+
+Download these optional launcher updates into the extracted kit directory (the original tar.gz kit remains unchanged):
+
+```sh
+curl -fL https://raw.githubusercontent.com/s-pollard/gusuku/main/experiments/local-ai/evaluation/v4/run-practical.py -o ~/homelab-ai-evaluation-v4/run-practical.py
+curl -fL https://raw.githubusercontent.com/s-pollard/gusuku/main/experiments/local-ai/evaluation/v4/run-test.py -o ~/homelab-ai-evaluation-v4/run-test.py
+```
+
+Then use one command for a task:
+
+```sh
+python3 ~/homelab-ai-evaluation-v4/run-test.py C00
+python3 ~/homelab-ai-evaluation-v4/run-test.py E01
+python3 ~/homelab-ai-evaluation-v4/run-test.py P02
+python3 ~/homelab-ai-evaluation-v4/run-test.py M01
+```
+
+Each opens a fresh session after displaying the candidate prompt; select the same model/settings and paste it. P uses the existing practical workflow. For C/E/M, terminal/file tools remain visible but their use is prohibited by the prompt; execution is routed to an offline empty sandbox. The run record captures this exposure policy and whether context-rule suppression was available. See [launcher instructions](v4/launchers.md) for setup, log locations, optional titles, and comparison limits.
+
+For an M incident, view evaluator evidence in another Aso terminal:
+
+```sh
+python3 ~/homelab-ai-evaluation-v4/run-test.py M01 --evidence
+```
+
+Return only facts relevant to the model's requested probes. Do not paste the whole evaluator packet. L tasks only save an INFRA_BLOCKED preparation brief; the launcher does not provision live infrastructure.
+
 ## Start testing
 
 1. Record the exact model, quantization, client/agent, serving build, context/output limits, reasoning effort, tool policy and memory/skill exposure in the run template.
