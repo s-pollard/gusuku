@@ -237,13 +237,17 @@ def main():
         state = load_state()
         model = choose_model(state)
         bank = tasks()
-        full = False
+        section = 'K'
         last = state.get('last_tests', {}).get(group_name(model)) if model else None
         while model:
-            shown = bank if full else [task for task in bank if task['core']]
+            shown = ([task for task in bank if task['core']] if section == 'K' else
+                     bank if section == 'A' else
+                     [task for task in bank if task['id'].startswith(section)])
             parent = HERE.parent / 'runs' / group_name(model)
             print('\nHOMELAB AI EVALUATION — ' + display_model(model))
-            print('Profile: ' + ('full bank' if full else 'Core24 + controls'))
+            print('Section: ' + {'K': 'Core24 + controls', 'A': 'All tasks',
+                  'C': 'Controls', 'E': 'Evidence / planning', 'P': 'Practical',
+                  'M': 'Incident simulations', 'L': 'Live lab contracts'}[section])
             print('Runs: ' + str(parent))
             suggested = next_task(shown, last)
             print('Last selected: ' + (last or 'none recorded') + ' | Next in this profile: ' + (suggested or 'none'))
@@ -252,7 +256,9 @@ def main():
                 suffix = f' [{count} prepared attempt(s)]' if count else ''
                 marker = '  <-- LAST SELECTED' if task['id'] == last else ''
                 print(f" {number:2d}. {task['id']}  {task['title']}{suffix}{marker}")
-            print('\nChoose number or task ID. A=all tasks, C=core, M=model, E=incident evidence, Q=quit')
+            print('\nSections: C=controls, E=evidence/planning, P=practical, M=incidents, L=live lab')
+            print('A=all tasks, K=Core24, S=select model, V=view incident evidence, Q=quit')
+            print('Choose a section, test number or full task ID (such as P02).')
             choice = input('Test [Enter = next]: ').strip().upper()
             if not choice:
                 if not suggested:
@@ -261,14 +267,14 @@ def main():
                 choice = suggested
             if choice == 'Q':
                 break
-            if choice in {'A', 'C'}:
-                full = choice == 'A'
+            if choice in {'A', 'K', 'C', 'E', 'P', 'M', 'L'}:
+                section = choice
                 continue
-            if choice == 'M':
+            if choice == 'S':
                 model = choose_model(state)
                 last = state.get('last_tests', {}).get(group_name(model)) if model else None
                 continue
-            if choice == 'E':
+            if choice == 'V':
                 incident = input('Incident ID' + (f' [{last}]' if last and last.startswith('M') else '') + ': ').strip().upper()
                 if not incident and last and last.startswith('M'):
                     incident = last
