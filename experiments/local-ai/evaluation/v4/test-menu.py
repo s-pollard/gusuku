@@ -7,6 +7,7 @@ Exit Hermes with /quit to return here. Requested model settings are passed as
 CLI arguments and recorded; they are not proof of the backend actually served.
 """
 import datetime
+import configparser
 import hashlib
 import importlib.util
 import json
@@ -77,9 +78,27 @@ def display_model(model):
 def downloaded_models(roots=None):
     """List GGUF filename-based IDs without reading weights or changing libraries."""
     home = Path.home()
+    hermes_home = Path(os.environ.get('HERMES_HOME', str(home / '.hermes')))
     if roots is None:
-        hermes_home = Path(os.environ.get('HERMES_HOME', str(home / '.hermes')))
         roots = [hermes_home / 'models', home / 'Models']
+    # A router preset name is the request ID; a GGUF filename need not match it.
+    if roots == [hermes_home / 'models', home / 'Models']:
+        preset = hermes_home / 'runtimes/llamacpp/presets.ini'
+        if preset.is_file():
+            config = configparser.ConfigParser(interpolation=None, strict=False)
+            try:
+                config.read(preset)
+            except configparser.Error as exc:
+                raise ValueError('Cannot parse local router presets: ' + str(exc)) from exc
+            registered = []
+            for name in config.sections():
+                value = config[name].get('model', config[name].get('m', '')).strip()
+                path = Path(value).expanduser()
+                if (not value or not path.is_absolute() or not path.is_file()
+                        or name.lower().startswith(('mmproj', 'projector'))):
+                    continue
+                registered.append({'model': name, 'paths': [str(path)], 'registered': True})
+            return sorted(registered, key=lambda item: item['model'].casefold())
     found = {}
     for root in map(Path, roots):
         if not root.is_dir():
@@ -132,24 +151,33 @@ def choose_model(state):
         saved_ids = {model['model'] for model in state['models']}
         local = [item for item in downloaded_models() if item['model'] not in saved_ids]
         if local:
-            print('Downloaded GGUF files (requested IDs come from filenames):')
+            print('Available local models (router preset IDs when configured):')
         for item in local:
             entries.append(('downloaded', item))
             locations = f" [{len(item['paths'])} locations]" if len(item['paths']) > 1 else ''
             print(f"  {len(entries)}. {item['model']}{locations}")
         if not local and not state['models']:
             print('No main GGUF files found in the model directories.')
-        print('  R. Refresh downloaded files\n  N. Enter another model / alias manually\n  Q. Quit')
+        print('  R. Refresh downloaded files\n  N. Enter another model / alias manually\n  D. Delete a saved menu choice\n  Q. Quit')
         choice = input('Model: ').strip()
         if choice.lower() == 'q':
             return None
         if choice.lower() == 'r':
             continue
+        if choice.lower() == 'd':
+            number = input('Saved choice number to remove (not a model file): ').strip()
+            if number.isdigit() and 1 <= int(number) <= len(state['models']):
+                removed = state['models'].pop(int(number) - 1)
+                save_state(state)
+                print('Removed menu choice: ' + removed['model'])
+            else:
+                print('Choose a saved entry number.')
+            continue
         if choice.isdigit() and 1 <= int(choice) <= len(entries):
             kind, value = entries[int(choice) - 1]
             if kind == 'saved':
                 return value
-            print('Selected file name: ' + value['model'])
+            print('Selected model ID: ' + value['model'])
             for location in value['paths']:
                 print('  ' + location)
             print('Using the existing configured provider. Hermes must accept this ID;\n'

@@ -107,3 +107,14 @@ After exiting active launchers, press U in the menu or run
 evaluation attempts, an index and file checksums, with a separate archive checksum.
 Symlinks/special files are excluded and listed. Started/unclosed attempts block
 export pending inspection. Existing attempts and exports are never overwritten.
+
+
+Local model selection now prefers section names from
+~/.hermes/runtimes/llamacpp/presets.ini (under HERMES_HOME when set), showing
+only presets whose model file exists. A configured preset file suppresses raw
+filename choices; the model ID can differ from its filename. This reads names
+and paths only and does not reload routers, edit presets or verify successful
+model loading. Without a preset file, GGUF filename discovery remains a fallback.
+Press D in model selection and enter a saved entry number to remove that menu
+choice without deleting weights, links, runs or test history. Old saved IDs are
+not silently rewritten: remove stale choices and select the registered ID.
