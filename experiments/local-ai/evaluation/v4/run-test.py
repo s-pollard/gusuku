@@ -22,6 +22,7 @@ import time
 
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
+MODEL_OVERRIDE_API = 1
 
 
 def validate(task):
@@ -88,6 +89,7 @@ def launch_command(transcript):
     command = ['hermes', 'chat', '--toolsets', 'terminal,file']
     help_result = subprocess.run(['hermes', 'chat', '--help'],
                                  capture_output=True, text=True, check=True)
+    command += model_arguments(help_result.stdout)
     ignore_rules = '--ignore-rules' in help_result.stdout
     if ignore_rules:
         command.append('--ignore-rules')
@@ -97,6 +99,27 @@ def launch_command(transcript):
         return (['script', '-q', '-e', '-f', '-c', shlex.join(command),
                  str(transcript)], command, ignore_rules, True)
     return command, command, ignore_rules, False
+
+
+def model_arguments(help_text):
+    values = [("HOMELAB_EVAL_MODEL", "--model"),
+              ("HOMELAB_EVAL_PROVIDER", "--provider"),
+              ("HOMELAB_EVAL_REASONING", "--reasoning")]
+    args = []
+    for key, flag in values:
+        value = os.environ.get(key, "").strip()
+        if value:
+            if flag not in help_text:
+                raise ValueError("Installed Hermes does not advertise " + flag)
+            args += [flag, value]
+    return args
+
+
+def requested_model():
+    return {"model": os.environ.get("HOMELAB_EVAL_MODEL") or "configured default",
+            "provider": os.environ.get("HOMELAB_EVAL_PROVIDER") or "configured default",
+            "reasoning": os.environ.get("HOMELAB_EVAL_REASONING") or "configured default",
+            "backend_verified": False}
 
 
 def main():
@@ -134,7 +157,7 @@ def main():
         record = {'suite': 'homelab-ai-v4.0', 'task': task,
                   'run': str(run), 'prompt_sha256': hashlib.sha256(prompt).hexdigest(),
                   'manual_title': '/title ' + run.name,
-                  'automatic_full_grade': False}
+                  'automatic_full_grade': False, 'requested_inference': requested_model()}
         record_path = run / 'launcher-record.json'
         if task[0] == 'L':
             record['status'] = 'INFRA_BLOCKED'
@@ -154,7 +177,7 @@ def main():
             return 0
         print('Copy this complete prompt:\n', flush=True)
         print(prompt.decode(), flush=True)
-        print('Use the same model/reasoning settings as the other tests.', flush=True)
+        print('Requested model/settings: ' + json.dumps(requested_model()), flush=True)
         print(f'Optional chat title: /title {run.name}', flush=True)
         if task[0] == 'M':
             print('Keep this incident in one chat. In another Aso terminal, view\n'

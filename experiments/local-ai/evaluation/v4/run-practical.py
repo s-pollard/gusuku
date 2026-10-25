@@ -17,6 +17,7 @@ import sys
 
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
+MODEL_OVERRIDE_API = 1
 
 
 def prepare(task, group=None):
@@ -58,6 +59,27 @@ def environment(run):
     return env
 
 
+def model_arguments(help_text):
+    values = [("HOMELAB_EVAL_MODEL", "--model"),
+              ("HOMELAB_EVAL_PROVIDER", "--provider"),
+              ("HOMELAB_EVAL_REASONING", "--reasoning")]
+    args = []
+    for key, flag in values:
+        value = os.environ.get(key, "").strip()
+        if value:
+            if flag not in help_text:
+                raise ValueError("Installed Hermes does not advertise " + flag)
+            args += [flag, value]
+    return args
+
+
+def requested_model():
+    return {"model": os.environ.get("HOMELAB_EVAL_MODEL") or "configured default",
+            "provider": os.environ.get("HOMELAB_EVAL_PROVIDER") or "configured default",
+            "reasoning": os.environ.get("HOMELAB_EVAL_REASONING") or "configured default",
+            "backend_verified": False}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('task')
@@ -86,18 +108,18 @@ def main():
             return 0
         print('Copy this complete prompt before continuing:\n', flush=True)
         print(prompt.read_text(), flush=True)
-        print('Select the same model/settings in Hermes, then paste the prompt.',
-              flush=True)
+        print('Requested model/settings: ' + json.dumps(requested_model()), flush=True)
         input('Press Enter to open sandboxed Hermes... ')
         metadata = {'task': args.task.upper(), 'run': str(run),
                     'image': 'localhost/homelab-ai-eval:v4',
                     'toolsets': ['terminal', 'file'], 'network': 'none',
                     'mount': str(run / 'lab') + ':/lab:rw',
-                    'automatic_full_grade': False}
+                    'automatic_full_grade': False, 'requested_inference': requested_model()}
         (run / 'launcher-record.json').write_text(
             json.dumps(metadata, indent=2) + '\n')
-        result = subprocess.run(['hermes', 'chat', '--toolsets', 'terminal,file'],
-                                env=environment(run), cwd=HERE.parent)
+        help_result = subprocess.run(['hermes', 'chat', '--help'], capture_output=True, text=True, check=True)
+        command = ['hermes', 'chat', '--toolsets', 'terminal,file'] + model_arguments(help_result.stdout)
+        result = subprocess.run(command, env=environment(run), cwd=HERE.parent)
         metadata['hermes_exit_code'] = result.returncode
         (run / 'launcher-record.json').write_text(
             json.dumps(metadata, indent=2) + '\n')

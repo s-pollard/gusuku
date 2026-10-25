@@ -28,6 +28,21 @@ python3 -B selftest.py
 
 If you already have a Gusuku checkout, update it with your normal Git workflow and use `experiments/local-ai/evaluation/v4/` directly. Do not discard local changes to update it.
 
+## Interactive menu
+
+Download the three launcher scripts together into your existing v4 kit:
+
+```sh
+cd ~/homelab-ai-evaluation-v4
+curl -fLO https://raw.githubusercontent.com/s-pollard/gusuku/main/experiments/local-ai/evaluation/evaluation-launchers.tar.gz
+tar -xzf evaluation-launchers.tar.gz
+python3 test-menu.py
+```
+
+Choose the model ID/alias, optional provider, and reasoning setting once. Then select a task from the menu. The script displays the prompt, prepares the matching environment and starts fresh Hermes. Paste the prompt; after /quit you return to the menu and can select the next test. Use M to change models, A for the full bank, C for Core24, E for incident evidence, and Q to quit. Settings combinations are remembered privately; run folders and metadata are grouped by model/provider/reasoning. The chosen model is passed with --model, not merely used as a folder label. Unsupported CLI settings stop with an error. Native session evidence is still required to verify the serving backend.
+
+[Menu and launcher details](v4/launchers.md). The launcher tar.gz contains only test-menu.py, run-test.py and run-practical.py; extract it in the existing kit. Earlier run folders are preserved. Optional chat titles remain manual; no /new is needed when starting from this menu. Live tasks still record INFRA_BLOCKED until their required infrastructure exists.
+
 ## One-command launchers
 
 Download these optional launcher updates into the extracted kit directory (the original tar.gz kit remains unchanged):

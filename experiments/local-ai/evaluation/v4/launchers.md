@@ -1,4 +1,16 @@
-# Test launchers
+# Interactive model/test menu
+
+Start `python3 test-menu.py` from the extracted kit. Choose N to add an exact Hermes model ID or alias, an optional provider name, and a reasoning effort (Enter keeps the configured value). Saved combinations appear as numbered choices on future runs. These are your saved selections, not an automatically discovered model inventory. No credentials or endpoints are requested.
+
+The task menu defaults to Core24 plus controls. Select a number or type an ID such as E01 or P02. A shows the full bank, C returns to the core profile, M changes the model, E displays operator-only incident evidence, and Q exits. The launcher displays the full prompt, prepares the appropriate environment and opens fresh Hermes after Enter. Paste the prompt; exit Hermes with /quit to return to the menu. Requested model/provider/reasoning are passed explicitly to Hermes for each run and recorded. The installed CLI is checked for the corresponding options; unsupported overrides stop instead of being silently ignored. Normal saved Hermes configuration is not changed.
+
+Runs are grouped as `~/runs/<model-and-settings-label>/ID-attemptNN/`. Different provider/reasoning selections receive separate groups. `model-selection.json` records the selected settings; each attempt retains its own requested-inference record. These are requested settings, not independent proof of which backend served the request. Preserve native session evidence and any model switches/fallbacks. Menu settings are saved privately under `$XDG_STATE_HOME/homelab-ai-evaluation/menu.json`, defaulting to `~/.local/state/homelab-ai-evaluation/menu.json`. Prepared-attempt counts are not grades or completed coverage.
+
+Update test-menu.py, run-test.py and run-practical.py together. The menu refuses launchers that predate model overrides. The downloadable `evaluation-launchers.tar.gz` contains those three files only; extract it inside the existing v4 kit. The original task bank, prompts, fixtures and previous attempts are unchanged.
+
+---
+
+# Individual test launchers
 
 Place run-test.py and run-practical.py beside lab.py in the extracted v4 kit.
 They use the rootless Podman image `localhost/homelab-ai-eval:v4` prepared during
