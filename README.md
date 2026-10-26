@@ -18,7 +18,7 @@ Gusuku is on hold until the November 2026 move is complete and the lab hardware 
 
 Shuri remains the planned first physical Gusuku host, but it is currently packed/offline. No permanent Gusuku services or virtual infrastructure are being deployed before the move.
 
-The [v4 local AI maintenance evaluation](experiments/local-ai/evaluation/README.md) is available for temporary testing on Aso. The active kit includes individual prompts, offline fixtures, evaluator guidance and a tar.gz download. Earlier setup records, tests and transcripts remain in the repository-level archive. Aso is a personal administration workstation, not a disposable Gusuku host; practical candidate execution needs a separate isolated environment.
+The local-AI model-comparison project is complete. **Qwen3.8-27B-UD-Q4-K-M is the committed local model for the homelab-helper role.** The evaluation kits, prompts, transcripts, prior candidates, Hermes/Odysseus setup notes, and related tooling are historical material and now live only in the repository-level [`archive/`](archive/README.md).
 
 ## lifecycle
 
@@ -90,7 +90,7 @@ Additional physical hosts should be added only when the existing environment can
 
 ## administration
 
-**Aso** is the primary personal administration workstation. **Ontake**, **Norikura**, and **Azuma** are alternative laptop clients. They are separate from disposable lab hosts. Aso's temporary local-AI testing does not change that boundary. See [administration workstations](docs/administration.md) for roles, naming, and links to hardware records.
+**Aso** is the primary personal administration workstation. **Ontake**, **Norikura**, and **Azuma** are alternative laptop clients. They are separate from disposable lab hosts. Prior Aso local-AI testing is archived and does not change that boundary. See [administration workstations](docs/administration.md) for roles, naming, and links to hardware records.
 
 ## direction
 
@@ -116,21 +116,23 @@ Do not commit credentials, API keys, tokens, private keys, recovery codes, exact
 
 Hardware models, high-level topology, lab roles, generic configurations, and non-secret lessons are appropriate to document publicly.
 
-## local AI experiments
+## local AI decision
 
-See the [local AI experiment index](experiments/local-ai/README.md) for the active v4 maintenance evaluation, downloadable kit and testing instructions. Earlier model tests, transcripts and agent setup records are preserved in the [root archive](archive/README.md). Experimental agents are not required production services. Raw chat databases/exports remain private; see [SECURITY.md](SECURITY.md).
+The model-selection phase is closed. **Qwen3.8-27B-UD-Q4-K-M** is the selected local model for future homelab-helper work. Reopen model comparison only if a concrete limitation, hardware change, or materially better model justifies it.
+
+All prior local-AI experiments are preserved under the [root archive](archive/README.md). Experimental AI remains optional tooling and is never a required dependency for Fujigoko production services.
 
 ## repository structure
 
 ```text
 .
 ├── README.md
+├── archive/
+│   └── local-ai/
 ├── docs/
 │   ├── administration.md
 │   ├── principles.md
 │   └── roadmap.md
-├── experiments/
-│   └── local-ai/
 ├── SECURITY.md
 └── hosts/
     └── shuri.md
