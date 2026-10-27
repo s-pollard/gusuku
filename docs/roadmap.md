@@ -4,9 +4,7 @@ This roadmap describes direction, not a fixed schedule.
 
 The purpose of gusuku is exploration. Later phases may change based on what proves interesting.
 
-## active workstation experiment — local AI
-
-[Local AI administration evaluation](../experiments/local-ai/README.md) is ongoing on Aso before the physical lab resumes. It covers evidence handling, scoped tool use, verification and model comparisons. It does not deploy permanent Gusuku infrastructure or make Fujigoko depend on the experiment.
+The prior Aso local-AI model-comparison work is complete and is not an active Gusuku roadmap item. Qwen3.8-27B-UD-Q4-K-M remains the selected local homelab-helper model unless a concrete limitation, hardware change, or materially better model justifies reopening that evaluation.
 
 ## phase 0 — foundation
 
