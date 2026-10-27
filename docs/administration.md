@@ -2,11 +2,11 @@
 
 Aso is the primary workstation used to administer Gusuku and Fujigoko. It is also the main personal desktop and most powerful non-server PC, used for gaming and photography.
 
-While physical Gusuku deployment is paused until the November 2026 move, Aso is the temporary test bed for [local AI experiments](../experiments/local-ai/README.md). All associated documentation, model tests, transcripts and tooling belong to Gusuku. The experiment does not make Aso part of the disposable lab host inventory.
+The prior Aso local-AI model-comparison work is complete. Qwen3.8-27B-UD-Q4-K-M is the selected local homelab-helper model recorded by Gusuku; the former evaluation material has been removed from the active repository tree. This work does not make Aso part of the disposable lab host inventory.
 
 | Workstation | Main role | Platform |
 | --- | --- | --- |
-| aso | Main desktop and primary server administration; temporary local-AI test bed | Arch Linux / KDE |
+| aso | Main desktop and primary server administration | Arch Linux / KDE |
 | ontake | Main gaming laptop; alternative administration | Bazzite / KDE |
 | norikura | Everyday portable browsing and off-site Tailscale tinkering | Arch Linux / COSMIC |
 | azuma | Everyday portable browsing and off-site Tailscale tinkering | macOS |
