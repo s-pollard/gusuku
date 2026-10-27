@@ -1,4 +1,4 @@
-# gusuku
+# /gusuku/
 
 Gusuku is the disposable learning and career-exploration environment within **/pleblab/**, the overall homelab.
 
