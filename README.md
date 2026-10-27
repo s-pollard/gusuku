@@ -18,7 +18,7 @@ Gusuku is on hold until the November 2026 move is complete and the lab hardware 
 
 Shuri remains the planned first physical Gusuku host, but it is currently packed/offline. No permanent Gusuku services or virtual infrastructure are being deployed before the move.
 
-The local-AI model-comparison project is complete. **Qwen3.8-27B-UD-Q4-K-M is the committed local model for the homelab-helper role.** The evaluation kits, prompts, transcripts, prior candidates, Hermes/Odysseus setup notes, and related tooling are historical material and now live only in the repository-level [`archive/`](archive/README.md).
+The local-AI model-comparison project is complete. **Qwen3.8-27B-UD-Q4-K-M is the committed local model for the homelab-helper role.** The active Gusuku repository now retains only the resulting decision; the former evaluation material is no longer part of the current repository tree.
 
 ## lifecycle
 
@@ -90,7 +90,7 @@ Additional physical hosts should be added only when the existing environment can
 
 ## administration
 
-**Aso** is the primary personal administration workstation. **Ontake**, **Norikura**, and **Azuma** are alternative laptop clients. They are separate from disposable lab hosts. Prior Aso local-AI testing is archived and does not change that boundary. See [administration workstations](docs/administration.md) for roles, naming, and links to hardware records.
+**Aso** is the primary personal administration workstation. **Ontake**, **Norikura**, and **Azuma** are alternative laptop clients. They are separate from disposable lab hosts. Prior Aso local-AI testing is complete and does not change that boundary. See [administration workstations](docs/administration.md) for roles, naming, and links to hardware records.
 
 ## direction
 
@@ -120,15 +120,13 @@ Hardware models, high-level topology, lab roles, generic configurations, and non
 
 The model-selection phase is closed. **Qwen3.8-27B-UD-Q4-K-M** is the selected local model for future homelab-helper work. Reopen model comparison only if a concrete limitation, hardware change, or materially better model justifies it.
 
-All prior local-AI experiments are preserved under the [root archive](archive/README.md). Experimental AI remains optional tooling and is never a required dependency for Fujigoko production services.
+Experimental AI remains optional tooling and is never a required dependency for Fujigoko production services.
 
 ## repository structure
 
 ```text
 .
 ├── README.md
-├── archive/
-│   └── local-ai/
 ├── docs/
 │   ├── administration.md
 │   ├── principles.md
